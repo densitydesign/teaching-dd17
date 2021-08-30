@@ -1,9 +1,168 @@
+// $main-color: #F8BA4F;
+$secondary: #ff9a50;
+$main-color: #99B2DD;
+$accent: #FFFD98;
+
 body {
-    font-family: "Switzer";
-    font-size: 1rem;
+    font-family: "Erode";
+    font-size: 1.3rem;
+    // background: #97DB4F;
+    background: $main-color;
+    color: #000000;
+    line-height: 1.5;
 }
 
-p {
-    font-family: "Erode";
+a, a:visited {
+    text-decoration: none;
+    font-family: "HK Grotesk";
+    font-size: 1.1rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 100rem;
+    border: 1px solid $accent;
+    color: $secondary;
+    background: $accent;
+    transition: 0.3s ease all;
+}
+
+a:hover {
+    background: $main-color;
+    color: #000000;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: "HK Grotesk";
+    font-weight: normal;
+    color: $accent;
+}
+
+h1 {
+    margin: 3rem 0 2rem 0;
+    font-size: 2rem;
+}
+
+h2 {
+    margin: 2rem 0 1.5rem 0;
+    font-size: 1.5rem;
+}
+
+h3 {
+    margin: 1.5rem 0 1rem 0;
     font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+#gatsby-focus-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1rem;
+    padding: 0 5%;
+}
+
+nav {
+    grid-column: 1 / span 5;
+    width: 100%;
+    background: $main-color;
+    position: sticky;
+    top: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid $accent;
+
+    * {
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    ul {
+        display: flex;
+        padding: 0;
+        grid-column: 3 / span 2;
+
+        li {
+            list-style: none;
+            margin-right: 2rem;
+          }
+    }
+}
+
+main {
+    margin: 5rem 0;
+    grid-column: 2 / span 4;
+}
+
+footer {
+    grid-column: 1 / span 4;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1rem;
+    font-size: 1.2rem;
+
+    * {
+        grid-column: span 1;
+    }
+
+    .logo {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 0.5rem;
+
+        * {
+            grid-column: span 1;
+        }
+    }
+
+    img {
+        height: 50px;
+        width: auto;
+    }
+
+    h1 {
+        margin: 0 0 1rem 0;
+        font-size: 1.1rem;
+    }
+
+    ul {
+        padding: 0;
+      }
+
+      li {
+        list-style: none;
+        margin: 0;
+        line-height: 1.5;
+      }
+}
+
+.title-card {
+    text-align: center;
+    height: 60vh;
+    background: rgb(255,154,80);
+    background: linear-gradient(45deg, rgba(255,154,80,1) 0%, rgba(255,253,152,1) 100%);
+    grid-column: 1 / span 5;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    * {
+        min-width: 100%;
+    }
+
+    .title {
+        font-size: 4rem;
+        margin: 0;
+        color: darken($main-color, 20%);
+        font-weight: bold;
+    }
+    
+    .subtitle {
+        margin: 0;
+        font-size: 2.5rem;
+        color: darken($main-color, 20%);
+    }
 }
