@@ -1,4 +1,5 @@
 import React from 'react';
+import CgMail from 'react-icons/cg'
 
 const logo = "https://andreabenedetti.github.io/dd-15/assets/img/Logo_DensityDesign.svg";
 const polimi = "https://andreabenedetti.github.io/dd-15/assets/img/polimi.svg";
