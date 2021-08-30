@@ -12,7 +12,9 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "dev-m": "gatsby develop -H 0.0.0.0 -p 8000 -o",
+    "dev-m-clean": "gatsby clean && gatsby develop -H 0.0.0.0 -p 8000 -o"
   },
   "dependencies": {
     "@mdx-js/mdx": "^1.6.22",
