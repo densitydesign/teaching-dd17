@@ -1,7 +1,7 @@
-$main-color: #ABAB73;
+// $main-color: #ABAB73;
 // $main-color: #809D84;
 $secondary: #ff9a50;
-// $main-color: #99B2DD;
+$main-color: #99B2DD;
 $accent: #FFFD98;
 
 @font-face {
@@ -49,8 +49,8 @@ a, a:visited {
 }
 
 a:hover {
-    background: $main-color;
-    box-shadow: 0 0 5px 5px $accent;
+    background: $accent;
+    box-shadow: 0 0 8px 8px $main-color inset;
     color: #000000;
 }
 
