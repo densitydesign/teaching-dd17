@@ -18,15 +18,15 @@ const IndexPage = () => {
     </main>
     <div className="project-phases">
       <div className="phase">
-        <h3>Phase 1</h3>
-        <h2>Data as material</h2>
+        <h3>Warm up</h3>
+        <h2>Visual explanations</h2>
       </div>
       <div className="phase">
-        <h3>Phase 2</h3>
+        <h3>Main assignment</h3>
         <h2>Data as artefact</h2>
       </div>
       <div className="phase">
-        <h3>Phase 3</h3>
+        <h3>Main assignment</h3>
         <h2>Data publics</h2>
       </div>
     </div>

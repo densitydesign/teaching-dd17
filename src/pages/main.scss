@@ -50,6 +50,7 @@ a, a:visited {
 
 a:hover {
     background: $main-color;
+    box-shadow: 0 0 5px 5px $accent;
     color: #000000;
 }
 
@@ -115,8 +116,22 @@ nav {
     }
 }
 
+aside {
+    position: sticky;
+    top: 4rem;
+    height: 10vh;
+    ul {
+        padding: 0;
+        grid-column: 3 / span 2;
+
+        li {
+            list-style: none;
+            margin-bottom: 0.5rem;
+          }
+    }
+}
+
 main {
-    margin: 5rem 0;
     grid-column: 2 / span 4;
 
     h1 {
@@ -133,6 +148,7 @@ main {
 }
 
 footer {
+    margin-top: 4rem;
     grid-column: 1 / span 4;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -239,12 +255,24 @@ footer {
             width: 100%;
             margin: 0;
         }
+
+        h2 {
+            font-family: "Erode", serif;
+            font-size: 1.8rem;
+            color: #000000;
+        }
     }
 }
 
 @media only screen and (max-width: 768px) {
     main {
         grid-column: 1 / span 5;
+    }
+
+    aside {
+        grid-column: 1 / span 5;
+        height: auto;
+        position: static;
     }
 
     footer .logo {
@@ -293,7 +321,9 @@ footer {
     
       .title-card {
           .title {
-              font-size: 2rem;
+              font-size: 2.5rem;
+              line-height: 1.2;
+              margin-bottom: 1rem;
           }
 
           .subtitle {
