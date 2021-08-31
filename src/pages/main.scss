@@ -42,7 +42,10 @@ a, a:visited {
     color: $secondary;
     background: $accent;
     transition: 0.3s ease all;
+    overflow-wrap: break-word;
     word-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
 }
 
 a:hover {
@@ -122,6 +125,10 @@ main {
 
     p {
         text-indent: 1rem;
+    }
+
+    table {
+        max-width: 100%;
     }
 }
 
