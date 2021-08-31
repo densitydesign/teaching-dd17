@@ -14,7 +14,7 @@ const IndexPage = () => {
   return (
     <>
     <Navbar/>
-    <div className="title-card"><h1 className="title">Mediazioni algoritmiche</h1>
+    <div className="title-card"><h1 className="title">Mediazioni algoritmiche III</h1>
       <h2 className="subtitle">Designing in a data-intensive society</h2>
       <h3>Politecnico di Milano, Master Degree in Communication Design</h3></div>
     <main>

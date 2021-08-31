@@ -1,5 +1,9 @@
 import React from 'react';
-import CgMail from 'react-icons/cg'
+import { AiOutlineFacebook } from "@react-icons/all-files/ai/AiOutlineFacebook";
+import { AiOutlineTwitter } from "@react-icons/all-files/ai/AiOutlineTwitter";
+import { AiOutlineInstagram } from "@react-icons/all-files/ai/AiOutlineInstagram";
+import { AiOutlineGlobal } from "@react-icons/all-files/ai/AiOutlineGlobal";
+import { MdMailOutline } from "@react-icons/all-files/md/MdMailOutline";
 
 const logo = "https://andreabenedetti.github.io/dd-15/assets/img/Logo_DensityDesign.svg";
 const polimi = "https://andreabenedetti.github.io/dd-15/assets/img/polimi.svg";
@@ -37,9 +41,9 @@ class Footer extends React.Component {
       <div id="contacts">
       <p>The FSDS is a Synthesis lab that takes place at Politecnico di Milano, in the last year of the Master's Degree in Communication Design between September 2020 and February 2021.</p>
       <ul>
-      <li><a href="https://www.facebook.com/densitydesign"><i className="fab fa-facebook-f" style={{ marginRight: "1rem" }}></i></a> <a href="https://twitter.com/densitydesign"><i className="fab fa-twitter" style={{ marginRight: "1rem" }}></i></a> <a href="https://www.instagram.com/densitydesign/"><i className="fab fa-instagram"></i></a></li>
-      <li><a href="http://densitydesign.org/"><i className="fas fa-globe-europe"></i> densitydesign.org</a></li>
-      <li><a href="mailto:info@densitydesign.org"><i className="fas fa-envelope"></i> email</a></li>
+      <li><a href="https://www.facebook.com/densitydesign"><AiOutlineFacebook className="icon" /></a> <a href="https://twitter.com/densitydesign"><AiOutlineTwitter className="icon" /></a> <a href="https://www.instagram.com/densitydesign/"><AiOutlineInstagram className="icon" /></a></li>
+      <li><a href="http://densitydesign.org/"><AiOutlineGlobal className="icon" /> densitydesign.org</a></li>
+      <li><a href="mailto:info@densitydesign.org"><MdMailOutline className="icon" /> email</a></li>
       </ul>
       </div>
       </footer>
