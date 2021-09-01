@@ -24,7 +24,7 @@ const IndexPage = () => {
           <Link to="https://densitydesign.github.io/teaching-dd16/">DD16 FSDS 2020/2021</Link>
         </li>
         <li>
-          <Link to="https://www4.ceda.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2021&k_cf=19&k_corso_la=1162&k_indir=***&codDescr=052799&lang=EN&semestre=1&anno_corso=2&idItemOfferta=154784&idRiga=267427">Course manifesto</Link>
+          <Link to="https://www4.ceda.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2021&k_cf=19&k_corso_la=1162&k_indir=***&codDescr=052799&lang=EN&semestre=1&anno_corso=2&idItemOfferta=154784&idRiga=267427">2021/2022 Course manifesto</Link>
         </li>
         <li>
           <Link to="">Course calendar</Link>
