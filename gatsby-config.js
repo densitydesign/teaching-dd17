@@ -34,4 +34,5 @@ module.exports = {
       __key: "pages",
     },
   ],
+  pathPrefix: "/teaching-dd17",
 };
