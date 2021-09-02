@@ -1,7 +1,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
 
-import SEO from "../components/seo"
+import SEO from "../components/seo.js"
 
 import Navbar from "../components/navbar.js"
 import Footer from "../components/footer.js"
