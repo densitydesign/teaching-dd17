@@ -12,22 +12,25 @@ import "./main.scss"
 const IndexPage = () => {
   return (
     <>
+    <title>Course results - DensityDesign Lab Final Synthesis Design Studio 2021/2022 - Mediazioni algoritmiche</title>
     <Navbar/>
     <main>
       <Course />
     </main>
     <div className="project-phases">
       <div className="phase">
-        <h3>Warm up</h3>
+        <h3>Poster</h3>
         <h2>Visual explanations</h2>
       </div>
-      <div className="phase">
-        <h3>Main assignment</h3>
-        <h2>Data as artefact</h2>
-      </div>
-      <div className="phase">
-        <h3>Main assignment</h3>
-        <h2>Data publics</h2>
+      <div className="phase lg">
+        <div className="phase">
+          <h3>Report</h3>
+          <h2>Data as artefact</h2>
+        </div>
+        <div className="phase">
+          <h3>Project</h3>
+          <h2>Data publics</h2>
+        </div>
       </div>
     </div>
     <Footer />

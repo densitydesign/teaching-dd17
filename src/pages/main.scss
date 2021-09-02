@@ -113,6 +113,12 @@ nav {
             margin-right: 2rem;
           }
     }
+
+    .current {
+        background: $secondary;
+        color: #000000;
+        border-color: $secondary;
+    }
 }
 
 aside {
@@ -259,6 +265,15 @@ footer {
             color: #000000;
         }
     }
+
+    .lg {
+        grid-column: 2 / span 3;
+        display: flex;
+
+        .phase {
+            width: 50%;
+        }
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -334,6 +349,16 @@ footer {
             margin: 1rem 0;
             padding: 3rem 0;
             grid-column: 1 / 4;
+        }
+
+        .lg {
+            padding: 0;
+
+            .phase {
+                margin: 0;
+                width: 100%;
+
+            }
         }
     }
 }

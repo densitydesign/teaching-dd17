@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 
 import Navbar from "../components/navbar.js"
 import Footer from "../components/footer.js"
+import Aside from "../components/aside.js"
 
 import Pack from "../contents/starter-pack.mdx"
 
@@ -12,7 +13,9 @@ import "./main.scss"
 const IndexPage = () => {
   return (
     <>
-    <Navbar/>
+    <title>Starter Pack - DensityDesign Lab Final Synthesis Design Studio 2021/2022 - Mediazioni algoritmiche</title>
+    <Navbar />
+    <Aside />
     <main>
       <Pack />
     </main>
