@@ -1,7 +1,13 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "teaching-dd17",
+    title: "Final Synthesis Design Studio 2021/2022",
+    titleTemplate: "%s - DD17",
+    description:
+      "Official website of the DensityDesign Final Synthesis Design Studio, 2021/2022",
+    siteUrl: "https://densitydesign.github.io/teaching-dd17/",
+    url: "https://densitydesign.github.io/teaching-dd17/",
+    image: "/assets/images/og-image.png", // Path to your image you placed in the 'static' folder
+    twitterUsername: "@densitydesign",
   },
   plugins: [
     "gatsby-plugin-sass",

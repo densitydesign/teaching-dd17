@@ -1,6 +1,8 @@
 import * as React from "react"
 import { Link } from "gatsby"
 
+import SEO from "../components/seo"
+
 import Navbar from "../components/navbar.js"
 import Footer from "../components/footer.js"
 import Aside from "../components/aside.js"
@@ -13,6 +15,7 @@ import "./main.scss"
 const IndexPage = () => {
   return (
     <>
+    <SEO />
     <title>DensityDesign Lab Final Synthesis Design Studio 2021/2022 - Mediazioni algoritmiche</title>
     <Navbar/>
     <div className="title-card"><h1 className="title">Mediazioni algoritmiche III</h1>
