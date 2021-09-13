@@ -6,7 +6,7 @@ module.exports = {
       "Official website of the DensityDesign Final Synthesis Design Studio, 2021/2022",
     siteUrl: "https://densitydesign.github.io/teaching-dd17/",
     url: "https://densitydesign.github.io/teaching-dd17/",
-    image: "og-image.png", // Path to your image you placed in the 'static' folder
+    image: "static/og-image.png", // Path to your image you placed in the 'static' folder
     twitterUsername: "@densitydesign",
   },
   plugins: [
