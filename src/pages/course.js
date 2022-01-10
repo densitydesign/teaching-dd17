@@ -14,9 +14,6 @@ const IndexPage = () => {
     <>
     <title>Course results - DensityDesign Lab Final Synthesis Design Studio 2021/2022 - Mediazioni algoritmiche</title>
     <Navbar/>
-    <main>
-      <Course />
-    </main>
     <div className="project-phases">
       <div className="phase">
         <h3>Poster</h3>
@@ -33,6 +30,9 @@ const IndexPage = () => {
         </div>
       </div>
     </div>
+    <main>
+      <Course />
+    </main>
     <Footer />
     </>
   )

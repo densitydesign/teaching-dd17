@@ -39,7 +39,7 @@ class Footer extends React.Component {
       </div>
 
       <div id="contacts">
-      <p>The FSDS is a Synthesis lab that takes place at Politecnico di Milano, in the last year of the Master's Degree in Communication Design between September 2020 and February 2021.</p>
+      <p>The Final Synthesis Design Studio is a laboratory that takes place at Politecnico di Milano, in the last year of the Master's Degree in Communication Design between September 2021 and January 2022.</p>
       <ul>
       <li><a href="https://www.facebook.com/densitydesign"><AiOutlineFacebook className="icon" /></a> <a href="https://twitter.com/densitydesign"><AiOutlineTwitter className="icon" /></a> <a href="https://www.instagram.com/densitydesign/"><AiOutlineInstagram className="icon" /></a></li>
       <li><a href="http://densitydesign.org/"><AiOutlineGlobal className="icon" /> densitydesign.org</a></li>
