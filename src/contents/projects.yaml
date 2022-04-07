@@ -1,0 +1,48 @@
+groups:
+- group: group01
+  title: "Green narratives and renderings in real estate"
+  names: "Francesco Battistoni, Carlo Boschis, Federica Inzani, Federico Meani, Mattia Mertens, Ottavia Robuschi"
+  image: "../../assets/img/es03/cover-g01.gif"
+  desc: "With only weeks to go before COP26, one of the frequently discussed issues is how urban cities can transition to more sustainable systems. Concepts such as “green jobs” “green city“, “smart green“, “green mobility“ are repeated in the rhetoric of Climate Change that produces real estate projects in large cities such as Milan. This rhetoric is accompanied by images of computer-generated renderings that communicate future projects and persuade the public. The rendering is an artefact that mediates between the rhetoric of the project and the actual physical space. What is the relationship between the green present in the renderings and the physical space? Which type of “green” is being proposed by real estate projects? What techniques of analysis can we use to demystify the green in the images of the renderings?"
+
+- group: group02
+  title: "Infodemic and the role of Dark Platforms"
+  names: "Mattia Casarotto, Davide Chiappini, Andrea De Simone, Emanuele Ghebaur, Francesca Gheli, Hanlu Ma, Raffaele Riccardelli"
+  image: "../../assets/img/es03/cover-g02.png"
+  desc: "We are facing what the WHO labelled infodemic: an excessive quantity of information  which encourages the spread of misinformation, disinformation and rumors during a health emergency. In the first months of the pandemic, hashtags like #scamdemic and #plandemic have been used on social platforms to disseminate articles, memes, videos and data visualizations about COVID-19. Major social media companies reacted (often too late) by updating platforms’ safety policies in order to limit the spread of deceptive contents. As a response, users started to migrate to alternative and less regulated social media (i.e., Dark Platforms) such as Bitchute and 8kun. How are malicious narratives and disinformation related to COVID-19 spreading on Dark Platforms?"
+
+- group: group03
+  title: "Mapping the sustainable blockchain ecosystem"
+  names: "Anel Alzhanova, Soraya Astaghforellahi, Maria Camila Coelho De Oliveira, Beatrice Foresti, Yaqing Luan, Nelly Serag Saad, Severin Alois Schwaighofer"
+  image: "../../assets/img/es03/cover-g03.gif"
+  desc: "The ecological impact of blockchains in general (e.g. Bitcoin, Ethereum) is the subject of recent and vibrant discussion across disparate communities. On the one hand, some believe that mining cryptocurrencies is positive for the climate and the world, on the other anti-cryptocurrency positions state it be a waste of energy and resources. This debate could be also applied to the recent introduction of NFT in the art market. However, given increasing popularity and growth, the environmental costs behind transactions related to NFT became a major issue. Indeed, the most used algorithm behind those transactions —known as Proof of Work (PoW), is very compute intensive to such an extent that a single Ethereum (cryptocurrency used for NFT market) transaction is estimated to have a footprint on average of around 35 kWh, and that the actual environmental impact of a single NFT is similar to that of driving a car for 1000km. As a response, eco-friendly blockchains have recently mushroomed. How can we map the landscape of eco-friendly blockchain technologies and their (visual) characteristics?"
+
+- group: group04
+  title: "Mapping alternative social media platforms"
+  names: "Letizia Agosta, Aurora Antonini Cencicchio, Martina Bombardieri, Elena Busletta, Camilla De Amicis, Federico Lucifora"
+  image: "../../assets/img/es03/cover-g04.gif"
+  desc: "After the Cambridge Analytica scandal, concerns about data privacy on leading social media platforms have increased. As a result, alternatives have gained traction. Claiming to give social networking back in the hands of users, allowing them to speak freely without worrying about privacy, or simply offering trust, control and love, an ecology of messaging and networking apps has arisen. At the same time, as leading social media platforms tighten their policies towards hate speech and deactivate the accounts of extreme internet celebrities (a phenomenon referred to as deplatforming, yet another ecosystem of alternative social media platforms arose, offering a safe haven for alt-right personalities. How can we map these alternatives? And what precisely do these new services claim to provide an alternative to? What is the life of such platforms? Do they change (or disappear)?"
+
+- group: group05
+  title: "Pandemic participation: slacktivism and misinformation"
+  names: "Alice Bocchio, Michele Bruno, Maria Celeste Casolino, Luca Draisci, Virginia Leccisotti, Barbara Roncalli, Sara Zanardi"
+  image: "../../assets/img/es03/cover-g05.png"
+  desc: "The digitalisation of our collective life, accelerated dramatically by the pandemic, has given new life to various forms of online activism. Slacktivism (a portmanteau of slacker and activism) is a derogatory term that identifies forms of digital activism (such as signing a petition or sharing a post) that require little to no effort or commitment. Another term is performative activism, where one supports a social cause for social clout rather than earnest dedication. With the pandemic disrupting our way of life, covid-related online petitions have been growing: Supporting small businesses, asking for alternative and non-scientific cures, or protesting against restrictions, these collective requests can become a valuable source of data to study tensions and debates regarding the (post-)pandemic life. What can we learn by mapping covid-related online petitions? How does the world of online activism intersect with misinformation?"
+
+- group: group06
+  title: "The clickbaitification of streaming platforms."
+  names: "Bharath Arappali, Lorenzo Bernini, Chiara Caputo, Irene Casano, Yasmine Hamdani, Marco Perico, Davide Perucchini"
+  image: "../../assets/img/es03/cover-g06.png"
+  desc: "In its never-ending quest against “decision fatigue”, Netflix has rolled out a series of technological improvements to its homepage to reduce the time users spend scrolling through titles. The Netflix home (started as a one-fits-all searchable catalogue) has increasingly become algorithmically tailored to each user history data. Trending titles, personalised picks, “continue watching”, and video thumbnails: Netflix algorithmically generates and constantly updates each section of its home page based on user behaviour. With hyper-personalisation, issues of (racial, geographic, gender) profiling arise, even though Netflix claims not to use demographic data. Furthermore, some have described the process of clickbaitification of streaming services, which employ tricks such as the “curiosity gap, the sexy thumbnail, and the misleading image”. Other streaming services have also implemented various strategies (from autoplay to customization) to limit the time users spend choosing what to watch. Which strategies streaming services put in place to “lock in” users and have them stop scrolling? Can we define a taxonomy of strategies against decision fatigue?"
+
+- group: group07
+  title: "The materiality of Covid-19: pandemic objects online"
+  names: "Daniele Dell'Orto, Martina Francella, Shan Huang, Octavian Danut Husoschi, Martina Melillo, Matteo Maria Pini, Alessandro Quets"
+  image: "../../assets/img/es03/cover-g07.png"
+  desc: "Life during the pandemic required a collective exercise of imagination to conceive the forms and modes of the “social distancing” society. It is not just an abstract operation projected into the future (Will we live in social bubbles?), but a process of material imagination of situations, architectures, objects, plexiglass, dividers, lines on the ground. It is a form of imagineering™ (from imagination and engineering), set in the materiality of the present but projected into the future, sometimes reminiscent of science fiction. Test-kits, dividers, masks, signs, gels: online one can find an ecosystem of pandemic paraphernalia. What can we learn from mapping this offer in various online marketplaces? What do they tell us about the materiality of the pandemic?"
+
+- group: group08
+  title: "NFT (Non-Fungible Token): the new art market?"
+  names: "Marina Fernández De La Rosa, Leo Luca Gamberini, Andrea Llamas Roldan, Renata Martínez Tapia, Amanda Rodrigues Cestaro, Regina Salviato, Qi Yu"
+  image: "../../assets/img/es03/cover-g08.png"
+  desc: "NFTs promise to revolutionise the art collection world. NFT (non-fungible tokens) are digital collectables that use blockchain technology as authentication. In broad terms, they are certificates of ownership of a digital asset. Since their invention, they have been used to sell almost everything: a New York Times article, music albums, the first tweet ever tweeted (for nearly 2.5 million dollars), gifs and memes, a 52 minutes audio of recorded farts, and of course, cat pictures. What can we learn about this new player in the art market by looking at interactions on the leading online spaces? Are NFTs redefining what an artwork is? "

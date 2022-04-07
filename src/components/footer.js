@@ -9,7 +9,7 @@ const logo = "https://andreabenedetti.github.io/dd-15/assets/img/Logo_DensityDes
 const polimi = "https://andreabenedetti.github.io/dd-15/assets/img/polimi.svg";
 
 const faculty = ["Michele Mauri", "Ángeles Briones", "Gabriele Colombo", "Simone Vantini", "Salvatore Zingale"],
-assistants = ["Andrea Benedetti", "Tommaso Elli", "Beatrice Gobbo"];
+assistants = ["Elena Aversa", "Andrea Benedetti", "Tommaso Elli", "Beatrice Gobbo", "Anna Riboldi"];
 
 class Footer extends React.Component {
   render() {

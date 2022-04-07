@@ -80,6 +80,8 @@ h3 {
     grid-template-columns: repeat(4, 1fr);
     column-gap: 1rem;
     padding: 0 5%;
+    max-width: 1200px;
+    margin: auto;
 }
 
 nav {
@@ -134,6 +136,39 @@ aside {
             list-style: none;
             margin-bottom: 0.5rem;
           }
+    }
+}
+
+aside.right {
+    margin-top: 5rem;
+    font-size: 1rem;
+    top: 6rem;
+
+    ul {
+        margin: 0;
+
+        li {
+            color: $accent;
+            display: flex;
+            align-items: baseline;
+            justify-content: flex-start;
+            margin-bottom: 1.1rem;
+            font-size: 1rem;
+            font-family: "HK Grotesk";
+        }
+
+        a {
+            font-size: 0.9rem;
+            background: transparent;
+            color: $accent;
+            padding: 0.05rem 0.5rem;
+            line-height: 1.73;
+            margin-right: 0.5rem;
+        }
+
+        a:hover {
+            color: #000000;
+        }
     }
 }
 
@@ -208,8 +243,6 @@ footer {
     height: 60vh;
     margin-bottom: 5rem;
     background: $secondary;
-    // background: rgb(153,178,221);
-    // background: linear-gradient(140deg, rgba(153,178,221,1) 0%, rgba(255,154,80,1) 20%, rgba(255,253,152,1) 63%, rgba(153,178,221,1) 100%);
     grid-column: 1 / span 5;
     display: flex;
     align-items: center;
@@ -242,6 +275,15 @@ footer {
     column-gap: 1rem;
     margin: 5rem 0;
 
+    a {
+        font-size: 1.1rem;
+        padding: initial;
+        border-radius: initial;
+        border: initial;
+        color: initial;
+        background: initial;
+    }
+
     .phase {
         text-align: center;
         height: 50vh;
@@ -253,6 +295,7 @@ footer {
         justify-content: center;
         flex-wrap: wrap;
         background: $secondary;
+        transition: all 0.33s ease;
 
         * {
             width: 100%;
@@ -266,12 +309,46 @@ footer {
         }
     }
 
+    .phase:hover {
+        background-color: darken($secondary, 10%);
+    }
+
     .lg {
         grid-column: 2 / span 3;
         display: flex;
 
         .phase {
             width: 50%;
+            background: none;
+        }
+    }
+}
+
+.repo {
+    grid-column: span 3;
+    margin-top: 5rem;
+    padding: 1rem 0;
+    border-top: 1px solid $accent;
+
+    .authors {
+        font-family: "HK Grotesk";
+        font-size: 1.2rem;
+    }
+
+    .card {
+        display: flex;
+        
+        > * {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            height: 300px;
+            outline: 1px solid cyan;
+        }
+
+        > *:first-child {
+            margin-right: 1rem;
         }
     }
 }

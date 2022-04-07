@@ -1,0 +1,48 @@
+groups:
+  - group: group01
+    title: "Simplicial Depth Measure"
+    names: "Francesco Battistoni, Carlo Boschis, Federica Inzani, Federico Meani, Mattia Mertens, Ottavia Robuschi"
+    image: "../../assets/img/es03/cover-g01.gif"
+    desc: "Simplicial Depth Measure is a geometry-based statistical method aiming at ranking multivariate data points from the most central ones to the most peripherical ones. It is called “simplicial” because a simplex is the simplest possible figure in any given space. Depth measures are commonly used during clinical trials and in finance for detecting anomalies and similarities. This poster made by #DD17Group1 illustrates the method using data gathered from a sample of @Spotify’s playlists collected among the class to identify patterns and anomalies in musical tastes."
+
+  - group: group02
+    title: "Neural Networks"
+    names: "Mattia Casarotto, Davide Chiappini, Andrea De Simone, Emanuele Ghebaur, Francesca Gheli, Hanlu Ma, Raffaele Riccardelli"
+    image: "../../assets/img/es03/cover-g02.png"
+    desc: "Neural Networks are a popular family of algorithms able to predict the value of a new unknown observation from past known observations by simulating the human brain learning. Even though they perform very well in predicting results, they are also known for the inscrutability of their functionings. This poster shows the inner workings of a neural network trained to detect hazardous items in a security-check system. Here the metaphor of the black-box is reinforced by the chromatic division of space. A white background shows what is visible to the human eye, while the black background provides a backdrop for the hidden mechanisms of the algorithm itself."
+
+  - group: group03
+    title: "Sentiment Analysis"
+    names: "Anel Alzhanova, Soraya Astaghforellahi, Maria Camila Coelho De Oliveira, Beatrice Foresti, Yaqing Luan, Nelly Serag Saad, Severin Alois Schwaighofer"
+    image: "../../assets/img/es03/cover-g03.gif"
+    desc: "Sentiment Analysis is an algorithm which systematically identifies, quantifies, and studies affective states and subjective information of a defined set. Learning from some texts whose sentiment has been hand-coded by a human, it estimates the proportion of texts belonging to sentiment categories in the corpus by comparing the frequencies of words in the corpus with the ones observed in the sentiment-specific hand-coded sets. This poster details the process behind the algorithm, from the definition of the training set to the actual application of the statistical method. Some charts and graphics drive the reading of the process, providing visual elements to the textual component."
+
+  - group: group04
+    title: "Page Rank Algorithm"
+    names: "Letizia Agosta, Aurora Antonini Cencicchio, Martina Bombardieri, Elena Busletta, Camilla De Amicis, Federico Lucifora"
+    image: "../../assets/img/es03/cover-g04.gif"
+    desc: "Page Rank is a famous algorithm used by search engines to rank web pages. It is a probabilistic algorithm based on the idea of a random web walker surfing the web by randomly clicking links from one page to other pages. The rank is determined by the number of visits to each web page if the walker could surf for an infinite amount of time. The poster designed by #DD17Group4 is composed of two layers and explains the functioning of the algorithm through an interactive game. On the first layer there is a path where users act as if they were the algorithm itself, traversing the flows between the web pages and marking their position with stickers. The second layer, that unrolls after users have gone through the web pages, reveals the actual ranking previously predicted by the algorithm."
+
+  - group: group05
+    title: "Hierarchical Clustering"
+    names: "Alice Bocchio, Michele Bruno, Maria Celeste Casolino, Luca Draisci, Virginia Leccisotti, Barbara Roncalli, Sara Zanardi"
+    desc: "Hierarchical Clustering refers to a family of algorithms aiming at identifying, within a multivariate data set, subgroups of homogeneous data points known as clusters. The algorithm is based on the idea of progressively merging into larger clusters (according to their relative distance) clusters generated at previous steps of the algorithm starting from an initial scenario in which each data point is a one-unit cluster. The poster, leveraging the well-known scenario of star constellations, reproduces an alternative celestial vault, originated by clusters found by the hierarchical clustering algorithm."
+    image: "../../assets/img/es03/cover-g05.png"
+
+  - group: group06
+    title: "Control Charts"
+    names: "Bharath Arappali, Lorenzo Bernini, Chiara Caputo, Irene Casano, Yasmine Hamdani, Marco Perico, Davide Perucchini"
+    image: "../../assets/img/es03/cover-g06.png"
+    desc: "Control Charts are anomaly detection tools used for the real-time monitoring of random stationary processes evolving over time. They are based on the identification of a minimal and maximal value of some attributes describing the status of the current process. These limits are built by looking at the distribution of these attributes during a training phase in which the process was known not to be affected by anomalies. To effectively deliver the visual explanation, the poster tells the story of a breeder who monitors the quality of their chickens with control charts."
+
+  - group: group07
+    title: "Bootstrap"
+    names: "Daniele Dell'orto, Martina Francella, Shan Huang, Octavian Danut Husoschi, Martina Melillo, Matteo Maria Pini, Alessandro Quets"
+    image: "../../assets/img/es03/cover-g07.png"
+    desc: "Bootstrap Estimation is a computationally intensive method to quantify the uncertainty of statistical estimates in scenarios in which a theoretical study of this uncertainty is out of reach. By resampling data with repetition from the original source, this method generates artificial data sets meant to mimic the alternative ones that could be observed. The poster shows how Bootstrap can be used to evaluate the accuracy of the estimated population’s mean height, which is calculated with the height values of a small sample."
+
+  - group: group08
+    title: "Classification Trees"
+    names: "Marina Fernández De La Rosa, Leo Luca Gamberini, Andrea Llamas Roldan, Renata Martínez Tapia, Amanda Rodrigues Cestaro, Regina Salviato, Qi Yu"
+    image: "../../assets/img/es03/cover-g08.png"
+    desc: "Classification Trees are sequences of binary decision rules aiming at assigning data points with unknown class membership to the most likely class starting from their at-tributes. They are based on a training set made of data points whose relative class is known, and they are driven by the idea of identifying sequential splitting rules (based on attribute values), creating sub-groups more and more homogeneous. The poster tells the story of a wizard preparing a potion with mushrooms. By analyzing the individual features of mushrooms in a vast catalog of specimens, the wizard creates a classification tree to identify if new mushrooms are magical."
