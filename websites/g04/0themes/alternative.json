@@ -1,0 +1,54 @@
+[
+  {
+    "Keyword": "Twitter Twitter Twitter Twitter Twitter",
+    "Websites": "Mastodon,<br> Nitter,<br> Opensource-socialnetwork,<br> Feedly,<br> Friendica"
+  },
+  {
+    "Keyword": "Facebook Facebook Facebook Facebook",
+    "Websites": "Mastodon,<br> MeWe,<br> Opensource-socialnetwork,<br> Geneva"
+  },
+  {
+    "Keyword": "Reddit Reddit",
+    "Websites": "Lemmy,<br> Saidit"
+  },
+  {
+    "Keyword": "app.net",
+    "Websites": "Friendica"
+  },
+  {
+    "Keyword": "Freenet",
+    "Websites": "Briar"
+  },
+  {
+    "Keyword": "Gnu social",
+    "Websites": "Friendica"
+  },
+  {
+    "Keyword": "GroupMe",
+    "Websites": "Geneva"
+  },
+  {
+    "Keyword": "Instagram",
+    "Websites": "Opensource-socialnetwork"
+  },
+  {
+    "Keyword": "Matrix",
+    "Websites": "Element"
+  },
+  {
+    "Keyword": "Sluck",
+    "Websites": "Geneva"
+  },
+  {
+    "Keyword": "Telegram",
+    "Websites": "DeltaChat"
+  },
+  {
+    "Keyword": "WhatsApp",
+    "Websites": "DeltaChat"
+  },
+  {
+    "Keyword": "YouTube",
+    "Websites": "AltCensored"
+  }
+]

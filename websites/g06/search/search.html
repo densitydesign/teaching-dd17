@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../css/search.css" />
+    <script src="libraries/p5.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Attention War</title>
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.svg" />
+  </head>
+  <body>
+    <div id="containerone">
+      <div id="campo">
+        <p id="instructionstext">
+          Try switching between a word-based (“Akira”) and a nonsense query
+          (“Udnkunsdfuns”).<br /><br />
+          Log-in and log-out of platforms to compare results for registered and
+          not-registered users.<br /><br />
+          Search results are shown in order of appearance. Hover them for more
+          details.
+        </p>
+        <div id="searchrow">
+          <div id="instructions"></div>
+          <div id="randombox">
+            <h1 id="gibberish">CLICK ON THE BAR TO SWITCH SEARCH:</h1>
+            <div id="randomizza">
+              <div id="tastoakira">
+                <h1
+                  style="cursor: pointer; color: black"
+                  id="akira"
+                  class="switchate"
+                >
+                  Akira
+                </h1>
+              </div>
+              <div id="lente"></div>
+            </div>
+          </div>
+          <div id="loginbox">
+            <h1 id="logintext">LOG IN</h1>
+            <div id="login" class="in">
+              <div id="boxino">
+                <div id="pallino"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="statsrow">
+          <div class="statsbox" id="statsbox1"></div>
+          <div class="statsbox">
+            <h1 class="titles">Netflix</h1>
+            <p id="netflixresults" class="results nothovering">315 results</p>
+            <p id="netflixresultsred" class="results hoveringred off">
+              1 results
+            </p>
+            <p id="netflixresultsblue" class="results hoveringblue off">
+              314 results
+            </p>
+          </div>
+          <div class="statsbox">
+            <h1 class="titles">Prime Video</h1>
+            <p id="primeresults" class="results nothovering">37 results</p>
+            <p id="primeresultsred" class="results hoveringred off">
+              6 results
+            </p>
+            <p id="primeresultsblue" class="results hoveringblue off">
+              31 results
+            </p>
+            <p id="primeresultsgreen" class="results hoveringgreen off"></p>
+          </div>
+          <div class="statsbox">
+            <h1 class="titles">Youtube</h1>
+            <p id="youtuberesults" class="results nothovering">828 results</p>
+            <p id="youtuberesultsred" class="results hoveringred off">
+              806 results
+            </p>
+            <p id="youtuberesultsblue" class="results hoveringblue off">
+              6 results
+            </p>
+            <p id="youtuberesultsgreen" class="results hoveringgreen off">
+              16 results
+            </p>
+            <p id="youtuberesultsfuchsia" class="results hoveringfuchsia off">
+              10 results
+            </p>
+          </div>
+          <div class="statsbox">
+            <h1 class="titles">Twitch</h1>
+            <p id="twitchresults" class="results nothovering">22 results</p>
+            <p id="twitchresultsred" class="results hoveringred off">
+              22 results
+            </p>
+          </div>
+        </div>
+        <div id="columnbox">
+          <div id="column5" class="column">
+            <div id="category1" class="category">
+              <h1>CONTAINS QUERY</h1>
+              <p id="desc1" class="offvero">
+                The searched keyword appears in the title, description and/or
+                tags.
+              </p>
+            </div>
+            <div id="category2" class="category">
+              <h1>SEARCH RELATED</h1>
+              <p id="desc2" class="offvero">
+                The results are related to the searched keyword but don’t
+                contain the query itself.
+              </p>
+            </div>
+            <div id="category3" class="category">
+              <h1>SEARCH UNRELATED</h1>
+              <p id="desc3" class="offvero">
+                Suggested content based on user history on the platform. Results
+                have no relation to the specific search.
+              </p>
+            </div>
+            <div id="category4" class="category">
+              <h1 id="previously">PREVIOUSLY WATCHED</h1>
+              <p id="desc4" class="offvero">
+                Previously watched Content from the user’s watch history.
+                Results have no relation to the specific search.
+              </p>
+            </div>
+          </div>
+          <div id="column1" class="column">
+            <div class="row" id="row1">
+              <div
+                style="
+                  background-image: url('./assets/netflix_thumbnails/1.jpg');
+                "
+                class="thumbnail keyword"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/netflix_thumbnails/2.jpg');
+                "
+                class="thumbnail searchrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/netflix_thumbnails/3.jpg');
+                "
+                class="thumbnail searchrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/netflix_thumbnails/4.jpg');
+                "
+                class="thumbnail searchrelated"
+              ></div>
+            </div>
+            <div class="row" id="row2">
+              <div
+                style="
+                  background-image: url('./assets/netflix_thumbnails/5.jpg');
+                "
+                class="thumbnail searchrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/netflix_thumbnails/6.jpg');
+                "
+                class="thumbnail searchrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/netflix_thumbnails/7.jpg');
+                "
+                class="thumbnail searchrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/netflix_thumbnails/8.jpg');
+                "
+                class="thumbnail searchrelated"
+              ></div>
+            </div>
+            <div class="row" id="row3">
+              <div
+                style="
+                  background-image: url('./assets/netflix_thumbnails/9.jpg');
+                "
+                class="thumbnail searchrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/netflix_thumbnails/10.jpg');
+                "
+                class="thumbnail searchrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/netflix_thumbnails/11.jpg');
+                "
+                class="thumbnail searchrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/netflix_thumbnails/12.jpg');
+                "
+                class="thumbnail searchrelated"
+              ></div>
+            </div>
+            <div class="row" id="row4">
+              <div
+                style="
+                  background-image: url('./assets/netflix_thumbnails/13.jpg');
+                "
+                class="thumbnail searchrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/netflix_thumbnails/14.jpg');
+                "
+                class="thumbnail searchrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/netflix_thumbnails/15.jpg');
+                "
+                class="thumbnail searchrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/netflix_thumbnails/16.jpg');
+                "
+                class="thumbnail searchrelated"
+              ></div>
+            </div>
+            <div class="row" id="row5">
+              <div
+                style="
+                  background-image: url('./assets/netflix_thumbnails/17.jpg');
+                "
+                class="thumbnail searchrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/netflix_thumbnails/18.jpg');
+                "
+                class="thumbnail searchrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/netflix_thumbnails/19.jpg');
+                "
+                class="thumbnail searchrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/netflix_thumbnails/20.jpg');
+                "
+                class="thumbnail searchrelated"
+              ></div>
+            </div>
+            <div class="row" id="row6">
+              <div
+                style="
+                  background-image: url('./assets/netflix_thumbnails/21.jpg');
+                "
+                class="thumbnail searchrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/netflix_thumbnails/22.jpg');
+                "
+                class="thumbnail searchrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/netflix_thumbnails/23.jpg');
+                "
+                class="thumbnail searchrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/netflix_thumbnails/24.jpg');
+                "
+                class="thumbnail searchrelated"
+              ></div>
+            </div>
+            <div class="row" id="row7">
+              <div
+                style="
+                  background-image: url('./assets/netflix_thumbnails/25.jpg');
+                "
+                class="thumbnail searchrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/netflix_thumbnails/26.jpg');
+                "
+                class="thumbnail searchrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/netflix_thumbnails/27.jpg');
+                "
+                class="thumbnail searchrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/netflix_thumbnails/28.jpg');
+                "
+                class="thumbnail searchrelated"
+              ></div>
+            </div>
+            <div class="row" id="row8">
+              <div
+                style="
+                  background-image: url('./assets/netflix_thumbnails/29.jpg');
+                "
+                class="thumbnail searchrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/netflix_thumbnails/30.jpg');
+                "
+                class="thumbnail searchrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/netflix_thumbnails/31.jpg');
+                "
+                class="thumbnail searchrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/netflix_thumbnails/32.jpg');
+                "
+                class="thumbnail searchrelated"
+              ></div>
+            </div>
+            <div class="row" id="row9">
+              <div
+                style="
+                  background-image: url('./assets/netflix_thumbnails/33.jpg');
+                "
+                class="thumbnail searchrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/netflix_thumbnails/34.jpg');
+                "
+                class="thumbnail searchrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/netflix_thumbnails/35.jpg');
+                "
+                class="thumbnail searchrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/netflix_thumbnails/36.jpg');
+                "
+                class="thumbnail searchrelated"
+              ></div>
+            </div>
+            <div class="row" id="row10">
+              <div
+                style="
+                  background-image: url('./assets/netflix_thumbnails/37.jpg');
+                "
+                class="thumbnail searchrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/netflix_thumbnails/38.jpg');
+                "
+                class="thumbnail searchrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/netflix_thumbnails/39.jpg');
+                "
+                class="thumbnail searchrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/netflix_thumbnails/40.jpg');
+                "
+                class="thumbnail searchrelated"
+              ></div>
+            </div>
+            <div class="row" id="row11">
+              <div
+                style="
+                  background-image: url('./assets/netflix_thumbnails/41.jpg');
+                "
+                class="thumbnail searchrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/netflix_thumbnails/42.jpg');
+                "
+                class="thumbnail searchrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/netflix_thumbnails/43.jpg');
+                "
+                class="thumbnail searchrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/netflix_thumbnails/44.jpg');
+                "
+                class="thumbnail searchrelated"
+              ></div>
+            </div>
+            <div class="row" id="row12">
+              <p>+ 271 results</p>
+            </div>
+          </div>
+          <div id="column2" class="column">
+            <!--COLONNA 2 PRIME-->
+            <div class="row" id="row1a">
+              <div
+                style="
+                  background-image: url('./assets/primevideo_thumbnails/1.jpg');
+                "
+                id="row1a-1"
+                class="thumbnail keyword"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/primevideo_thumbnails/2.jpg');
+                "
+                id="row1a-2"
+                class="thumbnail keyword"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/primevideo_thumbnails/3.jpg');
+                "
+                id="row1a-3"
+                class="thumbnail searchrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/primevideo_thumbnails/4.jpg');
+                "
+                id="row1a-4"
+                class="thumbnail searchrelated"
+              ></div>
+            </div>
+            <div class="row" id="row2a">
+              <div
+                style="
+                  background-image: url('./assets/primevideo_thumbnails/5.jpg');
+                "
+                id="row2a-1"
+                class="thumbnail searchrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/primevideo_thumbnails/6.jpg');
+                "
+                id="row2a-2"
+                class="thumbnail searchrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/primevideo_thumbnails/7.jpg');
+                "
+                id="row2a-3"
+                class="thumbnail keyword"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/primevideo_thumbnails/8.jpg');
+                "
+                id="row2a-4"
+                class="thumbnail keyword"
+              ></div>
+            </div>
+            <div class="row" id="row3a">
+              <div
+                style="
+                  background-image: url('./assets/primevideo_thumbnails/9.jpg');
+                "
+                id="row3a-1"
+                class="thumbnail keyword"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/primevideo_thumbnails/10.jpg');
+                "
+                id="row3a-2"
+                class="thumbnail searchrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/primevideo_thumbnails/11.jpg');
+                "
+                id="row3a-3"
+                class="thumbnail searchrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/primevideo_thumbnails/12.jpg');
+                "
+                id="row3a-4"
+                class="thumbnail searchrelated"
+              ></div>
+            </div>
+            <div class="row" id="row4a">
+              <div
+                style="
+                  background-image: url('./assets/primevideo_thumbnails/13.jpg');
+                "
+                id="row4a-1"
+                class="thumbnail searchrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/primevideo_thumbnails/14.jpg');
+                "
+                id="row4a-2"
+                class="thumbnail searchrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/primevideo_thumbnails/15.jpg');
+                "
+                id="row4a-3"
+                class="thumbnail keyword"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/primevideo_thumbnails/16.jpg');
+                "
+                id="row4a-4"
+                class="thumbnail searchrelated"
+              ></div>
+            </div>
+            <div class="row" id="row5a">
+              <div
+                style="
+                  background-image: url('./assets/primevideo_thumbnails/17.jpg');
+                "
+                id="row5a-1"
+                class="thumbnail searchrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/primevideo_thumbnails/18.jpg');
+                "
+                id="row5a-2"
+                class="thumbnail searchrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/primevideo_thumbnails/19.jpg');
+                "
+                id="row5a-3"
+                class="thumbnail searchrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/primevideo_thumbnails/20.jpg');
+                "
+                id="row5a-4"
+                class="thumbnail searchrelated"
+              ></div>
+            </div>
+            <div class="row" id="row6a">
+              <div
+                style="
+                  background-image: url('./assets/primevideo_thumbnails/21.jpg');
+                "
+                id="row6a-1"
+                class="thumbnail searchrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/primevideo_thumbnails/22.jpg');
+                "
+                id="row6a-2"
+                class="thumbnail searchrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/primevideo_thumbnails/23.jpg');
+                "
+                id="row6a-3"
+                class="thumbnail searchrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/primevideo_thumbnails/24.jpg');
+                "
+                id="row6a-4"
+                class="thumbnail searchrelated"
+              ></div>
+            </div>
+            <div class="row" id="row7a">
+              <div
+                style="
+                  background-image: url('./assets/primevideo_thumbnails/25.jpg');
+                "
+                id="row7a-1"
+                class="thumbnail searchrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/primevideo_thumbnails/26.jpg');
+                "
+                id="row7a-2"
+                class="thumbnail searchrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/primevideo_thumbnails/27.jpg');
+                "
+                id="row7a-3"
+                class="thumbnail searchrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/primevideo_thumbnails/28.jpg');
+                "
+                id="row7a-4"
+                class="thumbnail searchrelated"
+              ></div>
+            </div>
+            <div class="row" id="row8a">
+              <div
+                style="
+                  background-image: url('./assets/primevideo_thumbnails/29.jpg');
+                "
+                id="row8a-1"
+                class="thumbnail searchrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/primevideo_thumbnails/30.jpg');
+                "
+                id="row8a-2"
+                class="thumbnail searchrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/primevideo_thumbnails/31.jpg');
+                "
+                id="row8a-3"
+                class="thumbnail searchrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/primevideo_thumbnails/32.jpg');
+                "
+                id="row8a-4"
+                class="thumbnail searchrelated"
+              ></div>
+            </div>
+            <div class="row" id="row9a">
+              <div
+                style="
+                  background-image: url('./assets/primevideo_thumbnails/33.jpg');
+                "
+                id="row9a-1"
+                class="thumbnail searchrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/primevideo_thumbnails/34.jpg');
+                "
+                id="row9a-2"
+                class="thumbnail searchrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/primevideo_thumbnails/35.jpg');
+                "
+                id="row9a-3"
+                class="thumbnail searchrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/primevideo_thumbnails/36.jpg');
+                "
+                id="row9a-4"
+                class="thumbnail searchrelated"
+              ></div>
+            </div>
+            <div class="row" id="row10a">
+              <div
+                style="
+                  background-image: url('./assets/primevideo_thumbnails/37.jpg');
+                "
+                id="row10a-1"
+                class="thumbnail searchrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/primevideo_thumbnails/8.jpg');
+                "
+                id="row10a-2"
+                class="thumbnail off searchrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/primevideo_thumbnails/9.jpg');
+                "
+                id="row10a-3"
+                class="thumbnail off searchrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/primevideo_thumbnails/1.jpg');
+                "
+                id="row10a-4"
+                class="thumbnail off searchrelated"
+              ></div>
+            </div>
+            <div class="row off" id="row11a">
+              <div
+                style="
+                  background-image: url('./assets/primevideo_thumbnails/1.jpg');
+                "
+                id="row11a-1"
+                class="thumbnail searchrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/primevideo_thumbnails/2.jpg');
+                "
+                id="row11a-2"
+                class="thumbnail keyword"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/primevideo_thumbnails/3.jpg');
+                "
+                id="row11a-3"
+                class="thumbnail keyword"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/primevideo_thumbnails/4.jpg');
+                "
+                id="row11a-4"
+                class="thumbnail keyword"
+              ></div>
+            </div>
+            <div class="row off" id="row12a">
+              <p>+ 264 results</p>
+            </div>
+          </div>
+          <div id="column3" class="column">
+            <!--COLONNA 3 YOUTUBE-->
+            <div class="row" id="row1b">
+              <div
+                style="
+                  background-image: url('./assets/youtube_thumbnails/1.jpg');
+                "
+                id="row1b-1"
+                class="thumbnail keyword"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/youtube_thumbnails/2.jpg');
+                "
+                id="row1b-2"
+                class="thumbnail searchrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/youtube_thumbnails/3.jpg');
+                "
+                id="row1b-3"
+                class="thumbnail searchrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/youtube_thumbnails/4.jpg');
+                "
+                id="row1b-4"
+                class="thumbnail keyword"
+              ></div>
+            </div>
+            <div class="row" id="row2b">
+              <div
+                style="
+                  background-image: url('./assets/youtube_thumbnails/5.jpg');
+                "
+                id="row2b-1"
+                class="thumbnail keyword"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/youtube_thumbnails/6.jpg');
+                "
+                id="row2b-2"
+                class="thumbnail keyword"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/youtube_thumbnails/7.jpg');
+                "
+                id="row2b-3"
+                class="thumbnail keyword"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/youtube_thumbnails/8.jpg');
+                "
+                id="row2b-4"
+                class="thumbnail keyword"
+              ></div>
+            </div>
+            <div class="row" id="row3b">
+              <div
+                style="
+                  background-image: url('./assets/youtube_thumbnails/9.jpg');
+                "
+                id="row3b-1"
+                class="thumbnail searchrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/youtube_thumbnails/10.jpg');
+                "
+                id="row3b-2"
+                class="thumbnail searchrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/youtube_thumbnails/11.jpg');
+                "
+                id="row3b-3"
+                class="thumbnail searchrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/youtube_thumbnails/12.jpg');
+                "
+                id="row3b-4"
+                class="thumbnail searchrelated"
+              ></div>
+            </div>
+            <div class="row" id="row4b">
+              <div
+                style="
+                  background-image: url('./assets/youtube_thumbnails/13.jpg');
+                "
+                id="row4b-1"
+                class="thumbnail keyword"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/youtube_thumbnails/14.jpg');
+                "
+                id="row4b-2"
+                class="thumbnail keyword"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/youtube_thumbnails/15.jpg');
+                "
+                id="row4b-3"
+                class="thumbnail keyword"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/youtube_thumbnails/16.jpg');
+                "
+                id="row4b-4"
+                class="thumbnail keyword"
+              ></div>
+            </div>
+            <div class="row" id="row5b">
+              <div
+                style="
+                  background-image: url('./assets/youtube_thumbnails/17.jpg');
+                "
+                id="row5b-1"
+                class="thumbnail keyword"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/youtube_thumbnails/18.jpg');
+                "
+                id="row5b-2"
+                class="thumbnail keyword"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/youtube_thumbnails/19.jpg');
+                "
+                id="row5b-3"
+                class="thumbnail unrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/youtube_thumbnails/20.jpg');
+                "
+                id="row5b-4"
+                class="thumbnail unrelated"
+              ></div>
+            </div>
+            <div class="row" id="row6b">
+              <div
+                style="
+                  background-image: url('./assets/youtube_thumbnails/21.jpg');
+                "
+                id="row6b-1"
+                class="thumbnail unrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/youtube_thumbnails/22.jpg');
+                "
+                id="row6b-2"
+                class="thumbnail unrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/youtube_thumbnails/23.jpg');
+                "
+                id="row6b-3"
+                class="thumbnail unrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/youtube_thumbnails/24.jpg');
+                "
+                id="row6b-4"
+                class="thumbnail unrelated"
+              ></div>
+            </div>
+            <div class="row" id="row7b">
+              <div
+                style="
+                  background-image: url('./assets/youtube_thumbnails/25.jpg');
+                "
+                id="row7b-1"
+                class="thumbnail unrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/youtube_thumbnails/26.jpg');
+                "
+                id="row7b-2"
+                class="thumbnail unrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/youtube_thumbnails/27.jpg');
+                "
+                id="row7b-3"
+                class="thumbnail unrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/youtube_thumbnails/28.jpg');
+                "
+                id="row7b-4"
+                class="thumbnail unrelated"
+              ></div>
+            </div>
+            <div class="row" id="row8b">
+              <div
+                style="
+                  background-image: url('./assets/youtube_thumbnails/29.jpg');
+                "
+                id="row8b-1"
+                class="thumbnail unrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/youtube_thumbnails/30.jpg');
+                "
+                id="row8b-2"
+                class="thumbnail unrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/youtube_thumbnails/31.jpg');
+                "
+                id="row8b-3"
+                class="thumbnail unrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/youtube_thumbnails/32.jpg');
+                "
+                id="row8b-4"
+                class="thumbnail unrelated"
+              ></div>
+            </div>
+            <div class="row" id="row9b">
+              <div
+                style="
+                  background-image: url('./assets/youtube_thumbnails/33.jpg');
+                "
+                id="row9b-1"
+                class="thumbnail unrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/youtube_thumbnails/34.jpg');
+                "
+                id="row9b-2"
+                class="thumbnail unrelated"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/youtube_thumbnails/35.jpg');
+                "
+                id="row9b-3"
+                class="thumbnail keyword"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/youtube_thumbnails/36.jpg');
+                "
+                id="row9b-4"
+                class="thumbnail keyword"
+              ></div>
+            </div>
+            <div class="row" id="row10b">
+              <div
+                style="
+                  background-image: url('./assets/youtube_thumbnails/37.jpg');
+                "
+                id="row10b-1"
+                class="thumbnail keyword"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/youtube_thumbnails/38.jpg');
+                "
+                id="row10b-2"
+                class="thumbnail keyword"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/youtube_thumbnails/39.jpg');
+                "
+                id="row10b-3"
+                class="thumbnail keyword"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/youtube_thumbnails/40.jpg');
+                "
+                id="row10b-4"
+                class="thumbnail keyword"
+              ></div>
+            </div>
+            <div class="row" id="row11b">
+              <div
+                style="
+                  background-image: url('./assets/youtube_thumbnails/41.jpg');
+                "
+                id="row11b-1"
+                class="thumbnail keyword"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/youtube_thumbnails/42.jpg');
+                "
+                id="row11b-2"
+                class="thumbnail keyword"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/youtube_thumbnails/43.jpg');
+                "
+                id="row11b-3"
+                class="thumbnail keyword"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/youtube_thumbnails/44.jpg');
+                "
+                id="row11b-4"
+                class="thumbnail keyword"
+              ></div>
+            </div>
+            <div class="row" id="row12b">
+              <p>+ 784 results</p>
+            </div>
+          </div>
+          <div id="column4" class="column">
+            <div class="row">
+              <div
+                style="
+                  background-image: url('./assets/twitch_thumbnails/1.jpg');
+                "
+                class="thumbnail keyword"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/twitch_thumbnails/2.jpg');
+                "
+                class="thumbnail keyword"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/twitch_thumbnails/3.jpg');
+                "
+                class="thumbnail keyword"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/twitch_thumbnails/4.jpg');
+                "
+                class="thumbnail keyword"
+              ></div>
+            </div>
+            <div class="row">
+              <div
+                style="
+                  background-image: url('./assets/twitch_thumbnails/5.jpg');
+                "
+                class="thumbnail keyword"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/twitch_thumbnails/6.jpg');
+                "
+                class="thumbnail keyword"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/twitch_thumbnails/7.jpg');
+                "
+                class="thumbnail keyword"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/twitch_thumbnails/8.jpg');
+                "
+                class="thumbnail keyword"
+              ></div>
+            </div>
+            <div class="row">
+              <div
+                style="
+                  background-image: url('./assets/twitch_thumbnails/9.jpg');
+                "
+                class="thumbnail keyword"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/twitch_thumbnails/10.jpg');
+                "
+                class="thumbnail keyword"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/twitch_thumbnails/11.jpg');
+                "
+                class="thumbnail keyword"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/twitch_thumbnails/12.jpg');
+                "
+                class="thumbnail keyword"
+              ></div>
+            </div>
+            <div class="row">
+              <div
+                style="
+                  background-image: url('./assets/twitch_thumbnails/13.jpg');
+                "
+                class="thumbnail keyword"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/twitch_thumbnails/14.jpg');
+                "
+                class="thumbnail keyword"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/twitch_thumbnails/15.jpg');
+                "
+                class="thumbnail keyword"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/twitch_thumbnails/16.jpg');
+                "
+                class="thumbnail keyword"
+              ></div>
+            </div>
+            <div class="row">
+              <div
+                style="
+                  background-image: url('./assets/twitch_thumbnails/17.jpg');
+                "
+                class="thumbnail keyword"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/twitch_thumbnails/18.jpg');
+                "
+                class="thumbnail keyword"
+              ></div>
+              <div
+                style="
+                  background-image: url('./assets/twitch_thumbnails/19.jpg');
+                "
+                class="thumbnail keyword"
+              ></div>
+              <div style="visibility: hidden" class="thumbnail"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div onclick="location.href='../index.html';" id="goon2">
+        <a id="next2" style="font-size: 1vw" 
+          >Back to Home</a
+        >
+      </div>
+    </div>
+
+    <div id="cover-search">
+      <!-- <h2 class="capitolo">3<sup>rd</sup> TECHNIQUE</h2> -->
+      <h1 class="titolo">I'll handle it</h1>
+      <p class="info">
+        When a user actively searches for specific content, streaming services
+        rearrange results in an order that favors certain videos and
+        ultimately often proposes results that have actually no relation to your
+        typed-in query.
+      </p>
+      <a class="bottone-start" href="#">Enter</a>
+    </div>
+
+    <div id="navbar">
+      <a href="../index.html" id="home" class="navbar-button">ATTENTION WAR</a>
+      <div id="chapters" class="navbar-button">
+        <a href="../scroll/scroll.html" class="chapters-button"
+          >First impression</a
+        >
+        <a href="../mousetrack/mouse.html" class="chapters-button"
+          >Hide and seek</a
+        >
+        <a href="#" class="chapters-button" id="active">I'll handle it</a>
+      </div>
+    </div>
+
+    <!-- <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script> -->
+    <script src="../js/search.js"></script>
+  </body>
+</html>

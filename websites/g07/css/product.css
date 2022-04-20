@@ -1,0 +1,304 @@
+/*______________________________________________________structure*/
+
+#container {
+  height: 84vh;
+  padding: 0;
+}
+
+#prodContainer {
+  margin: 5vh 5vh 5vh 10vh;
+  border: 4px solid red;
+  border-radius: 10px;
+  height: 100%;
+  overflow: hidden;
+  color: white;
+}
+
+#prodContainer .col-7 {
+  background-color: red;
+  padding: 1rem 1rem;
+}
+
+#prodContainer .col-5 {
+  background-color: white;
+}
+
+/*______________________________________________________tags*/
+
+.tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 500;
+  padding: 5px;
+  border: 3px solid white;
+  border-radius: 10px;
+  color: white;
+  margin: 0 1rem 1rem 0;
+  display: inline-block;
+  font-size: 1rem;
+}
+
+.tag:hover {
+  border: 3px solid white;
+  background-color:white;
+  color: red;
+  text-decoration: none;
+}
+
+.blank:hover {
+  border: 3px solid white !important;
+  text-decoration: none;
+}
+
+.product-tag {
+  margin-bottom: 1rem;
+}
+
+/*______________________________________________________text*/
+
+.product-name {
+  margin-bottom: 1.2rem;
+}
+
+@media only screen and (max-width: 1366px) {
+  .product-name {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (min-width: 1367px) {
+  .product-name {
+    font-size: 1.8rem;
+  }
+}
+
+.product-category {
+  margin-bottom: 3rem;
+  font-size: 1.1rem;
+}
+
+/*______________________________________________________image*/
+
+.product-image {
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*______________________________________________________marketplaces*/
+
+#marketplace-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flag {
+  height: 1.5rem;
+  border: 2px solid white;
+  background-color: white;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+#prodImg {
+  background-color: white;
+}
+
+.tag-title {
+  display: block;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.domain {
+  margin-left: .2rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.marketplace {
+  display: flex;
+  align-items: baseline;
+  margin: 0 1rem 1rem 0;
+}
+
+.marketplace * {
+  display: inline-block;
+}
+
+/*______________________________________________________link Amazon*/
+
+.amazon-link {
+  position: absolute;
+  top: 10px;
+  right: 18px;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 500;
+  color: black;
+  font-size: .8rem;
+  text-decoration: underline;
+}
+
+.amazon-link:hover {
+  color: red;
+}
+
+/*______________________________________________________annotation*/
+
+.annotationContainer {
+  height: 0;
+  width: 100%;
+  cursor:default;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/*graphic element*/
+
+.annotation {
+  width: 40px;
+  height: 40px;
+  color: red;
+  content: "";
+  background-color: white;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.annotation:before {
+  width: 40px;
+  height: 40px;
+  color: red;
+  content: "";
+  background-color: white;
+  position: absolute;
+}
+
+.annotation:before {
+  transform: rotate(60deg);
+}
+
+.annotation div {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  position: absolute;
+  transform: rotate(-60deg);
+}
+
+/*text*/
+
+.annotation p {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  color: red;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.annotationText {
+  max-width: 30vw;
+  border-radius: 10px;
+  padding: 10px 15px;
+  background-color: black;
+  color: white;
+  position: relative;
+  left: 98%;
+  top: -80px;
+  z-index: 1;
+  transition: .3s;
+  transition-delay: .1s;
+}
+
+/*hover*/
+
+.hideAnnotation {
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
+}
+
+.displayAnnotation {
+  transform: translate(-100%, -100%) scale(1);
+  opacity: 1;
+}
+
+/*______________________________________________________back button*/
+
+#goBack {
+  position: fixed;
+  height: 84vh;
+  top: 11vh;
+  left: 7vh;
+  transform: translate(-50%, 0);
+  width: 3rem;
+  border-radius: 10px;
+  border: 4px solid red;
+  background-color: red;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#goBack:hover {
+  border: 4px solid red;
+  background-color: white;
+}
+
+.st1{fill:none;stroke:#FFFFFF;stroke-width:3.5629;stroke-linecap:round;stroke-linejoin:round;}
+.st2{fill:#FFFFFF;}
+
+#goBack:hover .st1 {
+  stroke:#ff0000;
+}
+
+#goBack:hover .st2 {
+  fill:#ff0000;
+}
+
+/* _____________________________________________________Responsive for wide screens */
+
+@media (min-width: 1400px) {
+  .product-name{
+    font-size: 2.2rem;
+  }
+
+  .product-category{
+    font-size: 1.5rem;
+  }
+
+  .tag-title{
+    font-size: 1.2rem;
+  }
+
+  .tag, .domain{
+    font-size: 1.2rem;
+  }
+
+  .annotationText {
+    font-size: 1.2rem;
+  }
+
+  #goBack{
+    width: 50px;
+  }
+
+  #prodContainer .col-7{
+    padding: 2rem 2rem;
+  }
+
+  .amazon-link{
+    font-size: 1rem;
+  }
+}

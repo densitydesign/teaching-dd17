@@ -1,0 +1,490 @@
+/*______________________________________________________cover*/
+
+#cover {
+  height: 94vh;
+  background-color: red;
+  overflow: hidden;
+}
+
+#logo_cover{
+  width: 40vw;
+  position: relative;
+  top: 47vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#cover .scroll{
+  width:fit-content;
+  display:flex;
+  border:4px solid red;
+}
+
+#cover .scroll div{
+  color:red;
+  background-color: white;
+  white-space: nowrap;
+  font-family: saint_regussemi_bold;
+  font-size:3rem;
+  text-transform: uppercase;
+  animation:scrolling1 40s linear infinite;
+  animation-delay:-40s;
+}
+
+#cover .scroll div:nth-child(2){
+  animation:scrolling2 40s linear infinite;
+  animation-delay:-20s
+}
+
+@keyframes scrolling1{
+  0%
+  {
+    transform:translateX(100%);
+  }
+
+  100%
+  {
+    transform:translateX(-100%);
+  }
+}
+
+@keyframes scrolling2{
+  0%
+  {
+    transform:translateX(0);
+  }
+
+  100%
+  {
+    transform:translateX(-200%);
+  }
+}
+
+.all_scroll_container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100vw;
+  height: 94vh;
+}
+
+.scroll_container-1{
+  width: 150vw;
+  position: absolute;
+  top: 5vh;
+  left: 50%;
+  overflow-x: hidden;
+  transform-origin: 50% 50%;
+  transform: translateX(-50%) rotate(16deg);
+}
+
+.scroll_container-2{
+  width: 150vw;
+  position: absolute;
+  top: 5vh;
+  left: 50%;
+  overflow-x: hidden;
+  transform-origin: 50% 50%;
+  transform: translateX(-50%) rotate(-16deg);
+}
+
+.scroll_container-3{
+  width: 150vw;
+  position: absolute;
+  top: 80vh;
+  left: 50%;
+  overflow-x: hidden;
+  transform-origin: 50% 50%;
+  transform: translateX(-50%) rotate(-16deg);
+}
+
+.scroll_container-4{
+  width: 150vw;
+  position: absolute;
+  top: 80vh;
+  left: 50%;
+  overflow-x: hidden;
+  transform-origin: 50% 50%;
+  transform: translateX(-50%) rotate(16deg);
+}
+
+/*______________________________________________________products scrolling*/
+
+.products-row .scroll{
+  width:100%;
+  display:flex;
+}
+
+.imgs1, .imgs2{
+  display:flex;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+
+.imgs1{
+  animation:obj-scroll1 40s linear infinite;
+  animation-delay:-40s;
+}
+
+.imgs2{
+  animation:obj-scroll2 40s linear infinite;
+  animation-delay:-20s
+}
+
+@keyframes obj-scroll1{
+  0%
+  {
+    transform:translateX(100%);
+  }
+
+  100%
+  {
+    transform:translateX(-100%);
+  }
+}
+
+@keyframes obj-scroll2{
+  0%
+  {
+    transform:translateX(0);
+  }
+
+  100%
+  {
+    transform:translateX(-200%);
+  }
+}
+
+.products_stripe {
+  display: flex;
+}
+
+.collCard {
+  width: 20vw;
+  height: 20vw;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.thumbImg {
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+  position: relative;
+  align-self: center;
+  -webkit-align-self: center;
+  transition: .3s;
+}
+
+.thumbImg:hover{
+  transform: scale(1.1);
+}
+
+/*______________________________________________________main*/
+
+#main p {
+  font-size: 1.5rem;
+}
+
+#main b{
+  font-family: 'saint_regussemi_bold';
+}
+
+.caption{
+  font-family: 'Inter', sans-serif;
+  font-size: .8rem;
+  text-align: center;
+  transform: translateY(-150%);
+}
+
+.spacer-small {
+  height: 4rem;
+  width: 100%;
+}
+
+.spacer-medium {
+  height: 10rem;
+  width: 100%;
+}
+
+.col-3{
+  z-index: -1;
+}
+
+.spacer-big {
+  height: 25rem;
+  width: 100%;
+}
+
+/*______________________________________________________souvenirs*/
+
+.souvenir-container{
+  display: flex;
+  height: 20vw;
+}
+
+.souvenir-container .collCard{
+  position: absolute;
+  padding: 4vw;;
+}
+
+.souvenir-img {
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+  position: relative;
+  align-self: center;
+  -webkit-align-self: center;
+  transform: scale(1) rotate(0deg);
+  transition: .3s;
+}
+
+.souvenir-img:hover{
+  transform: scale(1.1) rotate(5deg);
+}
+
+
+#netherlands {
+  left: 0vw;
+  top: 10vw;
+  transform: rotate(-8deg);
+}
+
+#usa {
+  left: 15vw;
+  top: 3vw;
+  transform: rotate(10deg);
+}
+
+#italy {
+  left: 35vw;
+  top: -5vw;
+  transform: rotate(-6deg);
+}
+
+#japan {
+  left: 60vw;
+  top: 0vw;
+  transform: rotate(-4deg);
+}
+
+#germany {
+  left: 80vw;
+  top: 12vw;
+  transform: rotate(7deg);
+}
+
+#india {
+  left: 3vw;
+  top: -10vw;
+  transform: rotate(-12deg);
+}
+
+#australia {
+  left: 19vw;
+  top: -16vw;
+  transform: rotate(7deg);
+}
+
+#brazil {
+  left: 50vw;
+  top: -15vw;
+  transform: rotate(10deg);
+}
+
+#emirates {
+  left: 73vw;
+  top: -10vw;
+  transform: rotate(5deg);
+}
+
+#canada {
+  left: -1vw;
+  top: -2vw;
+  transform: rotate(-10deg);
+}
+
+#france {
+  left: 17vw;
+  top: 2vw;
+  transform: rotate(-8deg);
+}
+
+#mexico {
+  left: 37vw;
+  top: -1vw;
+  transform: rotate(-3deg);
+}
+
+#saudi {
+  left: 56vw;
+  top: 4vw;
+  transform: rotate(-14deg);
+}
+
+#singapore {
+  left: 72vw;
+  top: -4vw;
+  transform: rotate(5deg);
+}
+
+#spain {
+  left: 7vw;
+  top: 13vw;
+}
+
+#sweden {
+  left: 30vw;
+  top: 17vw;
+  transform: rotate(7deg);
+}
+
+#uk {
+  left: 78vw;
+  top: 12vw;
+  transform: rotate(10deg);
+}
+
+/*______________________________________________________carousel*/
+
+#carousel {
+  padding: 0 15%;
+  overflow-y: hidden;
+  border: 3px black solid;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+
+.carousel-control-prev-icon{
+  background-image: url("../assets/landing/arrowleft.svg");
+  width: 40px;
+  height: 40px;
+}
+
+.carousel-control-next-icon{
+  background-image: url("../assets/landing/arrowright.svg");
+  width: 40px;
+  height: 40px;
+}
+
+.carousel-control-prev, .carousel-control-next{
+  filter: brightness(0);
+  opacity: 1;
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover{
+  filter: brightness(1);
+}
+
+.carousel-row{
+  display: flex;
+  justify-content: space-around;
+}
+
+.carousel-item{
+  padding: 50px 0;
+}
+
+.carousel-row .collCard{
+  width: auto;
+  flex-direction: column;
+  text-align: center;
+}
+
+.carousel-row p{
+  padding-bottom: 15px;
+  font-family: 'saint_regussemi_bold';
+  color: black;
+  text-decoration: none;
+}
+
+.carousel-row a:hover{
+  text-decoration: none;
+}
+
+/*______________________________________________________surf the catalog*/
+
+#surf_the_catalog button{
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: red;
+  color: white;
+  border: 4px solid red;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-family: 'saint_regussemi_bold';
+  font-size: 2rem;
+}
+
+#surf_the_catalog button:hover{
+  background-color: white;
+  color: red;
+  border: 4px solid red;
+}
+
+.cards-container{
+  height: 20rem;
+  width: auto;
+  overflow:hidden;
+}
+
+.card-img{
+  height:28rem;
+  width:auto;
+  position:absolute;
+  z-index:-2;
+}
+
+#cardbiohazard{
+  left:80vw;
+  transform:rotate(-15deg) translateY(6%);
+}
+
+#cardbirthday{
+  left:44vw;
+  transform:rotate(12deg) translateY(24%);
+}
+
+#cardanimals{
+  left:16vw;
+  transform:rotate(-12deg) translateY(22%);
+  z-index:-1;
+
+}
+
+#cardfuck{
+  left:-2vw;
+  transform:rotate(12deg) translateY(8%);
+
+}
+
+#cardsurvivor{
+  left:60vw;
+  transform:rotate(-6deg) translateY(30%);
+}
+
+#cardscience{
+  left:30vw;
+  transform:rotate(5deg) translateY(50%);
+}
+
+/* _____________________________________________________Responsive for wide screens */
+
+@media (min-width: 1400px) {
+  #main p {
+    font-size: 1.7rem;
+  }
+
+  .caption{
+    font-size: 1rem;
+  }
+
+  #cover .scroll div{
+    font-size: 4rem;
+  }
+}

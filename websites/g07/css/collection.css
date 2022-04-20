@@ -1,0 +1,348 @@
+/*______________________________________________________cover*/
+
+#coverContainer {
+  padding:0 6rem;
+  height:auto;
+  min-height: 75vh;
+  background-color: red;
+  position:relative;
+  z-index:2;
+}
+
+#coverContainer .col-5, #coverContainer .col-7 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  height:fit-content;
+}
+
+/*text*/
+
+.col-5 *{
+  width:100%;
+}
+
+.collectionTitle{
+  margin: 5vh 0 2rem 0;
+}
+
+#coverContainer h3 {
+  font-size: 1.4rem;
+}
+
+.col-5 h3{
+  font-weight:600;
+  margin-bottom:3rem;
+}
+
+#coverContainer p{
+  font-size: 1rem;
+}
+
+.overview{
+  font-weight:600;
+  margin-bottom:1rem;
+}
+
+/*image*/
+
+.img-cover{
+  margin-top:3rem;
+  max-width:50vh;
+  height:auto;
+}
+
+/*marketplaces*/
+
+.marketplace{
+  display:flex;
+  align-items: baseline;
+  margin:0 2rem .8rem 0;
+}
+
+.marketplace *{
+  display:inline-block;
+}
+
+.marketplace-title{
+  color:white;
+  font-weight:600;
+  margin-bottom:1.4rem;
+  width:100%;
+}
+
+.countries{
+  display:flex;
+  flex-wrap:wrap;
+  margin: 4rem 15px 0 15px;
+  align-content:flex-start;
+  padding-bottom:4rem;
+}
+
+.countries h3{
+  margin-bottom:.8rem;
+}
+
+.flag{
+  height:1.2rem;
+  border: 2px solid white;
+  background-color: white;
+  border-radius:4px;
+  overflow:hidden;
+}
+
+.domain{
+  color:white;
+  margin-left:.2rem;
+  margin-right:.2rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 500;
+}
+
+/*______________________________________________________grid*/
+
+#all-souvenirs {
+  padding: 0px;
+  position:relative;
+  transform:translateY(-3px);
+}
+
+/*title*/
+
+.categoryName {
+  border-top: 3px solid black;
+  padding: 20px 0 60px 0;
+  position:relative;
+  z-index:1;
+}
+
+.categoryName h2 {
+  color:black;
+  margin-left: 15px;
+  font-size: 2rem;
+}
+
+/*cards*/
+
+.souvenir-grid {
+  display: grid;
+  grid-gap: 1.6vw;
+  grid-template-columns: repeat(auto-fill, minmax(18vw, 1fr));
+  grid-auto-rows: minmax(18vw, 18vw);
+  grid-auto-flow: dense;
+  margin-bottom: 200px;
+}
+
+.collCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 3px solid rgb(0, 0, 0);
+  padding: 10px;
+  cursor: pointer;
+}
+
+.collCard:hover{
+  border: 3px solid red;
+}
+
+a.collCard{
+  text-decoration: none;
+}
+
+.productSize {
+  grid-row: span 1;
+  grid-column: span 1;
+}
+
+/*image*/
+
+.thumbImg {
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+  position: relative;
+}
+
+.img-container {
+  display: flex;
+  width: 15vw;
+  height: 15vw;
+  margin: 8px;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+.img-fill {
+  object-fit: scale-down;
+  max-width: 100%;
+}
+
+/*______________________________________________________back button*/
+
+#goBack {
+  position: fixed;
+  top: 12vh;
+  left: 5vw;
+  transform: translate(-50%, 0);
+  height: 40px;
+  width: 40px;
+  z-index: 3;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  flex-wrap: nowrap;
+}
+
+.st0{fill:#FF0000;stroke:#FFFFFF;stroke-width:3.6;stroke-miterlimit:10;}
+.st1{fill:none;stroke:#FFFFFF;stroke-width:3.5629;stroke-linecap:round;stroke-linejoin:round;}
+.st2{fill:#FFFFFF;}
+
+#goBack:hover .st0 {
+  fill:#ffffff;
+  stroke:#ff0000;
+}
+
+#goBack:hover .st1 {
+  stroke:#ff0000;
+}
+
+#goBack:hover .st2 {
+  fill:#ff0000;
+}
+
+/*______________________________________________________annotation*/
+
+.annotationContainer {
+  height: 0;
+  width: 100%;
+  cursor:default;
+}
+
+/*graphic element*/
+
+.annotation {
+  width: 40px;
+  height: 40px;
+  color: white;
+  content: "";
+  background-color: red;
+  position: relative;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.annotation:before {
+  width: 40px;
+  height: 40px;
+  color: white;
+  content: "";
+  background-color: red;
+  position: absolute;
+}
+
+.annotation:before {
+  transform: rotate(60deg);
+}
+
+.annotation div {
+  width: 40px;
+  height: 40px;
+  background-color: red;
+  position: absolute;
+  transform: rotate(-60deg);
+}
+
+.whitespace{
+  height:0;
+}
+
+/*text*/
+
+.annotation p {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.annotationText {
+  min-width: 25vw;
+  border-radius: 10px;
+  padding: 10px 15px;
+  background-color: black;
+  color: white;
+  position: relative;
+  left: 100%;
+  bottom: 70px;
+  z-index: 1;
+  transition: .3s;
+  transition-delay: .1s;
+  font-size: 1rem;
+}
+
+.center{
+  transform: translate(-50%, -100%);
+}
+.right{
+  transform: translate(-100%, -100%);
+}
+
+/*hover*/
+
+.hideAnnotation {
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
+}
+
+.displayAnnotation {
+  opacity: 1;
+}
+
+.displayAnnotation.right{
+  transform: translate(-100%, -100%) scale(1);
+}
+
+.displayAnnotation.center{
+  transform: translate(-50%, -100%) scale(1);
+}
+
+/* _____________________________________________________Responsive for wide screens */
+
+@media (min-width: 1400px) {
+  h1{
+    font-size: 3.5rem;
+  }
+
+  #coverContainer h3{
+    font-size: 1.8rem;
+  }
+
+  #coverContainer p{
+    font-size: 1.2rem;
+  }
+
+  .categoryName h2{
+    font-size: 2.5rem;
+  }
+
+  .annotationText {
+    font-size: 1.2rem;
+  }
+
+  #goBack{
+    width: 50px;
+    height: 50px;
+  }
+}

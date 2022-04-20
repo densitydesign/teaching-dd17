@@ -1,0 +1,209 @@
+/*______________________________________________________grid*/
+
+#collections {
+  margin: 0;
+}
+
+#collections .scrollBarStyle {
+  height: 91vh;
+  overflow-y: scroll;
+  padding: 0;
+}
+
+.souvenir-grid{
+    padding:20px 15px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(10vw, 1fr));
+    grid-auto-rows: minmax(15vw, 15vw);
+    grid-auto-flow: dense;
+    background-color: #f8f9fa;
+    filter: brightness(100%);
+    transition: .3s;
+}
+
+.collCard{
+  display:flex;
+  flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 3px solid rgb(0, 0, 0);
+    padding: 10px;
+    overflow: hidden;
+    cursor:pointer;
+}
+
+a.collCard{
+  color: black;
+  text-decoration: none;
+}
+
+.collCard:hover{
+  border: 3px solid red;
+}
+
+.small {
+  grid-row: span 1;
+  grid-column: span 1;
+}
+
+.medium {
+  grid-row: span 2;
+  grid-column: span 2;
+}
+
+.big {
+  grid-row: span 2;
+  grid-column: span 3;
+}
+
+/*______________________________________________________images*/
+
+.thumbImg {
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+  position: relative;
+  bottom:0;
+  transition: .3s;
+  background-color: white;
+}
+
+/*______________________________________________________minified grid*/
+
+.minified{
+  grid-row: span 1 !important;
+  grid-column: span 1 !important;
+}
+
+.minifiedGrid{
+  grid-template-columns: repeat(auto-fill, minmax(1vw, 100vw)) !important;
+}
+
+.minifiedDarken{
+  filter: brightness(30%);
+}
+
+/*______________________________________________________grid titles*/
+
+.homeTitle{
+    background-color:red;
+    padding:0;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index:2;
+  color:white;
+
+  overflow: hidden;
+  height: 3rem;
+}
+
+.homeTitle *{
+  display:inline-block;
+}
+
+.displayText{
+  display:inline-block;
+}
+
+.hideText{
+  display:none;
+}
+
+.homeTitle h2{
+    margin:0;
+    padding: 8px 15px;
+}
+
+.homeTitle p{
+  font-size:1rem;
+  margin-left:1rem;
+}
+
+/*______________________________________________________leftovers*/
+
+#leftovers{
+  width:fit-content;
+  display:flex;
+  height:3vh;
+  background-color:red;
+  border-top:3px solid red;
+  color:white;
+  text-decoration:none;
+  overflow: hidden;
+  align-items: center;
+}
+
+#leftovers:hover{
+  background-color:white;
+  color:red;
+  border-top:3px solid red;
+}
+
+#leftovers p {
+  white-space: nowrap;
+  font-family: 'saint_regusSBdCn', 'sans-serif';
+  font-weight: bold;
+  font-size:1rem;
+  animation: leftovers1 60s linear infinite;
+  animation-delay: -60s;
+}
+
+#leftovers p:nth-child(2){
+  animation:leftovers2 60s linear infinite;
+  animation-delay:-30s
+}
+
+@keyframes leftovers1{
+  0%
+  {
+    transform:translateX(100%);
+  }
+
+  100%
+  {
+    transform:translateX(-100%);
+  }
+}
+
+@keyframes leftovers2{
+  0%
+  {
+    transform:translateX(0);
+  }
+
+  100%
+  {
+    transform:translateX(-200%);
+  }
+}
+
+/* _____________________________________________________Responsive for wide screens */
+
+@media (min-width: 1400px) {
+
+  h2{
+    font-size: 2.5rem;
+  }
+
+  h3{
+    font-size: 1.2rem;
+  }
+
+  p{
+    font-size: 1rem;
+  }
+
+  .homeTitle{
+    height: 4rem;
+  }
+
+  .homeTitle p{
+    font-size: 1.2rem;
+  }
+
+  #leftovers p{
+    font-size: 1.2rem;
+  }
+}

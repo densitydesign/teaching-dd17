@@ -1,0 +1,405 @@
+@font-face {
+  font-family: px;
+  font-weight: 100;
+  src: url("../assets/fonts/PxGrotesk/PxGrotesk-Light.ttf");
+}
+@font-face {
+  font-family: px;
+  font-weight: 200;
+  src: url("../assets/fonts/PxGrotesk/PxGrotesk-Regular.ttf");
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: px;
+  /* background-color: black; */
+  overflow-x: hidden;
+  font-weight: 100;
+  /* overflow-y: scroll; */
+}
+
+canvas {
+  display: block;
+  position: absolute;
+  /* z-index: -1; */
+}
+
+.loadingclass {
+  margin: 0 auto;
+  padding: 0 auto;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  position: absolute;
+  top: 0px;
+  font-family: px;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  justify-content: center;
+  background: black;
+  z-index: 2;
+}
+loadingclass2 {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-align: center;
+  background-color: red;
+  z-index: 99;
+  justify-content: center;
+}
+.text {
+  color: white;
+  text-align: center;
+  width: 50%;
+  font-size: 28px;
+  font-weight: 100;
+  z-index: 1;
+  transition: 0.7s;
+}
+#container {
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  /* z-index: 1; */
+  transition: 0.7s;
+  background-color: black;
+
+  /* scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100%;
+  width: 100vw; */
+}
+.sezione {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: black; */
+
+  /* scroll-snap-align: start; */
+}
+#intro3 {
+  display: flex;
+  flex-direction: column;
+}
+.bottone {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  font-family: px;
+  font-size: 22px;
+  padding: 6px 18px 6px 18px;
+  transition: 0.5s;
+}
+
+.bottone:hover {
+  background-color: white;
+  color: black;
+}
+
+/* ---------------NAVBAR----------------------- */
+
+#navbar {
+  position: fixed;
+  justify-content: space-between;
+  width: 100%;
+  display: flex;
+  font-size: 1.2vw;
+  top: 0;
+  z-index: 10;
+  font-weight: 100;
+  opacity: 0%;
+  transition: 0.5s;
+}
+
+.navbar-button {
+  padding: 1vw;
+  color: white;
+  opacity: 1;
+}
+.chapters-button {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.navbar-button:hover {
+  color: white;
+  transition: 0.2s;
+  opacity: 1;
+}
+
+#home {
+  color: rgb(255, 255, 255);
+  opacity: 1;
+}
+
+a {
+  color: #5c5c5c;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+/* ------------------------THUMBNAILS------------------------- */
+
+#thumbnail-group {
+  width: 100vw;
+  position: absolute;
+  left: 20%;
+  /* top: 225vh; */
+  width: 60%;
+}
+
+.thumbnail {
+  display: inline-block;
+  /* width: 170px;
+  height: 100px; */
+  width: 10vw;
+  height: 11vh;
+  margin: 5px 5px 5px 5px;
+  top: 100vh;
+  background-color: aqua;
+  z-index: 9;
+  transition: 0.5s;
+  background-size: cover;
+}
+
+#t1 {
+  background-image: url("../assets/thumbnails/netflix_thumbnails/1.jpg");
+}
+#t2 {
+  background-image: url("../assets/thumbnails/primevideo_thumbnails/4.jpg");
+}
+#t3 {
+  background-image: url("../assets/thumbnails/random_login_youtube_thumbnails/4.jpg");
+}
+#t4 {
+  background-image: url("../assets/thumbnails/youtube_logout_thumbnails/2.jpg");
+}
+#t5 {
+  background-image: url("../assets/thumbnails/twitch_thumbnails/15.jpg");
+}
+#t6 {
+  background-image: url("../assets/thumbnails/netflix_thumbnails/3.jpg");
+}
+#t7 {
+  background-image: url("../assets/thumbnails/primevideo_thumbnails/2.jpg");
+}
+#t8 {
+  background-image: url("../assets/thumbnails/netflix_thumbnails/22.jpg");
+}
+#t9 {
+  background-image: url("../assets/thumbnails/netflix_thumbnails/23.jpg");
+}
+#t10 {
+  background-image: url("../assets/thumbnails/primevideo_thumbnails/30.jpg");
+}
+#t11 {
+  background-image: url("../assets/thumbnails/youtube_thumbnails/34.jpg");
+}
+#t12 {
+  background-image: url("../assets/thumbnails/netflix_thumbnails/44.jpg");
+}
+#t13 {
+  background-image: url("../assets/thumbnails/random_logout_primevideo_thumbnails/41.jpg");
+}
+#t14 {
+  background-image: url("../assets/thumbnails/youtube_thumbnails/billie.jpg");
+}
+#t15 {
+  background-image: url("../assets/thumbnails/netflix_thumbnails/8.jpg");
+}
+#t16 {
+  background-image: url("../assets/thumbnails/primevideo_thumbnails/8.jpg");
+}
+#t17 {
+  background-image: url("../assets/thumbnails/youtube_thumbnails/h3.jpg");
+}
+#t18 {
+  background-image: url("../assets/thumbnails/netflix_thumbnails/16.jpg");
+}
+#t19 {
+  background-image: url("../assets/thumbnails/youtube_thumbnails/mct.jpg");
+}
+#t20 {
+  background-image: url("../assets/thumbnails/primevideo_thumbnails/35.jpg");
+}
+#t21 {
+  background-image: url("../assets/thumbnails/netflix_thumbnails/2.jpg");
+}
+#t22 {
+  background-image: url("../assets/thumbnails/random_login_primevideo_thumbnails/20.jpg");
+}
+#t23 {
+  background-image: url("../assets/thumbnails/youtube_thumbnails/fortnite.jpg");
+}
+#t24 {
+  background-image: url("../assets/thumbnails/netflix_thumbnails/5.jpg");
+}
+#t25 {
+  background-image: url("../assets/thumbnails/youtube_thumbnails/ciccio.jpg");
+}
+
+/* ------------------------------------------------------------ */
+
+#intro2 {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 130vh;
+}
+#intro4 {
+  display: flex;
+  flex-direction: column;
+}
+.sotto {
+  z-index: 0;
+}
+h1 {
+  font-style: normal;
+  font-size: 12vw;
+  font-weight: 100;
+  /* color: white; */
+  margin-top: 5vh;
+  font-family: px;
+}
+#landing {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  justify-content: space-between;
+  position: relative;
+}
+/* #freccia {
+  height: 50px;
+  position: absolute;
+  bottom: 5vh;
+  z-index: 5;
+  display: none;
+} */
+h4 {
+  font-size: 28px;
+  font-family: px;
+  font-weight: 100;
+  color: white;
+}
+#freccia {
+  position: absolute;
+  bottom: 40px;
+  z-index: 1;
+  display: none;
+}
+
+#myVideo {
+  position: absolute;
+  top: 100vh;
+}
+#begin {
+  margin-top: 8vh;
+  padding: 25px 40px;
+  font-size: 24px;
+  font-weight: 100;
+}
+/* #container::before {
+  pointer-events: none;
+} */
+#intro1 {
+  background-image: url("../assets/fight-tr_4.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 30vh;
+}
+
+#gruppo-capitoli {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+}
+
+/*HOME*/
+.capitolo {
+  color: white;
+  width: 16vw;
+  /* border: 1px solid white; */
+  margin: 0 6px 0 6px;
+  padding: 20px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+.capitolo-text {
+  padding: 0;
+  margin: 0 0 14px 0;
+}
+.capitolo-img {
+  height: 30vh;
+  /* margin-bottom: 20px; */
+}
+#capitolo-img-1 {
+  background-image: url("../assets/gif/scroll.gif");
+  background-size: cover;
+}
+#capitolo-img-2 {
+  background-image: url("../assets/gif/mousetrack2.gif");
+  background-size: cover;
+}
+#capitolo-img-3 {
+  background-image: url("../assets/gif/search.gif");
+  background-size: cover;
+}
+
+h2 {
+  font-weight: 100;
+  font-size: 24px;
+  margin: 0 0 20px 0;
+  padding: 0;
+  text-align: center;
+}
+
+p {
+  cursor: default;
+  user-select: none;
+}
+
+/* .capitolo:hover {
+  margin-top: -10px;
+  margin-bottom: 10px;
+} */
+
+#sfumatura {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  height: 15vh;
+  background-image: linear-gradient(transparent, black);
+  z-index: 3;
+}
+
+/* SCROLLBAR */
+/* width */
+::-webkit-scrollbar {
+  width: 2vh;
+  background-color: rgb(34, 34, 34);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #303030;
+  background-clip: padding-box;
+  border: 2px solid transparent;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #444444;
+  background-clip: padding-box;
+  border: 2px solid transparent;
+}

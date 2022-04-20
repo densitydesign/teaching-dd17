@@ -1,0 +1,563 @@
+collectionData = {
+
+    "hugs and kisses":
+    {
+        "type": "semantic",
+        "title": "Hugs and kisses",
+        "image": "./assets/semantic/hugs_and_kisses.png",
+        "gif": "./assets/semantic/hugs_and_kisses.gif",
+        "coverImage": "./assets/semantic/hugs_and_kisses_cover.png",
+        "section": "59 products with references to physical affection such as hugs, kisses, and being close/far from one another.",
+        "text": "Hugs and kisses are described in two ways: as something desiderable and made possible again thanks to <b>vaccines</b>, or as something unpleasant in general, even if vaccinated."
+    },
+
+    "if you can read this":
+    {
+        "type": "semantic",
+        "title": "If you can read this",
+        "image": "./assets/semantic/if_you_can_read_this.png",
+        "gif": "./assets/semantic/if_you_can_read_this.gif",
+        "coverImage": "./assets/semantic/if_you_can_read_this_cover.png",
+        "section": "20 products that address a message to the people around the owner using text.",
+        "text": "The reading distance is used as a measure for <b>social distancing</b>: the majority of products have a message stating that if the text is readable to you, you are too close to the owner."
+    },
+
+    "social distancing champion":
+    {
+        "type": "semantic",
+        "title": "Social distancing champion",
+        "image": "./assets/semantic/social_distancing_champion.png",
+        "gif": "./assets/semantic/social_distancing_champion.gif",
+        "coverImage": "./assets/semantic/social_distancing_champion_cover.png",
+        "section":"67 products stating how good the wearer is at social distancing.",
+        "text":"Claims such as \"social distancing champion\" or \"I was social distancing before it was cool\" are mainly used on <b>apparel</b>, and represent <b>social distancing</b> in an ironic way."
+    },
+
+    "kinky covid":
+    {
+        "type": "semantic",
+        "title": "Kinky COVID",
+        "image": "./assets/semantic/kinky_covid.png",
+        "gif": "./assets/semantic/kinky_covid.gif",
+        "coverImage": "./assets/semantic/kinky_covid_cover.png",
+        "section":"29 products containing sexual references or innuendoes.",
+        "text":"Sexual innuendos are used in relation with <b>vaccination</b> and <b>quarantine</b>: the majority of the products state that the wearer is either ready to engage in sexual practices or that they are pregnant with a baby conceived during the pandemic.</br></br> 14 out of 29 products come from the <b>French marketplace</b>."
+    },
+
+    "look i'm vaccinated":
+    {
+        "type": "semantic",
+        "title": "Look I'm vaccinated",
+        "image": "./assets/semantic/look_im_vaccinated.png",
+        "gif": "./assets/semantic/look_im_vaccinated.gif",
+        "coverImage": "./assets/semantic/look_im_vaccinated_cover.png",
+        "section":"992 products stating that the owner has had either one or two doses of the COVID vaccine.",
+        "text":"\"I'm vaccinated\" statements are used to support the <b>vaccination campaign</b>. This is the <b>biggest collection</b> in the website, with almost half of the total products."
+    },
+
+    "i got the shot":
+    {
+        "type": "semantic",
+        "title": "I got the shot",
+        "image": "./assets/semantic/i_got_the_shot.png",
+        "gif": "./assets/semantic/i_got_the_shot.gif",
+        "coverImage": "./assets/semantic/i_got_the_shot_cover.png",
+        "section":"108 products containing the claim \"I got the shot\" or close variations, referring to the vaccine shot.",
+        "text":"The claim is used to support the <b>vaccination campaign</b>. In some products the claim has <b>ironic connotations</b>, such as allusions to drink shots."
+    },
+
+    "keep calm":
+    {
+        "type": "semantic",
+        "title": "Keep calm",
+        "image": "./assets/semantic/keep_calm.png",
+        "gif": "./assets/semantic/keep_calm.gif",
+        "coverImage": "./assets/semantic/keep_calm_cover.png",
+        "section":"39 products containing the English motto \"Keep calm and …\", references to \"peace & love\" or other phrases stating intention or encouraging the reader to relax.",
+        "text":"The \"Keep calm and\" motto comes from a British motivational poster, and is referenced in many products. Only one product is explicitly <b>anti-vax</b>, while the others convey positive messages on <b>vaccines</b> and <b>quarantine</b>."
+    },
+
+    "vaccines cause adults":
+    {
+        "type": "semantic",
+        "title": "Vaccines cause adults",
+        "image": "./assets/semantic/vaccines_cause_adults.png",
+        "gif": "./assets/semantic/vaccines_cause_adults.gif",
+        "coverImage": "./assets/semantic/vaccines_cause_adults_cover.png",
+        "section":"55 products containing the claim \"Vaccines cause adults\" or close variations.",
+        "text":"The claim refers to the \"vaccine cause…\" statements from <b>anti-vaxxers</b>, overturning their meaning: \"Vaccines cause adults\" implies that the willingness to be <b>vaccinated</b> is synonymous with maturity."
+    },
+
+    "no vaccine against stupidity":
+    {
+        "type": "semantic",
+        "title": "No vaccine against stupidity",
+        "image": "./assets/semantic/no_vaccine_against_stupidity.png",
+        "gif": "./assets/semantic/no_vaccine_against_stupidity.gif",
+        "coverImage": "./assets/semantic/no_vaccine_against_stupidity_cover.png",
+        "section":"12 products containing the claim \"There's no vaccine against stupidity\" or close variations.",
+        "text":"The claim mocks <b>anti-vaxxers</b>: it implies there there is a link between being stupid and not wanting to be vaccinated."
+    },
+
+    "jesus is my vaccine":
+    {
+        "type": "semantic",
+        "title": "Jesus is my vaccine",
+        "image": "./assets/semantic/jesus_is_my_vaccine.png",
+        "gif": "./assets/semantic/jesus_is_my_vaccine.gif",
+        "coverImage": "./assets/semantic/jesus_is_my_vaccine_cover.png",
+        "section":"19 products stating that the owner does not need a vaccine since they have Jesus.",
+        "text":"Religion is used to strengthen <b>anti-vax</b> messages: the claim \"Jesus is my vaccine\" is used on the majority of the products, while a few state that \"Jesus was not vaccinated\". </br></br>13 out of 19 products come from from the <b>US marketplace</b>."
+    },
+
+    "merry (covid) xmas":
+    {
+        "type": "semantic",
+        "title": "Merry (COVID) Xmas",
+        "image": "./assets/semantic/merry_covid_xmas.png",
+        "gif": "./assets/semantic/merry_covid_xmas.gif",
+        "coverImage": "./assets/semantic/merry_covid_xmas_cover.png",
+        "section":"27 products containing references to Christmas.",
+        "text":"Christmas is represented as a moment that changed a lot due to the <b>pandemic</b>: these products display symbols such as Santa Claus or pine trees next to masks, vials and syringes. </br></br>The majority of the products are <b>Christmas decorations</b>."
+    },
+
+    "pandemic politics":
+    {
+        "type": "semantic",
+        "title": "Pandemic politics",
+        "image": "./assets/semantic/pandemic_politics.png",
+        "gif": "./assets/semantic/pandemic_politics.gif",
+        "coverImage": "./assets/semantic/pandemic_politics_cover.png",
+        "section":"21 products with messages linked to any kind of political ideology.",
+        "text":"Political ideologies are mainly linked to polarized positions on the <b>vaccine</b>, on both sides. The majority of products refer to US political figures and parties."
+    },
+
+    "my body my choice":
+    {
+        "type": "semantic",
+        "title": "My body my choice",
+        "image": "./assets/semantic/my_body_my_choice.png",
+        "gif": "./assets/semantic/my_body_my_choice.gif",
+        "coverImage": "./assets/semantic/my_body_my_choice_cover.png",
+        "section":"38 products containing the claim \"My body my choice\" or close variations.",
+        "text":"The claim is a feminist slogan regarding bodily autonomy and abortion, but it is used in these products as an <b>anti-vax</b> slogan. </br></br>The majority of products display a <b>syringe</b> crossed by a <b>prohibition symbol</b> on top."
+    },
+
+    "fuck covid":
+    {
+        "type": "semantic",
+        "title": "Fuck COVID",
+        "image": "./assets/semantic/fuck_covid.png",
+        "gif": "./assets/semantic/fuck_covid.gif",
+        "coverImage": "./assets/semantic/fuck_covid_cover.png",
+        "section":"16 products containing the claim \"Fuck covid\" or close variations.",
+        "text":"The claim expresses <b>anger</b> for the pandemic in general. Very few of them censor the word \"fuck\"."
+    },
+
+    "best doctor/nurse":
+    {
+        "type": "semantic",
+        "title": "Best doctor/nurse",
+        "image": "./assets/semantic/best_doctor_nurse.png",
+        "gif": "./assets/semantic/best_doctor_nurse.gif",
+        "coverImage": "./assets/semantic/best_doctor_nurse_cover.png",
+        "section":"37 products containing references to healthcare jobs.",
+        "text":"The claims of these products either state that the owner has a healthcare profession or express gratitude to those that do."
+    },
+
+    "best (covid) teacher":
+    {
+        "type": "semantic",
+        "title": "Best (COVID) teacher",
+        "image": "./assets/semantic/best_covid_teacher.png",
+        "gif": "./assets/semantic/best_covid_teacher.gif",
+        "coverImage": "./assets/semantic/best_covid_teacher_cover.png",
+        "section":"14 products stating that the owner is a teacher.",
+        "text":"Teachers are mainly represented and figures that had to overcome many issues because of the pandemic, in particular related to <b>distance learning</b>. </br></br>12 out of 15 products come from the <b>spanish marketplace</b>."
+    },
+
+    "pandemic drinking":
+    {
+        "type": "semantic",
+        "title": "Pandemic drinking",
+        "image": "./assets/semantic/pandemic_drinking.png",
+        "gif": "./assets/semantic/pandemic_drinking.gif",
+        "coverImage": "./assets/semantic/pandemic_drinking_cover.png",
+        "section":"41 products containing puns or references about alcohol.",
+        "text":"Alcohol is used in relation to <b>vaccines</b>: the vaccine shots are compared to drink shots, and the name of alcoholic beverages is associated with vaccine certificates in puns. </br></br> 14 out of 41 products come from the <b>italian marketplace</b>."
+    },
+
+    "i have my immune system":
+    {
+        "type": "semantic",
+        "title": "I have my immune system",
+        "image": "./assets/semantic/i_have_my_immune_system.png",
+        "gif": "./assets/semantic/i_have_my_immune_system.gif",
+        "coverImage": "./assets/semantic/i_have_my_immune_system_cover.png",
+        "section":"15 products containing the claim \"No vaccine needed, i have an immune system\" or close variations.",
+        "text":"The claim is used as an <b>anti-vax</b> slogan, mainly in association with the representation of a syringe. </br></br>10 out of 15 products come from the <b>US marketplace</b>, and two <span style=\"white-space: nowrap;\">t-shirts</span> display the US flag."
+    },
+
+    "no fear no vax":
+    {
+        "type": "semantic",
+        "title": "No fear no vax",
+        "image": "./assets/semantic/no_fear_no_vax.png",
+        "gif": "./assets/semantic/no_fear_no_vax.gif",
+        "coverImage": "./assets/semantic/no_fear_no_vax_cover.png",
+        "section":"10 products with messages about fear and/or not being afraid.",
+        "text":"The word \"Fear\" is used in <b>anti-vax</b> claims: it is represented as an irrational reaction to the pandemic, that pushes people to vaccinate and be cautious. </br></br>The majority of products display <b>US flags</b>."
+    },
+
+    "freedom fighters":
+    {
+        "type": "semantic",
+        "title": "Freedom fighters",
+        "image": "./assets/semantic/freedom_fighters.png",
+        "gif": "./assets/semantic/freedom_fighters.gif",
+        "coverImage": "./assets/semantic/freedom_fighters_cover.png",
+        "section":"56 products with messages related to freedom.",
+        "text":"The messages of these products approach <b>mask, vaccination and social distancing mandates</b> as a freedom movement would against a totalitarian regime. </br></br>26 out of 56 products come from the <b>US marketplace</b>, and many of them display the <b>US flag</b>."
+    },
+
+    "no covid passport":
+    {
+        "type": "semantic",
+        "title": "No COVID passport",
+        "image": "./assets/semantic/no_covid_passport.png",
+        "gif": "./assets/semantic/no_covid_passport.gif",
+        "coverImage": "./assets/semantic/no_covid_passport_cover.png",
+        "section":"62 products stating the unwillingness to comply with any kind of \"COVID passport\".",
+        "text":"The claims are displayed on <b>t-shirts</b>, often in association with representations of <b>QR codes</b>, <b>flags</b> and <b>middle fingers</b>. </br></br>34 out of 62 products come from the <b>italian marketplace</b>, 23 from the <b>german</b> one."
+    },
+
+    "save lives":
+    {
+        "type": "semantic",
+        "title": "Save lives",
+        "image": "./assets/semantic/save_lives.png",
+        "gif": "./assets/semantic/save_lives.gif",
+        "coverImage": "./assets/semantic/save_lives_cover.png",
+        "section":"22 products containing the claim \"Save lives\"",
+        "text":"\"Save lives\" is used either in the claim \"Stay home save lives\" or in the claim \"vaccines save lives\"."
+    },
+
+    "flatter than earth":
+    {
+        "type": "semantic",
+        "title": "Flatter than earth",
+        "image": "./assets/semantic/flatter_than_earth.png",
+        "gif": "./assets/semantic/flatter_than_earth.gif",
+        "coverImage": "./assets/semantic/flatter_than_earth_cover.png",
+        "section":"10 products containing the claim \"The only thing that is flatter than the earth is an anti-vax child's EKG\".",
+        "text":"The claim, displayed on mugs, is a violent message in opposition to <b>anti-vaxxers</b>. In 6 products there are spelling mistakes such as \"The <b>onlything</b> that…\". </br></br>7 out of 10 products come from the <b>US marketplace</b>."
+    },
+
+    "covid conspiracy":
+    {
+        "type": "semantic",
+        "title": "COVID conspiracy",
+        "image": "./assets/semantic/covid_conspiracy.png",
+        "gif": "./assets/semantic/covid_conspiracy.gif",
+        "coverImage": "./assets/semantic/covid_conspiracy_cover.png",
+        "section":"42 products with messages related to one or more conspiracy theories.",
+        "text":"References to <b>conspiracy theories</b> are used on these products to either support or mock that particular theory. </br></br>The majority of conspiracy theories mentioned are linked to <b>vaccines</b>."
+    },
+
+    "thanks science":
+    {
+        "type": "semantic",
+        "title": "Thanks science",
+        "image": "./assets/semantic/thanks_science.png",
+        "gif": "./assets/semantic/thanks_science.gif",
+        "coverImage": "./assets/semantic/thanks_science_cover.png",
+        "section":"63 products containing references to science.",
+        "text":"Science is always represented as a synonym of <b>progress</b> and <b>objective truth</b>. The majority of products convey <b>appreciative or thankful messages</b>.</br></br> Only 1 out of 63 products display an <b>anti-vax</b> message."
+    },
+
+    "look i'm anti-vax":
+    {
+        "type": "semantic",
+        "title": "Look I'm anti-vax",
+        "image": "./assets/semantic/look_im_antivax.png",
+        "gif": "./assets/semantic/look_im_antivax.gif",
+        "coverImage": "./assets/semantic/look_im_antivax_cover.png",
+        "section":"124 products stating the message that the owner is anti-vax.",
+        "text":"<b>Anti-vax</b> statements are used to express dissent against the vaccination campaign. The majority of products are <b>caps</b> and <b>t-shirts</b>."
+    },
+
+    "happy (covid) birthday":
+    {
+        "type": "semantic",
+        "title": "Happy (COVID) birthday",
+        "image": "./assets/semantic/happy_covid_birthday.png",
+        "gif": "./assets/semantic/happy_covid_birthday.gif",
+        "coverImage": "./assets/semantic/happy_covid_birthday_cover.png",
+        "section":"11 products containing references to birthdays.",
+        "text":"Birthday is represented as a moment that changed a lot due to the <b>pandemic</b>: the majority of products display the message \"COVID ruined my birthday\"."
+    },
+
+    "i survived":
+    {
+        "type": "semantic",
+        "title": "I survived",
+        "image": "./assets/semantic/i_survived.png",
+        "gif": "./assets/semantic/i_survived.gif",
+        "coverImage": "./assets/semantic/i_survived_cover.png",
+        "section":"39 products containing references to war and fightings.",
+        "text":"War is used as a metaphor describing the <b>pandemic</b>: products in this collection represent people as warriors and survivers in a <b>tough context</b>, while the COVID is the  <b>enemy </b>."
+    },
+
+    "get vaccinated y'all":
+    {
+        "type": "semantic",
+        "title": "Get vaccinated y'all",
+        "image": "./assets/semantic/get_vaccinated_yall.png",
+        "gif": "./assets/semantic/get_vaccinated_yall.gif",
+        "coverImage": "./assets/semantic/get_vaccinated_yall_cover.png",
+        "section":"27 products with messages that encourage people to get vaccinated.",
+        "text":"\"Get vaccinated\" statements are used to support the <b>vaccination campaign</b>. Products in these collection use a wide variety of visual elements and claims to strengthen the message."
+    },
+
+    "covid palette":
+    {
+        "type": "visual",
+        "title": "COVID palette",
+        "image": "./assets/visual/covid_palette.png",
+        "gif": "./assets/visual/covid_palette.gif",
+        "coverImage": "./assets/visual/covid_palette_cover.png",
+        "section":"81 products containing the \"COVID palette\": a combination of red, yellow, and light blue.",
+        "text":"This palette can be used in texts as well as in striped backgrounds. It is displayed next to <b>various messages</b>, and the products containing it come from <b>12 different marketplaces</b>."
+    },
+
+    "stars and stripes":
+    {
+        "type": "visual",
+        "title": "Stars and stripes",
+        "image": "./assets/visual/stars_and_stripes.png",
+        "gif": "./assets/visual/stars_and_stripes.gif",
+        "coverImage": "./assets/visual/stars_and_stripes_cover.png",
+        "section":"182 products containing the stars and stripes motif or colors of the US flag.",
+        "text":"Stars and stripes are used worldwide for <b>polarized messages</b>, promoting the <b>vaccination campaign</b> as well as empowering <b>anti-vax</b> slogans. </br></br>Anti-vax products are prevalent and their main message deal with <b>freedom, fear, and politics</b>."
+    },
+
+    "qr":
+    {
+        "type": "visual",
+        "title": "QR",
+        "image": "./assets/visual/qr.png",
+        "gif": "./assets/visual/qr.gif",
+        "coverImage": "./assets/visual/qr_cover.png",
+        "section":"40 products containing a QR code.",
+        "text":"QR codes in this collection are related to <b>COVID passports</b>. The majority of products convey messages <b>against the mandates</b> regarding those passports. </br></br>19 out of 40 products come from the <b>german marketplace</b>, 15 from the <b>italian</b> one."
+    },
+
+    "mask":
+    {
+        "type": "visual",
+        "title": "Mask",
+        "image": "./assets/visual/mask.png",
+        "gif": "./assets/visual/mask.gif",
+        "coverImage": "./assets/visual/mask_cover.png",
+        "section":"152 products containing representations of surgical masks.",
+        "text":"The mask can be displayed worn by <b>humanized figures, animals, emojis</b> as well as in <b>stand-alone</b>. In the majority of products the mask has a <b>positive connotation</b>, but there are many exceptions."
+    },
+
+    "firearms":
+    {
+        "type": "visual",
+        "title": "Firearms",
+        "image": "./assets/visual/firearms.png",
+        "gif": "./assets/visual/firearms.gif",
+        "coverImage": "./assets/visual/firearms_cover.png",
+        "section":"8 products containing representations of firearms.",
+        "text":"Firearms are used both as a symbol empowering <b>anti-vax</b> and <b>pro-vax</b> slogans, but with a different connotation. Anti-vax products represent the firearm as a symbol of <b>protection</b>, whereas in <b>pro-vax</b> products firearm mean danger."
+    },
+
+    "skull":
+    {
+        "type": "visual",
+        "title": "Skull",
+        "image": "./assets/visual/skull.png",
+        "gif": "./assets/visual/skull.gif",
+        "coverImage": "./assets/visual/skull_cover.png",
+        "section":"15 products containing representations of a skull or other skeletal parts.",
+        "text":"The skull is mainly used to create a <b>negative visual connection</b> with the various message enclosed, or to express toughness. </br></br>7 out of 15 products come from the <b>german marketplace</b>."
+    },
+
+    "middle finger":
+    {
+        "type": "visual",
+        "title": "Middle finger",
+        "image": "./assets/visual/middle_finger.png",
+        "gif": "./assets/visual/middle_finger.gif",
+        "coverImage": "./assets/visual/middle_finger_cover.png",
+        "section":"38 products containing representations of a hand doing the middle finger.",
+        "text":"The middle finger is used as a sign of <b>strong opposition</b>: the majority of products in this collection display messages against <b>COVID passports</b>. </br></br>23 out of 38 products come from the <b>german marketplace</b>."
+    },
+
+    "virus shape":
+    {
+        "type": "visual",
+        "title": "Virus shape",
+        "image": "./assets/visual/virus_shape.png",
+        "gif": "./assets/visual/virus_shape.gif",
+        "coverImage": "./assets/visual/virus_shape_cover.png",
+        "section":"224 products containing the shape or silhouette of a virus, represented as a spiked sphere.",
+        "text":"The virus shape is mainly used as a <b>decorative or background element</b>. It can also be represented as an <b>enemy to destroy</b> through vaccination, giving it a face and occasionally arms and legs. </br></br>Just three <b>anti-vax</b> products display this shape."
+    },
+
+    "biohazard symbol":
+    {
+        "type": "visual",
+        "title": "Biohazard symbol",
+        "image": "./assets/visual/biohazard_symbol.png",
+        "gif": "./assets/visual/biohazard_symbol.gif",
+        "coverImage": "./assets/visual/biohazard_symbol_cover.png",
+        "section":"25 products containing the biohazard symbol.",
+        "text":"The biohazard symbol is commonly used for biological materials that carry a significant <b>health risk</b>. The majority of the products display are <b>anti-vax messages</b>, representing the vaccine as dangerous for health."
+    },
+
+    "syringe":
+    {
+        "type": "visual",
+        "title": "Syringe",
+        "image": "./assets/visual/syringe.png",
+        "gif": "./assets/visual/syringe.gif",
+        "coverImage": "./assets/visual/syringe_cover.png",
+        "section":"702 products containing the representation of a syringe.",
+        "text":"The syringe is widely used in the <b>vaccine campaign</b> as a synonym of <b>hope</b>, while associated with the <b>prohibition symbol</b> supports <b>anti-vax messages</b>."
+    },
+
+    "vaccine vial":
+    {
+        "type": "visual",
+        "title": "Vaccine vial",
+        "image": "./assets/visual/vaccine_vial.png",
+        "gif": "./assets/visual/vaccine_vial.gif",
+        "coverImage": "./assets/visual/vaccine_vial_cover.png",
+        "section":"87 products containing the representation of a vaccine vial.",
+        "text":"The vaccine vial is used as a symbol associated with the <b>syringe</b> on many products. The majority of the products support the <b>vaccination campaign</b>, but there are many exceptions."
+    },
+
+    "band aid":
+    {
+        "type": "visual",
+        "title": "Band aid",
+        "image": "./assets/visual/band_aid.png",
+        "gif": "./assets/visual/band_aid.gif",
+        "coverImage": "./assets/visual/band_aid_cover.png",
+        "section":"Products containing the representation of a band aid.",
+        "text":"The band aid stands for the patch used after a vaccination. This element is used to support the <b>vaccination campaign</b>, mainly on <b>bracelets and </b>pins. </br></br>It is usually combined with a <b>checkmark</b> in the shape of a “V” referencing the initial of vaccine or a heart."
+    },
+
+    "caduceus":
+    {
+        "type": "visual",
+        "title": "Caduceus",
+        "image": "./assets/visual/caduceus.png",
+        "gif": "./assets/visual/caduceus.gif",
+        "coverImage": "./assets/visual/caduceus_cover.png",
+        "section":"207 products containing the representation of a caduceus.",
+        "text":"The caduceus, a staff with two snakes coiled around it, is a worldwide a symbol of <b>healthcare organizations</b> as well as the insignia of the United States Medical Corps. </br></br>The symbol is displayed on <b>medical alert bracelets</b>, mainly used to communicate that the owner is <b>vaccinated</b>."
+    },
+
+    "red cross":
+    {
+        "type": "visual",
+        "title": "Red cross",
+        "image": "./assets/visual/red_cross.png",
+        "gif": "./assets/visual/red_cross.gif",
+        "coverImage": "./assets/visual/red_cross_cover.png",
+        "section":"71 products containing the Red Cross symbol or any related visual element.",
+        "text":"The red cross symbol is internationally associated with <b>healthcare</b>. It is mainly used with a positive connotation in <b>vaccination campaigns</b> around the globe. </br></br>However, few products represent it as something to <b>fight against</b>."
+    },
+
+    "prohibition symbol":
+    {
+        "type": "visual",
+        "title": "Prohibition symbol",
+        "image": "./assets/visual/prohibition_symbol.png",
+        "gif": "./assets/visual/prohibition_symbol.gif",
+        "coverImage": "./assets/visual/prohibition_symbol_cover.png",
+        "section":"119 products containing the prohibition symbol: a circle with a backslash.",
+        "text":"The prohibition symbol is often used in combination with a <b>syringe</b> to convey <b>anti-vax messages</b>. however, many other products display it in combination with the <b>virus symbol</b> to state that the owner is vaccinated."
+    },
+
+    "animals":
+    {
+        "type": "visual",
+        "title": "Animals",
+        "image": "./assets/visual/animals.png",
+        "gif": "./assets/visual/animals.gif",
+        "coverImage": "./assets/visual/animals_cover.png",
+        "section":"100 products containing the representation of any kind of animal.",
+        "text":"Animals are mainly used as a <b>cheerful element</b> in the vaccination campaign. However, some of them can have completely different meanings, such as <b>lab rats</b> or <b>vaccinated sheep</b>."
+    },
+
+    "people":
+    {
+        "type": "visual",
+        "title": "People",
+        "image": "./assets/visual/people.png",
+        "gif": "./assets/visual/people.gif",
+        "coverImage": "./assets/visual/people_cover.png",
+        "section":"103 products containing any kind of figure recognizable as a human.",
+        "text":"People pictured can be <b>healthcare professionals, politicians, pop culture characters, stick figures, or emojis</b>. Products in this collection display <b>various messages</b>."
+    },
+
+    "checkmark":
+    {
+        "type": "visual",
+        "title": "Checkmark",
+        "image": "./assets/visual/checkmark.png",
+        "gif": "./assets/visual/checkmark.gif",
+        "coverImage": "./assets/visual/checkmark_cover.png",
+        "section":"357 products containing a checkmark symbol or a checkbox.",
+        "text":"The checkmark and/or checkbox convey different messages based on the <b>text</b> displayed next and the <b>status of the checkbox</b>. The majority of products have written \"vaccinated\" on them."
+    },
+
+    "we can do it":
+    {
+        "type": "visual",
+        "title": "We can do it",
+        "image": "./assets/visual/we_can_do_it.png",
+        "gif": "./assets/visual/we_can_do_it.gif",
+        "coverImage": "./assets/visual/we_can_do_it_cover.png",
+        "section":"27 products containing the \"we can do it woman\".",
+        "text":"The symbol refers to the famous <b>American wartime poster</b> \"We can do it!\". It is used in different versions, sometimes summarised with an arm. </br></br>The figure is used as a symbol of <b>resistance against the virus</b>, as a mascot for the <b>vaccine</b> but also as an emblem of the <b>anti-vax</b> opposition."
+    },
+
+    "heart":
+    {
+        "type": "visual",
+        "title": "Heart",
+        "image": "./assets/visual/heart.png",
+        "gif": "./assets/visual/heart.gif",
+        "coverImage": "./assets/visual/heart_cover.png",
+        "section":"70 products containing a heart symbol.",
+        "text":" The heart is mainly used to convey <b>affection</b> to the message it comes with: the majority of products display positive messages about the <b>vaccine</b>. Almost half of them are <b>pins</b>."
+    },
+
+    "flags":
+    {
+        "type": "visual",
+        "title": "flags",
+        "image": "./assets/visual/flags.png",
+        "gif": "./assets/visual/flags.gif",
+        "coverImage": "./assets/visual/flags_cover.png",
+        "section":"26 products containing national flags, except the US one.",
+        "text":"The flag, in combination with any kind of message, gives the product <b>patriotic</b> and/or <b>nationalistic</b> connotations. The majority of products are <b>t-shirts</b> displaying <b>anti-vax messages</b>. </br></br>17 out of 26 products come from the <b>italian marketplace</b>."
+    },
+
+    "leftovers":
+    {
+        "type": "",
+        "title": "leftovers",
+        "image": "",
+        "gif": "",
+        "coverImage": "./assets/leftovers/leftovers_cover.png",
+        "section":"These are the 43 products that did not fit either in visuals or messages collections",
+        "text": ""
+    }
+}

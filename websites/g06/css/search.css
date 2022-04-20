@@ -1,0 +1,491 @@
+@font-face {
+  font-family: PxGroteskRegular;
+  font-weight: 200;
+  src: url("../assets/fonts/PxGrotesk/PxGrotesk-Regular.ttf");
+}
+@font-face {
+  font-family: PxGroteskRegular;
+  font-weight: 100;
+  src: url("../assets/fonts/PxGrotesk/PxGrotesk-Light.ttf");
+}
+
+body {
+  font-family: PxGroteskRegular;
+  background-color: black;
+  margin: 0;
+  overflow: hidden;
+}
+
+a {
+  color: #5c5c5c;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+#navbar {
+  position: absolute;
+  justify-content: space-between;
+  width: 100%;
+  display: flex;
+  /* background-color: #262626; */
+  font-size: 1.2vw;
+}
+
+.navbar-button {
+  padding: 1vw;
+}
+.chapters-button {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+#navbar a:hover {
+  color: white;
+  transition: 0.2s;
+}
+/* #home {
+  padding-left: 1.5%;
+} */
+#active,
+#home,
+#about {
+  color: white;
+}
+#campo {
+  height: 95vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  position: fixed;
+  transition: all 0.5s ease-in-out;
+  bottom: 0%;
+  left: 0;
+}
+#searchrow,
+#statsrow {
+  display: flex;
+  width: 100vw;
+  padding-top: 3vh;
+  margin-bottom: 0.5vh;
+  flex-direction: row;
+  align-items: center;
+  height: 6vh;
+  margin-top: 2.5vh;
+  border-width: 0 0 0 0;
+  border-style: solid;
+  border-color: white;
+}
+#statsrow {
+  padding-top: 1vh;
+  padding-bottom: 2vh;
+  justify-content: left;
+}
+#columnbox {
+  display: flex;
+  width: 100vw;
+  flex-direction: row;
+  height: 81vh;
+}
+.thumbnail {
+  height: 85%;
+  width: 4vw;
+  align-self: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  transition: all 0.4s ease-in-out;
+  margin: 0 0 0 5px;
+  background-color: transparent;
+}
+.column {
+  border-width: 0 0 0 0;
+  border-style: solid;
+  border-color: white;
+  width: 21.25vw;
+  margin-top: 1vh;
+  transition: all 0.4s ease-in-out;
+  visibility: visible;
+  height: 90%;
+  flex-direction: column;
+  display: flex;
+}
+.results {
+  position: absolute;
+  right: 15%;
+  font-size: 1.5vw;
+  bottom: 0;
+  margin-bottom: 0;
+}
+.statsbox {
+  height: 100%;
+  width: 21.25vw;
+  border-width: 0 0 0 0;
+  position: relative;
+  border-style: solid;
+  border-color: white;
+}
+#statsbox1 {
+  width: 15vw;
+  padding-right: 3.8vw;
+}
+.category {
+  width: 90%;
+  /* height:25%; */
+  border-style: solid;
+  margin: 0;
+  margin-left:10px;
+  margin-bottom:20px;
+  /* left: 10%; */
+  /* text-align: center; */
+  word-break: break-all;
+  border-width: 2px;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+.category > p {
+  font-size: 1vw;
+  margin: 0 1vw 0 1vw;
+  padding-top: 0.6vw;
+  padding-bottom: 0.8vw;
+  font-weight: 100;
+}
+.category > h1 {
+  margin: 0 1vw 0 1vw;
+
+  padding-top: 5%;
+  font-size: 0.9vw;
+  font-weight: 200;
+}
+#category1 {
+  border-color: red;
+  margin-top:70%;
+}
+#category2 {
+  border-color: rgb(0, 92, 230);
+}
+#category3 {
+  border-color: rgb(0, 255, 0);
+}
+#category4 {
+  border-color: fuchsia;
+}
+#instructions {
+  width: 15vw;
+  height: 100%;
+  background-color: black;
+  align-items: center;
+  padding-right: 2.8vw;
+  flex-direction: row;
+  display: flex;
+}
+#instructionstext {
+  font-size: 1.1vw;
+  position: fixed;
+  top: 7vh;
+  align-self: auto;
+  margin-left: 1vw;
+  width: 14vw;
+  font-weight: 100;
+}
+#banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 5vh;
+  border-style: solid;
+  background-color: black;
+  border-color: white;
+  border-width: 0 0 1px 0;
+}
+#titolopag {
+  font-family: PxGroteskRegular;
+  font-size: 1.4vw;
+  width: 30vw;
+  top: 50%;
+  left: 1%;
+  transform: translate(0, -50%);
+  position: absolute;
+  margin: none;
+  text-align: left;
+  font-style: normal;
+  color: white;
+}
+#backmenu {
+  position: absolute;
+  color: white;
+  transform: translate(0, -50%);
+  top: 50%;
+  right: 3vw;
+  font-size: 1.4vw;
+}
+h1 {
+  font-size: 1vw;
+  color: white;
+  font-family: PxGroteskRegular;
+  margin: 0px;
+  cursor: default;
+}
+p {
+  font-size: 1.3vw;
+  color: white;
+  cursor: default;
+  word-break: normal;
+  font-family: PxGroteskRegular;
+  text-align: left;
+}
+.titles {
+  color: white;
+  bottom: 0;
+  position: absolute;
+  font-size: 1.1vw;
+  margin-left: 0.5vw;
+  font-weight: 100;
+}
+.off {
+  visibility: hidden;
+}
+.offvero{
+  display:none;
+}
+.row {
+  height: 3vw;
+  width: 95%;
+  display: flex;
+  border-color: white;
+  border-style: solid;
+  border-width: 0 0 0 0;
+  margin-right: 15px;
+}
+#loginbox,
+#randombox {
+  display: flex;
+  height: 7vh;
+  width: 20%;
+  margin-left: 1vw;
+  flex-direction: column;
+}
+#randombox {
+  height: 12vh;
+}
+.switchate {
+  font-size: 1.1vw;
+  position: absolute;
+  font-weight: 200;
+  display: inline-block;
+}
+#bianchino {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  outline: white 1px solid;
+  align-self: center;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+  left: 0;
+  top: 0;
+}
+#tastoakira {
+  position: absolute;
+  display: flex;
+  height: 50%;
+  top: 22%;
+  margin-left: 2%;
+}
+#tastoakira {
+  left: 0;
+  width: 50%;
+}
+#randomizza {
+  width: 100%;
+  position: relative;
+  display: flex;
+  cursor: pointer;
+  border-style: solid;
+  background-color: white;
+  border-color: white;
+  border-width: 1px;
+  align-items: center;
+  justify-content: center;
+  height: 30%;
+  margin-top: 0.5vh;
+}
+#lente {
+  background-image: url("../assets/images/SVG/search_icon.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 10%;
+  height: 60%;
+  position: absolute;
+  left: 92%;
+}
+#loginbox {
+  flex-direction: row;
+  width: 25%;
+  margin-left: 2.5vw;
+}
+#column5 {
+  width: 15vw;
+  position: relative;
+  padding-right: 3.8vw;
+  align-items: center;
+}
+#logintext,
+#gibberish {
+  color: white;
+  width: 20%;
+  margin-left: 0%;
+}
+#logintext {
+  margin-top: 3.5%;
+}
+#gibberish {
+  width: 100%;
+  font-size: 0.85vw;
+  height: 25%;
+}
+#login {
+  display: flex;
+  font-size: 1vw;
+  color: white;
+  width: 100%;
+  margin-top: 2.5%;
+  cursor: pointer;
+}
+#searchbutton {
+  font-size: 12pt;
+  width: 5%;
+  position: absolute;
+  right: 3%;
+  text-align: right;
+}
+#searchinput,
+#searchakira {
+  left: 4%;
+  display: flex;
+  position: relative;
+}
+#title {
+  position: absolute;
+  top: -100%;
+  overflow: auto;
+  margin: 0px;
+  font-size: 20pt;
+  color: black;
+  text-align: center;
+  left: 50%;
+  width: 80%;
+  transform: translate(-50%, 0%);
+}
+#boxino {
+  width: 3vh;
+  border-color: white;
+  border-style: solid;
+  position: absolute;
+  border-width: 2px;
+  transition: all 0.4s ease-in-out;
+  background-color: black;
+  height: 3vh;
+}
+#pallino {
+  left: 50%;
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  width: 2vh;
+  height: 2vh;
+}
+#goon2 {
+  bottom: 3vh;
+  right: 3vh;
+  /* width: 160px; */
+  position: fixed;
+  display: flex;
+  border-style: solid;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-width: 1px;
+  border-color: white;
+  transition: all 0.5s cubic-bezier(0, 0, 0.58, 1);
+  font-family: PxGroteskRegular;
+  cursor: pointer;
+  color: white;
+  font-size: 1.2vw;
+  padding: 1vw;
+}
+#goon2:hover {
+  background-color: white;
+}
+#goon2:hover > #next2 {
+  color: black;
+}
+#next2 {
+  color: white;
+}
+
+/* ----------------COVER-------------------- */
+
+#cover-search {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 95vh;
+  background-color: black;
+  color: white;
+  width: 100vw;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+
+.titolo {
+  font-size: 3vw;
+  transform: translate(0, 50px);
+  transition: 0.5s;
+  margin-bottom: 5vh;
+}
+
+.info {
+  font-weight: 100;
+  width: 40%;
+  text-align: center;
+  font-size: 1.2vw;
+  opacity: 0%;
+  transition: 0.5s;
+  transform: translate(0, 5px);
+}
+.capitolo {
+  font-weight: 100;
+  font-size: 22px;
+  opacity: 0%;
+  transition: 0.5s;
+  transform: translate(0, 5px);
+}
+.bottone-start {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  font-size: 1.2vw;
+  padding: 1vw 1.5vw;
+  transform: translate(0, 40px);
+  opacity: 0%;
+  transition: 0.5s;
+}
+
+.bottone-start:hover {
+  background-color: white;
+  color: black;
+}
+h1 {
+  font-style: normal;
+  font-weight: normal;
+}

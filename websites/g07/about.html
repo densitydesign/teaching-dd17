@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/about.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.svg">
+
+  <title>About - My Covid Souvenir</title>
+</head>
+
+<body>
+
+  <!-- desktop only -->
+
+  <h2 id="desktop-only">Desktop only</h2>
+
+  <!-- desktop only -->
+
+  <!-- HEADER START -->
+
+  <div class="container-fluid" id="navBar">
+    <div class="row">
+      <a href="catalog.html" class="col-4">
+        <p>Catalogue</p>
+      </a>
+      <a href="index.html" class="col-4" id="logoNavBarCol">
+        <img id="logoNavBar" src="assets/svg/logo.svg" />
+      </a>
+      <a href="about.html" class="col-4">
+        <p>About</p>
+      </a>
+    </div>
+  </div>
+
+  <!-- HEADER END -->
+
+
+
+  <main>
+    <div class="container-fluid content">
+
+      <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
+          <h2>About the project</h2>
+          <p>
+            Lockdown and quarantines made online shopping the preferred method over buying in stores or at the supermarket. In less than a few weeks, Amazon globally became our favourite lockdown companion. The pandemic introduced a new set of
+            objects into our lives: test kits, bread mixers, handcrafted masks, and many more guided the mapping of a new materiality. However, while scraping the surfaces of various online marketplaces a new focus arose from the research. We started
+            to think, not only about those objects useful to face the pandemic, but also how some of these came to life thanks to the message they enclosed. These products are souvenirs of the past two years, their meaning describes opinions, trends,
+            and ideas about this (post?) pandemic world.
+            <br><br>
+            My Covid Souvenir is a catalogue you can surf to find the perfect gift to remember the COVID 19 and all that came with it.
+            <br><br>
+            Products in this catalogue were collected during November and December 2021.
+          </p>
+
+          <h3>Aim and focus</h3>
+          <p>
+            The catalogue showcases a large variety of products created in reaction to the global pandemic. By extracting these products from their native context and by providing a different way to explore and navigate through them, the project aims
+            to highlight the recurring communication patterns used to express the concepts, opinions and emotions that have characterized the years influenced by the pandemic.
+          </p>
+
+        </div>
+        <div class="col-3"></div>
+      </div>
+      <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
+
+          <h2>Process</h2>
+          <h3>Context definition</h3>
+          <p>
+            Starting from the research question “Which are the covid related objects sold online worldwide?”, we analysed major online marketplaces such as Aliexpress, Amazon, or Alibaba. Many of these platforms block queries connected to COVID-19 or
+            show non-related products, making our research harder.
+          </p>
+          <img src="assets/about/alibaba.png" alt="">
+          <div class="caption">Result for "covid" query on Alibaba.com</div>
+
+          <p>
+            We focused on Amazon since it’s a worldwide platform with country-specific marketplaces, in which COVID-related queries are not blocked and it doesn’t require an account to surf the website (as it is on Wish.com or Taobao.com).
+          </p>
+          <img style="padding: 1rem 10vw" src="assets/about/amazon.png" alt="">
+          <div class="caption"></div>
+          <p>
+            For each country, in which Amazon has an operational marketplace, we searched for its most popular e-commerces on Google using the query "top e-commerces + [country]". We excluded those countries in which Amazon wasn’t one of its most
+            popular platforms. The marketplaces exluded are
+            Amazon.com.tr (Turkey), Amazon.cn (China), Amazon.pl (Poland).
+          </p>
+          <h3>Data extraction</h3>
+          <p>
+            The data was extracted from the seventeen selected Amazon marketplaces using a list of queries and saving, for each of them, the first page of results.
+          </p>
+          <p><b>Selected Amazon marketplaces</b></p>
+          <ul class="list_col-3">
+            <li>amazon.sg (Singapore)</li>
+            <li>amazon.sa (Saudi Arabia)</li>
+            <li>amazon.it (Italy)</li>
+            <li>amazon.au (Australia)</li>
+            <li>amazon.com (USA)</li>
+            <li>amazon.co.uk (UK)</li>
+            <li>amazon.nl (the Netherlands)</li>
+            <li>amazon.ae (United Arab Emirates)</li>
+            <li>amazon.ca (Canada)</li>
+            <li>amazon.com.mx (Mexico)</li>
+            <li>amazon.se (Sweden)</li>
+            <li>amazon.jp (Japan)</li>
+            <li>amazon.fr (France)</li>
+            <li>amazon.br (Brazil)</li>
+            <li>amazon.de (Germany)</li>
+            <li>amazon.es (Spain)</li>
+            <li>and amazon.in (India)</li>
+          </ul>
+
+          <h4>Queries definition</h4>
+          <p>
+            For each country and language, we formulated specific queries. We used a VPN service to switch IP and fake our location to view the corresponding news about pandemic for each country, in which we identified the most used terms in relation
+            to COVID. These terms then became queries, which we tested on each marketplace, checking if they corresponded to COVID related products. (<a
+              href="https://docs.google.com/spreadsheets/d/1Q_pJs5Y-NC-zdz2UVvrR49PyJOGZezbTpwCrNNSTa-o/edit?usp=sharing" target="_blank">check all the queries</a>)
+          </p>
+          <h4>Scraping</h4>
+          <p>
+            For each query in each marketplace we saved all the products shown in the first page of results. To do so we used a scraper written in Python (<a
+              href="https://medium.datadriveninvestor.com/introduction-to-scraping-in-python-with-beautifulsoup-and-requests-ab7b1c9bc113" target="_blank">learn more about scraping</a>)
+          </p>
+          <div class="code" id="scraper">
+            <script type="text/javascript" src="assets/about/python_scraper.js"></script>
+          </div>
+          <div class="caption">Python scraper code <a href="assets/about/amazon_scraper.py">download the file</a></div>
+
+          <p>
+            <b>For each product we saved</b>
+          </p>
+          <ul class="list_col-1">
+            <li>Name</li>
+            <li>Link</li>
+            <li>Marketplace</li>
+            <li>Query</li>
+            <li>Image</li>
+            <li>Amazon tag (tags used to divide some products into categories)</li>
+          </ul>
+          <p><b>Amazon tags encountered during the research</b></p>
+          <ul class="list_col-1">
+            <li>Book</li>
+            <li>e-Book</li>
+            <li>Video disk</li>
+            <li>Audio disk</li>
+            <li>App</li>
+            <li>Mp3 file</li>
+            <li>Prime video product</li>
+          </ul>
+          <p>
+            We filtered our dataset by deleting all the products presenting an Amazon tag, focusing on the objects that weren’t tagged, such as masks, gloves, or gadgets about COVID-19.
+          </p>
+          <img src="assets/about/amazon_tags.png" alt="">
+          <div class="caption">Visual difference between an Amazon product with and without a tag</div>
+          <p>
+            Then we removed by hand products that weren’t related to
+            COVID-19, following these criterias:
+          </p>
+          <ul>
+            <li>Products that didn’t mention COVID or pandemic effects in their image, title or shape.</li>
+            <li>Products that weren’t used against the virus during the pandemic.</li>
+          </ul>
+          <p>
+            <a href="https://docs.google.com/spreadsheets/d/1O2KWYAsATIC5zK0BqSddlQFQ6v_q0eZ9VOZT3sBAVzk/edit?usp=sharing" target="_blank">Check the dataset</a> we obtained during this phase.
+          </p>
+
+          <h3>Dataset expansion</h3>
+          <p>
+            Afterwards, we focused on products we defined as covid souvenirs, those products in which the main characteristic is that they weren’t created to be functional in facing the pandemic. Instead, their main goal is
+            to communicate opinions about various aspects of the pandemic discussion. Therefore we decided to expand our dataset collecting more of these products.
+          </p>
+          <h4>Queries definition</h4>
+          <p>
+            We identified recurrent products categories and topics:
+          </p>
+          <p id="products_categories"><b>Product categories</b></p>
+          <ul class="list_col-1">
+            <li>Bracelets</li>
+            <li>T-shirts</li>
+            <li>Flags</li>
+            <li>Mugs</li>
+            <li>Socks</li>
+            <li>Caps</li>
+            <li>Patches</li>
+            <li>Stikers</li>
+          </ul>
+          <p><b>Topics</b></p>
+          <ul class="list_col-1">
+            <li>COVID</li>
+            <li>Vaccine</li>
+            <li>COVID pass</li>
+            <li>Social distancing</li>
+          </ul>
+          <p>
+            These categories were obtained through the analysis of the starting dataset, however some of them were included afterwards during the manual testing of the queries. For example while searching for shirts and pins, there were many patches
+            showing up, so we decided to include the Patches category. Sometimes we also used positions about the topic when it produced relevant results (e.g. “pro distanciamento social”).
+            <br><br>
+            We formulated new queries derived from product categories combined with topics.
+            <br><br>
+            <b>Query = [category] + [topic]</b>
+            <br>
+            E.g. in Amazon.es (Spain): “camiseta” + “vacuna”
+            <br><br>
+            Each query was formulated in the local language of each country of the selected amazon marketplace and then each query was tested by hand in the corresponding marketplace to see if it was functional to our purpose of finding new covid
+            souvenirs.
+            <br><br>
+            <a href="https://docs.google.com/spreadsheets/d/1fdZSJ7gzpe5Mh49euMjJyJdTBuAuXaP9VGKu1nFWq-M/edit?usp=sharing" target="_blank">Check all the queries</a>
+          </p>
+          <h4>Scraping</h4>
+          <p>
+            Using these queries in the <a href="#scraper">scraper</a> mentioned before we scraped again the 17 Amazon marketplaces, keeping only the products without an amazon tag.
+          </p>
+          <p>
+            <a href="https://docs.google.com/spreadsheets/d/1DUf9Us1aQlwlmvBdG0c9udrUi_D_1fb_3VkQublEg2Q/edit?usp=sharing" target="_blank">Check the expanded dataset</a>
+          </p>
+          <h4>Cleaning</h4>
+          <p>
+            The resulting pool consisted of more than 6000 products, therefore, for each <a href="#products_categories">product category</a>, we tagged 50 products manually, and used them to train a custom model on <a href="https://www.clarifai.com/"
+              target="_blank">Clarifai</a>, an image
+            recognition service (<a href="https://docs.clarifai.com/portal-guide/model/pcustom-model-walkthrough" target="_blank">create a custom model in Clarifai</a>). Finally, we used the Clarifai python API to automatically tag the whole dataset.
+          </p>
+          <div class="code">
+            <script type="text/javascript" src="assets/about/clarifai_tagging.js"></script>
+          </div>
+          <div class="caption">Automate tagging code <a href="assets/about/clarifai_tagging.py">download the file</a></div>
+          <p>
+            The custom model was built on the Clarifai template “context-based classifier”, so it didn’t need too many examples to be trained properly.
+          </p>
+          <img style="width: 60%" src="assets/about/clarifai.png" alt="">
+          <div class="caption">The "context-based classifier" template's description in the Clarifai app</div>
+          <p>Sometimes the same product was sold in multiple amazon marketplaces. We identified the duplicates and then deleted them, keeping only the information about the country in which they were sold. Then we did further cleaning by removing by
+            hand products that didn’t mention COVID or pandemic effects in their image, title or shape.
+            <br><br>
+            As we concluded the cleaning process, the number of products was reduced from more than 6000 to about 2000.
+          </p>
+          <h4>Tagging</h4>
+          <p>
+            After polishing the dataset, among the products we noticed the presence of recurring messages and visual elements. We turned these recurrent elements into tags and, through a manual process, we tagged all the products in the dataset.
+          </p>
+          <p>
+            To set the tags we followed three main criterias:
+          </p>
+          <ul>
+            <li>Tags describing objects containing the same visual element</li>
+            <li>Tags describing objects containing the same slogan or variations of it</li>
+            <li>Tags describing objects referring to the same semantic field</li>
+          </ul>
+          <p>
+            Here’s a list of all the tags emerged and then used to tag the products:
+          </p>
+          <p><b>Messages conveyed</b></p>
+          <ul class="list_col-3">
+            <li>I got the shot</li>
+            <li>Social distancing champion</li>
+            <li>Kinky COVID</li>
+            <li>Look I’m vaccinated</li>
+            <li>Keep calm</li>
+            <li>Vaccines cause adults</li>
+            <li>No vaccine against stupidity</li>
+            <li>If you can read this</li>
+            <li>Hugs and kisses</li>
+            <li>Jesus is my vaccine</li>
+            <li>Merry (COVID) Xmas</li>
+            <li>Pandemic politics</li>
+            <li>My body my choice</li>
+            <li>Fuck COVID</li>
+            <li>Best doctor/nurse</li>
+            <li>Best (COVID) teacher</li>
+            <li>Pandemic drinking</li>
+            <li>I have my immune system</li>
+            <li>No fear no vax</li>
+            <li>Freedom fighters</li>
+            <li>No COVID passport</li>
+            <li>Save lives</li>
+            <li>Flatter than Earth</li>
+            <li>COVID conspiracy</li>
+            <li>Thanks science</li>
+            <li>Look I’m anti-vax</li>
+            <li>Happy (COVID) birthday</li>
+            <li>I survived</li>
+            <li>Get vaccinated y’all</li>
+          </ul>
+          <p><b>Visual elements</b></p>
+          <ul class="list_col-3">
+            <li>COVID palette</li>
+            <li>Stars and Stripes</li>
+            <li>QR</li>
+            <li>Mask</li>
+            <li>Firearms</li>
+            <li>Skull</li>
+            <li>Middle finger</li>
+            <li>Biohazard symbol</li>
+            <li>Virus shape</li>
+            <li>Syringe</li>
+            <li>Vaccine vial</li>
+            <li>Caduceus</li>
+            <li>Band aid</li>
+            <li>Red cross</li>
+            <li>Prohibition symbol</li>
+            <li>Animals</li>
+            <li>We can do it</li>
+            <li>People</li>
+            <li>Checkmark</li>
+            <li>Heart</li>
+            <li>Flags</li>
+          </ul>
+          <p>
+            <a href="https://docs.google.com/spreadsheets/d/1b_kPU_r0LRup50dvanw7XaL5HuqytwYh1U6t18Di28o/edit?usp=sharing" target="_blank">Check the final dataset</a>
+          </p>
+        </div>
+        <div class="col-3"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
+          <h2>Publishing</h2>
+          <p>
+            We organized our dataset into a virtual catalogue, as we wanted to provide a different way to explore and navigate through the products.
+            The collections are divided in two main areas, one regarding the conveyed messages and one regarding the visual elements.
+             Each collection provides a brief introduction to the
+            content, an overview of the trends within the collection, and the list of Amazon marketplaces where the products are sold.
+            <br><br>
+            We added annotations to products which needed a further explanation. Annotations explain memes, pop culture references, cultural references and give translations.
+            <br><br>
+            Every product has its own page, with the full name of the product, its category, its tags and the indication of the Amazon marketplaces where the product is sold. We decided to include in the product page the link to its Amazon page to
+            see the product in its native context.
+            <br><br>
+            We named this project “My Covid Souvenir”. It presents a total of 50 collections, in which we organized 2167 products selected and collected across 17 different Amazon marketplaces.
+          </p>
+        </div>
+        <div class="col-3"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
+          <h2>Credits</h2>
+              <h3 style="text-align: center">My Covid Souvenir team</h3>
+            <div id="team" class="row">
+              <div class="team_mate">
+                <img src="assets/about/daniele.png" alt="">
+                <p>Daniele Dell'Orto</p>
+              </div>
+              <div class="team_mate">
+                <img src="assets/about/marcella.png" alt="">
+                <p>Martina Francella</p>
+              </div>
+              <div class="team_mate">
+                <img src="assets/about/octavian.png" alt="">
+                <p>Octavian Husoschi</p>
+              </div>
+              <div class="team_mate">
+                <img src="assets/about/shan.png" alt="">
+                <p>Shan Huang</p>
+              </div>
+              <div class="team_mate">
+                <img src="assets/about/martina.png" alt="">
+                <p>Martina Melillo</p>
+              </div>
+              <div class="team_mate">
+                <img src="assets/about/matteo.png" alt="">
+                <p>Matteo Pini</p>
+              </div>
+              <div class="team_mate">
+                <img src="assets/about/alessandro.png" alt="">
+                <p>Alessandro Quets</p>
+              </div>
+            </div>
+        </div>
+        <div class="col-3"></div>
+      </div>
+
+    </div>
+
+    <!-- FOOTER START -->
+
+    <footer>
+      <div id="students">
+        <h1>Authors</h1>
+        <ul>
+          <li>Daniele Dell'Orto</li>
+          <li>Martina Francella</li>
+          <li>Octavian Husoschi</li>
+          <li>Shan Huang</li>
+          <li>Martina Melillo</li>
+          <li>Matteo Pini</li>
+          <li>Alessandro Quets</li>
+        </ul>
+      </div>
+
+      <div id="faculty">
+        <h1>Faculty</h1>
+        <ul>
+          <li>Michele Mauri</li>
+          <li>Ángeles Briones</li>
+          <li>Gabriele Colombo</li>
+          <li>Simone Vantini</li>
+          <li>Salvatore Zingale</li>
+        </ul>
+      </div>
+      <div id="assistants">
+        <h1>Teaching Assistants</h1>
+        <ul>
+          <li>Elena Aversa</li>
+          <li>Andrea Benedetti</li>
+          <li>Tommaso Elli</li>
+          <li>Beatrice Gobbo</li>
+        </ul>
+      </div>
+
+      <div id="contacts">
+        <div class="logo">
+          <img src="assets/footer/Logo_DensityDesign.svg" alt="DensityDesign Lab" />
+          <img src="assets/footer/Logo_Polimi.svg" alt="Politecnico di Milano" />
+        </div>
+        <p><a href="https://densitydesign.github.io/teaching-dd17/" target="_blank">Mediazioni Algoritmiche.
+            Designing in a data intensive society.</a></p>
+        <p>The Final Synthesis Design Studio is a course at Politecnico di Milano for the Master's Degree in
+          Communication Design.</p>
+        <ul>
+          <li id="social"><a href="https://www.facebook.com/densitydesign"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                <path
+                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+              </svg></a> <a href="https://twitter.com/densitydesign"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                <path
+                  d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+              </svg></a> <a href="https://www.instagram.com/densitydesign/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                <path
+                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+              </svg></a></li>
+          <li><a href="http://densitydesign.org/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe2" viewBox="0 0 16 16">
+                <path
+                  d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855-.143.268-.276.56-.395.872.705.157 1.472.257 2.282.287V1.077zM4.249 3.539c.142-.384.304-.744.481-1.078a6.7 6.7 0 0 1 .597-.933A7.01 7.01 0 0 0 3.051 3.05c.362.184.763.349 1.198.49zM3.509 7.5c.036-1.07.188-2.087.436-3.008a9.124 9.124 0 0 1-1.565-.667A6.964 6.964 0 0 0 1.018 7.5h2.49zm1.4-2.741a12.344 12.344 0 0 0-.4 2.741H7.5V5.091c-.91-.03-1.783-.145-2.591-.332zM8.5 5.09V7.5h2.99a12.342 12.342 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5c.035.987.176 1.914.399 2.741A13.612 13.612 0 0 1 7.5 10.91V8.5H4.51zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741H8.5zm-3.282 3.696c.12.312.252.604.395.872.552 1.035 1.218 1.65 1.887 1.855V11.91c-.81.03-1.577.13-2.282.287zm.11 2.276a6.696 6.696 0 0 1-.598-.933 8.853 8.853 0 0 1-.481-1.079 8.38 8.38 0 0 0-1.198.49 7.01 7.01 0 0 0 2.276 1.522zm-1.383-2.964A13.36 13.36 0 0 1 3.508 8.5h-2.49a6.963 6.963 0 0 0 1.362 3.675c.47-.258.995-.482 1.565-.667zm6.728 2.964a7.009 7.009 0 0 0 2.275-1.521 8.376 8.376 0 0 0-1.197-.49 8.853 8.853 0 0 1-.481 1.078 6.688 6.688 0 0 1-.597.933zM8.5 11.909v3.014c.67-.204 1.335-.82 1.887-1.855.143-.268.276-.56.395-.872A12.63 12.63 0 0 0 8.5 11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.963 6.963 0 0 0 14.982 8.5h-2.49a13.36 13.36 0 0 1-.437 3.008zM14.982 7.5a6.963 6.963 0 0 0-1.362-3.675c-.47.258-.995.482-1.565.667.248.92.4 1.938.437 3.008h2.49zM11.27 2.461c.177.334.339.694.482 1.078a8.368 8.368 0 0 0 1.196-.49 7.01 7.01 0 0 0-2.275-1.52c.218.283.418.597.597.932zm-.488 1.343a7.765 7.765 0 0 0-.395-.872C9.835 1.897 9.17 1.282 8.5 1.077V4.09c.81-.03 1.577-.13 2.282-.287z" />
+              </svg> densitydesign.org</a></li>
+          <li><a href="mailto:info@densitydesign.org"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-open" viewBox="0 0 16 16">
+                <path
+                  d="M8.47 1.318a1 1 0 0 0-.94 0l-6 3.2A1 1 0 0 0 1 5.4v.817l5.75 3.45L8 8.917l1.25.75L15 6.217V5.4a1 1 0 0 0-.53-.882l-6-3.2ZM15 7.383l-4.778 2.867L15 13.117V7.383Zm-.035 6.88L8 10.082l-6.965 4.18A1 1 0 0 0 2 15h12a1 1 0 0 0 .965-.738ZM1 13.116l4.778-2.867L1 7.383v5.734ZM7.059.435a2 2 0 0 1 1.882 0l6 3.2A2 2 0 0 1 16 5.4V14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5.4a2 2 0 0 1 1.059-1.765l6-3.2Z" />
+              </svg> email</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- FOOTER END -->
+
+    <!-- ******************* Utilities ******************* -->
+    <!-- Javascript libraries -->
+    <!-- d3.js -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+    <!-- jQuery and Popper. They are required by Bootstrap, we discourage using jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <!-- Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <!-- Your js file -->
+
+  </main>
+
+</body>
+
+</html>
