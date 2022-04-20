@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Off Track</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+  <link rel="icon" type="image/gif" href="/assets/img/favicongif.gif" />
+  <link rel="preload" href="assets/font/Redaction_50-Regular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://kit.fontawesome.com/e14f8b50f6.js" crossorigin="anonymous"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body id="masks">
+  <div id="disclaimer">
+    <p>FOR A BETTER EXPERIENCE,</br>ROTATE YOUR PHONE.</p>
+  </div>
+  <div class="se-pre-con">
+    <p>LOADING...</p>
+  </div>
+  <nav>
+    <div class="header hgrid">
+      <div class="home-btn redaction"><a class="btn redaction" href="home.html">Home</a></div>
+      <div class="jumpto-btn redaction" ontouchstart="" ontouchend=""><a class="btn redaction">JUMP INTO</a>
+        <div class="dropdown-content">
+          <a class="redaction" href="masks.html">#Masks</a>
+          <a class="redaction" href="vaccine.html">#Vaccine</a>
+          <a class="redaction" href="pcr.html">#PCR</a>
+          <a class="redaction" href="virus.html">#Virus</a>
+        </div>
+      </div>
+      <div class="archive-btn redaction"><a class="btn redaction" href="archive.html">Archive</a></div>
+      <div class="about-btn redaction"><a class="btn redaction" href="about.html">About</a></div>
+    </div>
+  </nav>
+
+  <!-- CONTAINER VIDEOS -->
+  <div id="toggleVolume">
+    <svg class="hide">
+      <line x1="0" y1="100%" x2="100%" y2="0" />
+    </svg>
+  </div>
+  <div id="container">
+    <div class="window" id="canvasLines"></div>
+    <div class="content">
+      <div class="title grid" id="title">
+        <div class="title-content">
+          <p class="t-title">#MASKS</p>
+          <p class="subtitle">
+            Scroll through the page to dive into the selection of #MASKS
+            videos.<br />Hover to play the audio and create your own path.
+          </p>
+        </div>
+      </div>
+
+      <div class="videos-container video-grid">
+        <div class="wrapper hoax" data-aos="fade-zoom-in" id="wrapper-mask-1">
+          <p>Dr. Kaufman with Spiro On The Legality Of Masks</p>
+          <video id="vid1" controls loop autoplay muted loading="lazy" preload="auto" volume="0.01">
+            <source src="assets/videos/mask/masks01.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <div class="hash" id="hashtag-mask-1">
+          <p>#HOAX</p>
+        </div>
+
+        <div class="quote" id="quote-mask-A">
+          <p>
+            “It is a major barrier, you can’t read facial expression, you can’t speak really, so it keeps us apart”
+          </p>
+        </div>
+        <div class="wrapper hoax" data-aos="fade-zoom-in" id="wrapper-mask-2">
+          <p>Dr. Kaufman with Spiro On The Legality Of Masks</p>
+          <video id="vid2" controls loop autoplay muted loading="lazy" preload="auto" volume="0.01">
+            <source src="assets/videos/mask/masks02.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <div class="quote" id="quote-mask-B">
+          <p>
+            “If you are worried about headaches and stuff, there’s way,
+            because you are not getting enough oxygen.”
+          </p>
+        </div>
+        <div class="hash" id="hashtag-mask-2">
+          <p>#COVID</p>
+        </div>
+
+        <div class="wrapper covid" data-aos="fade-zoom-in" id="wrapper-mask-3">
+          <p>
+            TESTING OXYGEN LEVELS UNDER A MASK WITH AN OSHA AIR QUALITY
+            MONITOR - BRIAN STAVELY (VIDEO)
+          </p>
+          <video id="vid3" controls playsinline autoplay muted loop volume="0.01">
+            <source src="assets/videos/mask/masks03.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <div class="wrapper covid" data-aos="fade-zoom-in" id="wrapper-mask-4">
+          <p>Science Teacher's Important Message on Masks in Schools!!!</p>
+          <video id="vid4" controls loop autoplay muted loading="lazy" preload="auto" volume="0.01">
+            <source src="assets/videos/mask/masks04.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <div class="hash" id="hashtag-mask-3">
+          <p>#PCR</p>
+        </div>
+
+        <div class="quote" id="quote-mask-C">
+          <p>
+            “When you are wearing this, you are doing your body a disservice”
+          </p>
+        </div>
+        <div class="wrapper pcr" data-aos="fade-zoom-in" id="wrapper-mask-5">
+          <p>
+            Lekarze mówią prawdę o pandemii i przemyśle farmaceutycznym, cz.2
+            (napisy PL) / Doctors speak up
+          </p>
+          <video id="vid5" controls loop autoplay muted loading="lazy" preload="auto" volume="0.01">
+            <source src="assets/videos/mask/masks05.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <div class="quote" id="quote-mask-D">
+          <p>
+            “When I heard that they have nanographite, I almost hit the roof”
+          </p>
+        </div>
+        <div class="wrapper covid genocide injection" data-aos="fade-zoom-in" id="wrapper-mask-6">
+          <p>
+            Toxic Masks Made in China and Distributed in Canada Schools - More
+            NWO Chaos!
+          </p>
+          <video id="vid6" controls loop autoplay muted loading="lazy" preload="auto" volume="0.01">
+            <source src="assets/videos/mask/masks06.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <div class="hash" id="hashtag-mask-4">
+          <p>#GENOCIDE</p>
+        </div>
+
+        <div class="quote" id="quote-mask-E">
+          <p>
+            “There are so many stupid pepole out there at the moment”
+          </p>
+        </div>
+        <div class="wrapper covidiots" data-aos="fade-zoom-in" id="wrapper-mask-7">
+          <p>HOW MANY STUPID PEOPLE ACTUALLY LIVE ON THIS PLANET?</p>
+          <video id="vid7" controls loop autoplay muted loading="lazy" preload="auto" volume="0.01">
+            <source src="assets/videos/mask/masks07.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <div class="hash" id="hashtag-mask-5">
+          <p>#INJECTION</p>
+        </div>
+
+        <div class="hash" id="hashtag-mask-6">
+          <p>#COVIDIOTS</p>
+        </div>
+
+        <div class="hash" id="hashtag-mask-7">
+          <p>#BULLSHIT</p>
+        </div>
+
+        <div class="quote" id="quote-mask-F">
+          <p>
+            “Does that look real good to you?”
+          </p>
+        </div>
+        <div class="wrapper" data-aos="fade-zoom-in" id="wrapper-mask-8">
+          <p>Podcast: A Few Reasons the Mask Mandates May Not Be Healthy</p>
+          <video id="vid8" controls loop autoplay muted loading="lazy" preload="auto" volume="0.01">
+            <source src="assets/videos/mask/masks08.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <div class="quote" id="quote-mask-G">
+          <p>
+            “It’s not fair and it’s not right!”
+          </p>
+        </div>
+        <div class="wrapper bullshit" data-aos="fade-zoom-in" id="wrapper-mask-9">
+          <p>ROSE GREEN STANDS UP TO SUPERMARKET REGARDING MASKS</p>
+          <video id="vid9" controls loop autoplay muted loading="lazy" preload="auto" volume="0.01">
+            <source src="assets/videos/mask/masks09.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <div class="quote" id="quote-mask-H">
+          <p>
+            “Are you done with this craziness?”
+          </p>
+        </div>
+        <div class="wrapper" data-aos="fade-zoom-in" id="wrapper-mask-10">
+          <p>
+            Foodland Farms Denies Service to Maskless Shoppers, Calls Police
+          </p>
+          <video id="vid10" controls loop autoplay muted loading="lazy" preload="auto" volume="0.01">
+            <source src="assets/videos/mask/masks10.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <div class="quote" id="quote-mask-I">
+          <p>
+            “Do you know what hypoxemia is? She sais, “Yes I do” and then she shut the door at me like I had leprosy”
+          </p>
+        </div>
+        <div class="wrapper scam" data-aos="fade-zoom-in" id="wrapper-mask-11">
+          <p>ON THE ROAD W/CHARLES FOCKAERT - MASKS AND MORE MASKS IN MCCALL
+            IDAHO #841</p>
+          <video id="vid11" controls loop autoplay muted loading="lazy" preload="auto" volume="0.01">
+            <source src="assets/videos/mask/masks12.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <div class="hash" id="hashtag-mask-8">
+          <p>#SCAM</p>
+        </div>
+
+        <div class="wrapper" data-aos="fade-zoom-in" id="wrapper-mask-12">
+          <p>
+            1102 YAHWEH ELOHIM DOES NOT WEAR A FACE DIAPER
+          </p>
+          <video id="vid12" controls loop autoplay muted loading="lazy" preload="auto" volume="0.01">
+            <source src="assets/videos/mask/masks11.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <div class="hash" id="hashtag-mask-9">
+          <p>#COMMUNIST</p>
+        </div>
+
+        <div class="wrapper communist" data-aos="fade-zoom-in" id="wrapper-mask-13">
+          <p>
+            GET A COURT INJUNCTION AGAINST AN EMPLOYER REQUIRING A MASK #852
+          </p>
+          <video id="vid13" controls loop autoplay muted loading="lazy" preload="auto" volume="0.01">
+            <source src="assets/videos/mask/masks13.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <div class="quote" id="quote-mask-J">
+          <p>
+            “These politicians are trying to get us to wear fucking… these rags on our faces”
+          </p>
+        </div>
+        <div class="wrapper" data-aos="fade-zoom-in" id="wrapper-mask-14">
+          <p>Podcast: A Few Reasons the Mask Mandates May Not Be Healthy</p>
+          <video id="vid14" controls loop autoplay muted loading="lazy" preload="auto" volume="0.01">
+            <source src="assets/videos/mask/masks14.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <div class="wrapper" data-aos="fade-zoom-in" id="wrapper-mask-15">
+          <p>It's Just A MASK - Mark Sargent</p>
+          <video id="vid15" controls loop autoplay muted loading="lazy" preload="auto" volume="0.01">
+            <source src="assets/videos/mask/masks15.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <div class="quote" id="quote-mask-K">
+          <p>
+            “All we have to do is come together, make some noise and take off the masks!”
+          </p>
+        </div>
+        <div class="wrapper" data-aos="fade-zoom-in" id="wrapper-mask-16">
+          <p>Podcast: A Few Reasons the Mask Mandates May Not Be Healthy</p>
+          <video id="vid16" controls loop autoplay muted loading="lazy" preload="auto" volume="0.01">
+            <source src="assets/videos/mask/masks16.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <div class="quote" id="quote-mask-L">
+          <p>
+            “Mask, Vaccine...<br>not for me!”
+          </p>
+        </div>
+        <div class="wrapper" data-aos="fade-zoom-in" id="wrapper-mask-17">
+          <p>PSEC - 2021 - TEST DRIVING THE FAKE MASK [HD 720P]</p>
+          <video id="vid17" controls loop autoplay muted loading="lazy" preload="auto" volume="0.01">
+            <source src="assets/videos/mask/masks17.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <div class="hash" id="hashtag-mask-10">
+          <p>#FREEDOM</p>
+        </div>
+
+        <div class="wrapper" data-aos="fade-zoom-in" id="wrapper-mask-18">
+          <p>PSEC - 2021 - TEST DRIVING THE FAKE MASK [HD 720P]</p>
+          <video id="vid18" controls loop autoplay muted loading="lazy" preload="auto" volume="0.01">
+            <source src="assets/videos/mask/masks18.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <div class="quote" id="quote-mask-M">
+          <p>
+            “It’s our right to be here!”
+          </p>
+        </div>
+        <div class="wrapper freedom" data-aos="fade-zoom-in" id="wrapper-mask-19">
+          <p>Freedom Flash Mob - Natural Grocers</p>
+          <video id="vid19" controls loop autoplay muted loading="lazy" preload="auto" volume="0.01">
+            <source src="assets/videos/mask/masks19.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <div class="quote" id="quote-mask-N">
+          <p>
+            “NO MORE MASKS!<br>NO MORE MASKS!<br>NO MORE MASKS!”
+          </p>
+        </div>
+        <div class="wrapper" data-aos="fade-zoom-in" id="wrapper-mask-20">
+          <p>
+            Parents took over and ceased school council over masks for
+            children
+          </p>
+          <video id="vid20" controls loop autoplay muted loading="lazy" preload="auto" volume="0.01">
+            <source src="assets/videos/mask/masks20.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <div class="quote" id="quote-mask-O">
+          <p>
+            “Maybe what we should be wearing is something more like this”
+          </p>
+        </div>
+        <div class="wrapper illuminati" data-aos="fade-zoom-in" id="wrapper-mask-21">
+          <p>WHY MASKS DON'T WORK - DR. COLIN M. BARRON (VIDEO)</p>
+          <video id="vid21" controls loop autoplay muted loading="lazy" preload="auto" volume="0.01">
+            <source src="assets/videos/mask/masks21.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <div class="hash" id="hashtag-mask-11">
+          <p>#ILLUMINATI</p>
+        </div>
+
+        <div class="quote" id="quote-mask-P">
+          <p>
+            “Why are you playing along with this shit?
+            Take your masks off!”
+          </p>
+        </div>
+        <div class="wrapper" data-aos="fade-zoom-in" id="wrapper-mask-23">
+          <p>BLIND COMPLIANCE IS PROLONGING THIS NIGHTMARE
+          </p>
+          <video id="vid23" controls loop autoplay muted loading="lazy" preload="auto" volume="0.01">
+            <source src="assets/videos/mask/masks23.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <div class="hash" id="hashtag-mask-12">
+          <p>#PCR</p>
+        </div>
+
+        <div class="quote" id="quote-mask-Q">
+          <p>
+            “I’m a registered nurse with
+            a master degree and I will never put a fucking mask on my face or my child’s face”
+          </p>
+        </div>
+        <div class="wrapper pcr1" data-aos="fade-zoom-in" id="wrapper-mask-24">
+          <p>Lekarze mówią prawdę o pandemii i przemyśle farmaceutycznym, cz.2
+            (napisy PL) / Doctors speak up</p>
+          <video id="vid24" controls loop autoplay muted loading="lazy" preload="auto" volume="0.01">
+            <source src="assets/videos/mask/masks24.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <div class="hash" id="hashtag-mask-13">
+          <p>#COVIDIOTS</p>
+        </div>
+
+        <div class="quote" id="quote-mask-R">
+          <p>
+            “BAAAA!”
+          </p>
+        </div>
+        <div class="wrapper covidiots1" data-aos="fade-zoom-in" id="wrapper-mask-25">
+          <p>HOW MANY STUPID PEOPLE ACTUALLY LIVE ON THIS PLANET?</p>
+          <video id="vid25" controls loop autoplay muted loading="lazy" preload="auto" volume="0.01">
+            <source src="assets/videos/mask/masks25.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+
+      <div id="selector-wrapper">
+
+        <div class="grid">
+          <div class="introduction-text introduction-content">
+            Starting with #MASKS the user can get to close themes such as #COVID, <div class="tooltip">
+              <u class="redaction">#PCR</u><span class="tooltiptext">
+                Polymerase chain reaction (PCR) is the method used for testing the positivity to
+                Covid-19</br></br>Source: <a href="https://en.wikipedia.org/wiki/COVID-19_testing"
+                  target="_blank"><u>Wikipedia</u></a></span>,
+            </div> or similarly #INJECTION which alludes to vaccination protocol, but he can also be taken further
+            away. As it is often said on the platform that masks can cause physical or even psychological harm to the
+            wearer, users may find that they have been defined as a means to a #GENOCIDE. The mandatory nature of
+            masks has also been questioned because it deprives people of their #FREEDOM. With #HOAX and #SCAM, #MASKS
+            is linked to the idea that the whole health emergency is fake or even part of a bigger conspiracy,
+            bringing into the discussion topics like <div class="tooltip">
+              <u class="redaction">#ILLUMINATI</u><span class="tooltiptext">
+                Secret society often referred to conspire to control world affairs, by masterminding events and planting
+                agents in government and corporations, in order to gain political power and influence and to establish a
+                New World
+                Order.</br></br>Source: <a href="https://en.wikipedia.org/wiki/Illuminati"
+                  target="_blank"><u>Wikipedia</u></a></span>
+            </div>. Because of this, people wearing masks are often referred to as <div class="tooltip">
+              <u class="redaction">#COVIDIOTS</u>.<span class="tooltiptext">
+                Usually a term to describe someone who ignores warnings concerning public health or safety, is here
+                used with the opposite meaning to mock those who follow safety regulations.
+                </br></br>Source: <a
+                  href="https://www.dictionary.com/e/s/new-words-we-created-because-of-coronavirus/#covidiot"
+                  target="_blank"><u>dictionary.com</u></a></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Explore -->
+        <div class="choose grid">
+          <div class="title-content t-title">
+            <p>EXPLORE MORE</p>
+          </div>
+          <div class="go-to-rabbit">
+            <div class="keywords">
+              <a href="vaccine.html" class="keyword">#Vaccine</a>
+              <a href="pcr.html" class="keyword">#PCR</a>
+              <a href="virus.html" class="keyword">#Virus</a>
+            </div>
+            <div class="rabbit">
+              <p>CHOOSE<br>ANOTHER PATH</p>
+            </div>
+          </div>
+          <div class="go-to-archive">
+            <div class="keywords">
+              <a href="archive.html" class="keyword">EXPLORE THE WHOLE ARCHIVE</a>
+              <a href="https://group02-dd17.github.io/offtrack/archive.html?selection=masks" class="keyword">DIVE INTO #MASK NETWORK</a>
+            </div>
+            <div class="rabbit">
+              <p>SEE MORE<br>ON THE ARCHIVE</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+    <script src="https://unpkg.com/p5.js-svg@1.1.1"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      let hashArray = [
+        "hoax",
+        "covid",
+        "pcr",
+        "genocide",
+        "injection",
+        "covidiots",
+        "bullshit",
+        "scam",
+        "communist",
+        "freedom",
+        "illuminati",
+        "pcr1",
+        "covidiots1",
+      ];
+
+      let checkPage = "mask-";
+    </script>
+    <script src="js/narration.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      $(document).ready(function () {
+        setTimeout(() => {
+          AOS.init();
+        }, 120);
+      });
+
+      window.onorientationchange = function () {
+        var orientation = window.orientation;
+        switch (orientation) {
+          case 0:
+          case 90:
+          case -90: window.location.reload();
+            break;
+        }
+      };
+    </script>
+</body>
+
+</html>

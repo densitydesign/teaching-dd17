@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Themes</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.typekit.net/vpn0wxn.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <script src="../addons/p5.js"></script>
+  <!-- <script src="./addons/p5.sound.js"></script> -->
+  <script src="sketch.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div>
+      <a href="../index.html" title="Go back to intro"><button id="restart">restart</button></a>
+    </div>
+    <div id="navigo">
+      <a href="../0catalogue/catalogue.html" id="catalogue" class="reference">catalogue</a>
+      <a href="../0ecosystem/ecosystem.html" id="ecosystem" class="reference">ecosystem</a>
+      <a href="#" id="themes" class="reference">themes</a>
+      <a href="../0about/about.html" id="about" class="reference">about</a>
+    </div>
+  </div>
+  <p id="catTitle">themes</p>
+  <p id="titleDescription">Alternative to:</p>
+
+  <div class="parent">
+    <button class="collapsible" id="freedomCollapsible">1 <span id="freedomTitle" class="pTitle">Censorship</span></button>
+    <div class="content">
+      <div>
+        <p class="themestext2"> alternative to <br>censorship</p>
+        <p class="themestext3"> Extracted keywords are related to 'freedom of speech'.<br> However, social media use them to refer to the broader theme of 'alternative to censorship'</p>
+        <p class="themestext4"> <span>Expressions extracted</span> from Alternative Social Media payoffs tell us a story:</p>
+        <p class="themestext5"> Generally, censorship is intended as a <span>cancel culture </span>with the suppression of speech and <span>moderation</span> of information which can occur <br>in many different contexts, including various media.
+          In opposition to censorship and digital <span>banning of content, freedom of speech and expression</span> stands up as the ultimate goal to <span>individuality,
+            the right to have one’s voice heard. No fear of being censored, deplatformed,</span> banned, <span> deleted, blocked or moderated </span> by the strict policies and guidelines of <span>the big tech. </span>
+          A place where the first <span>rule is free speech <br> and free thinking,a place for you to be you,</span> a place <span>where you do you.</span>
+        </p>
+        <a><img class="infoIcon" src="info.png"></a>
+      </div>
+      <div class="keywordsBox freedomColor" id="freedomKeywords"></div>
+    </div>
+
+    <button class="collapsible" id="decentralizedCollapsible">2 <span id="decentralizedTitle" class="pTitle">Centralization</span></button>
+    <div class="content">
+      <div>
+        <p class="themestext2"> alternative to <br>centralization</p>
+        <p class="themestext3"> Extracted keywords are related to 'decentralization'.<br> However, social media use them to refer to the broader theme of 'alternative to centralization'</p>
+        <p class="themestext4"> <span id="dece">Expressions extracted</span> from Alternative Social Media payoffs tell us a story:</p>
+        <p class="themestext5"> More and more the internet is becoming centralized. This term is usually referred to <span id="dece">a huge central server owned by a large organisation where everyone’s data is being stored.</span>A mandatory hub,
+          something through which all the data on the network must pass. <br>
+          <span id="dece">As an alternative to centralized </span> service,<span id="dece">decentralisation exists on independently managed pods : it’s all about putting platform ownership in the hands of the users through blockchain technology.The
+            service technology used is common</span> and the main feature is that data are <span id="dece">passed directly between </span>users <span id="dece">via a peer-to-peer (p2p) protocol from friend to friend, without any central server.
+          </span>
+        </p>
+        <a><img class="infoIcon" src="info.png"></a>
+      </div>
+      <div class="keywordsBox decentralizedColor" id="decentralizedKeywords"></div>
+    </div>
+
+    <button class="collapsible" id="rightCollapsible">3 <span id="rightTitle" class="pTitle">Tracking</span></button>
+    <div class="content">
+      <div>
+        <p class="themestext2"> alternative to <br>tracking</p>
+        <p class="themestext3">Extracted keywords are related to 'right to privacy'.<br> However, social media use them to refer to the broader theme of 'being monitored'</p>
+        <p class="themestext4"> <span id="being">Expressions extracted</span> from Alternative Social Media payoffs tell us a story:</p>
+        <p class="themestext5"> Social media monitoring involves the <span id="being">tracking </span>of online users traces. It can undermine the
+          <span id="being"> ownership and control of personal information.</span> <br>On the contrary,<span id="being">the right to privacy minimises sensitive metadata </span> and guarantees <span id="being">freedom from any form of control.</span>
+          <br>Privacy-based platforms, <span id="being">connect users with their friends without anyone listening in </span>believing that <span id="being">private life is #Not4Sale. </span> They stand for <span id="being">secure and independent
+            communication</span>against <span id="being">digital surveillance, tracking and spying.
+          </span></p>
+        <a><img class="infoIcon" src="info.png"></a>
+      </div>
+      <div class="keywordsBox rightColor" id="rightKeywords"></div>
+    </div>
+
+    <button class="collapsible" id="safeCollapsible">4 <span id="safeTitle" class="pTitle">Harmful space</span></button>
+    <div class="content">
+      <div>
+        <p class="themestext2"> alternative to <br>harmful space</p>
+        <p class="themestext3"> Extracted keywords are related to 'safe and healthy space'.<br> However, social media use them to refer to the broader theme of 'harmful space'</p>
+        <p class="themestext4"> <span id="safe">Expressions extracted</span> from Alternative Social Media payoffs tell us a story:</p>
+        <p class="themestext5"> Like any metropolis, the web has neighborhoods. You can come across <span id="safe">harmful spaces, toxic social network, </span>where cyberbullying and fake news call the shots.
+          On the other hand, some other neighborhoods are trying to create a space
+          <span id="safe"> prioritizing kindness and respect, providing a safe online community, </span>far away <span id="safe">from offensive behaviour,
+            people spanning and people impersonating. Social media </span> with the aim of being safe places are built <span id="safe"> for humans, not algorithms.
+            They value respect, kindness and trust and they believe that people here are not users but members of a community.
+          </span></p>
+        <a><img class="infoIcon" src="info.png"></a>
+      </div>
+      <div class="keywordsBox safeColor" id="safeKeywords"></div>
+    </div>
+
+    <button class="collapsible" id="dataCollapsible">5 <span id="dataTitle" class="pTitle">Selling data</span></button>
+    <div class="content">
+      <div>
+        <p class="themestext2"> alternative to<br>selling data</p>
+        <p class="themestext3"> Extracted keywords are related to 'data ownership'.<br> However, social media use them to refer to the broader theme of 'free access to data'</p>
+        <p class="themestext4"> <span id="free">Expressions extracted</span> from Alternative Social Media payoffs tell us a story:</p>
+        <p class="themestext5"> Nowadays our identity is clearly exposed on the web. This can lead to a total free access to our sensitive information, including truly <span id="free">personal data </span> easily <span id="free">sold and
+            stolen</span>
+          online. Against this ever-increasing access, there is <span id="free">data ownership and management.</span> Some social media on the web are trying to create a space in which <span id="free">users own their data,</span> a space for people
+          <span id="free">tired of Facebook, Instagram & Twitter selling their data.
+            Data ownership consists in seeing what you share and protecting your identity</span> : it’s basically <span id="free">social networking, back in your hands.</span>
+        </p>
+        <a><img class="infoIcon" src="info.png"></a>
+      </div>
+      <div class="keywordsBox dataColor" id="dataKeywords"></div>
+    </div>
+
+    <button class="collapsible" id="alternativeCollapsible">6 <span id="alternativeTitle" class="pTitle">Mainstream</span></button>
+    <div class="content">
+      <div>
+        <p class="themestext2"> alternative to <br>mainstream</p>
+        <p class="themestext3"> Extracted keywords are related to 'vs Twitter, Facebook, Reddit...'.<br> However, social media use them to refer to the broader theme of 'alternative to mainstream'</p>
+        <p class="themestext4"><span id="main"> Expressions extracted</span> from Alternative Social Media payoffs tell us a story:</p>
+        <p class="themestext5"> <span id="main"> Twitter, Facebook, Instagram, Tinder, YouTube, Whatsapp, Telegram.
+          </span>These are extremely frequent names shown in our mobile phones. But in the past few year a lot of
+          <span id="main">alternative social media </span>are coming up. They present themselves as <span id="main"> alternatives to the mainstream</span>
+          with respect to various issues such as: privacy, data access, freedom of speech, technology, adv etc..
+        </p>
+        <a><img class="infoIcon" src="info.png"></a>
+      </div>
+      <div class="keywordsBox alternativeColor" id="alternativeKeywords"></div>
+    </div>
+
+    <button class="collapsible" id="openCollapsible">7 <span id="openTitle" class="pTitle">Proprietary software</span></button>
+    <div class="content">
+      <div>
+        <p class="themestext2"> alternative to <br>proprietary software</p>
+        <p class="themestext3">Extracted keywords are related to 'open source'.<br> However, social media use them to refer to the broader theme of 'proprietary software'</p>
+        <p class="themestext4"><span id="pro">Expressions extracted</span> from Alternative Social Media payoffs tell us a story:</p>
+        <p class="themestext5"> Proprietary software has proper copyright and license meaning <span id="pro">advertising, monetizing and venture capital..</span> Besides, the software always remains the property
+          of the owner/developer itself who is the only one with the right to modify or sell the software. On the other hand, <span id="pro">open source software projects believe in non-commercial,
+            neutral, and fair mobile communication for everyone. </span>
+          This means it is <span id="pro">totally free, modificable and accessible for everyone.</span>
+        </p>
+        <a><img class="infoIcon" src="info.png"></a>
+      </div>
+      <div class="keywordsBox openColor" id="openKeywords"></div>
+    </div>
+
+    <button class="collapsible" id="advertisementCollapsible">8 <span id="advertisementTitle" class="pTitle">Advertisement</span></button>
+    <div class="content">
+      <div>
+        <p class="themestext2"> alternative to <br>advertisment</p>
+        <p class="themestext3">Extracted keywords are related to 'continuous use'.<br> However, social media use them to refer to the broader theme of 'alternative to advertisment'</p>
+        <p class="themestext4"><span id="adv">Expressions extracted</span> from Alternative Social Media payoffs tell us a story:</p>
+        <p class="themestext5">
+          <span id="adv">Online advertising</span>, also called internet marketing, uses the Internet to <span id="adv">target </span> promotional marketing messages to consumers.
+          Many social media are full of ads that interrupt the continuous use of the platform. Alternative ones instead, usually describe themselves as <span id="adv">a place
+            where advertisers don’t call the shots and where everything is optimized with no addiction. A place that supports nuance, complexity, and vital storytelling without giving
+            in to the incentives of advertising. It’s an environment that promotes substance and authenticity instead of paid contents.</span>
+        </p>
+        <a><img class="infoIcon" src="info.png"></a>
+      </div>
+      <div class="keywordsBox advertisementColor" id="advertisementKeywords"></div>
+    </div>
+
+    <button class="collapsible" id="realCollapsible">9 <span id="realTitle" class="pTitle">False intimacy</span></button>
+    <div class="content">
+      <div>
+        <p class="themestext2"> alternative to <br>false intimacy</p>
+        <p class="themestext3">Extracted keywords are related to 'real connections'.<br> However, social media use them to refer to the broader theme of 'alternative to false intimacy'</p>
+        <p class="themestext4"> <span id="false">Expressions extracted</span> from Alternative Social Media payoffs tell us a story:</p>
+        <p class="themestext5"> We text, we post, we interact, we talk : all through the web and its algorithms. Although, This constant online conversation, however, sometimes gives us back a sense of false intimacy.
+          In fact, <span id="false">a recommendation from someone you know beats an algorithm any day.</span> Some alternative social media are trying to face this issue by transforming themselves into <span id="false">“more social and less media
+            '' with the aim of building real-world connections.</span> They want to be a space for <span id="false">human connection and authentic expression with meaningful sense of belonging.</span>
+        </p>
+        <a><img class="infoIcon" src="info.png"></a>
+      </div>
+      <div class="keywordsBox realColor" id="realKeywords"></div>
+    </div>
+
+    <button class="collapsible" id="freeCollapsible">10 <span id="freeTitle" class="pTitle">Payment</span></button>
+    <div class="content">
+      <div>
+        <p class="themestext2"> alternative to <br>payment</p>
+        <p class="themestext3">Extracted keywords are related to 'free of charge'.<br> However, social media use them to refer to the broader theme of 'payment' </p>
+        <p class="themestext4"> <span id="pay">Expressions extracted</span> from Alternative Social Media payoffs tell us a story:</p>
+        <p class="themestext5"> Every time we enter into a social media platform we come across its <span id="pay">free entry or payment fee</span>.
+          Most of them are <span id="pay"> free</span>, with the possibility of the <span id="pay"> payment</span> for the premium one. </p>
+        <a><img class="infoIcon" src="info.png"></a>
+      </div>
+      <div class="keywordsBox freeColor" id="freeKeywords">
+
+      </div>
+    </div>
+  </div>
+
+  <div id="infoContainer">
+    <div id="infoBox">
+      <p>In the wall of words you can check which words are used by alternative social media to describe themes and how many times they appear.
+        Move the mouse over any word to know the social media associated to it.</p>
+      <button id="infoButton">Got it!</button>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    }
+  </script>
+
+</body>
+
+</html>

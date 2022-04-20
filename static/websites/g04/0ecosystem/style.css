@@ -1,0 +1,168 @@
+body {
+  background-color: #f9f8f7;
+  overflow-x: hidden;
+}
+
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.container-fluid{
+  width:100%;
+  height:50vh;
+}
+
+#infoIcon {
+  position: absolute;
+  top:1.2vw;
+  width:1.7vw;
+  left: 96.1vw;
+  z-index: 4;
+}
+
+#infoContainer {
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.3);
+  z-index:2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#infoBox {
+  font-family: input-mono;
+  font-size: 2.2vh;
+  background-color: white;
+  position:fixed;
+  text-align: center;
+  padding: 3vh 3vh;
+  border: 1px solid black;
+  width: 57vh;
+  z-index: 3;
+  opacity: 1;
+}
+
+#infoBox p {
+  text-align: left;
+  margin: 0vh 0vh 2vh 0vh;
+}
+
+.closedInfo {
+  transform: translate(48vw, -46vh) scale(0);
+}
+
+#infoButton {
+  font-family: input-mono;
+  font-size: 2.2vh;
+  font-weight: 300;
+  margin: 0vh 0vh 0vh 0vh;
+  padding: 0.6vh 1.2vh;
+  background-color: white;
+  border-radius: 999px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+#infoButton:hover {
+  background-color: #d8d8d8;
+}
+
+.removeElements {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.containerNav {
+  height: 2vw;
+  display: block;
+  width:100vw;
+  padding: 1vw 0vw;
+  font-family: neue-haas-unica;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.2vw;
+}
+
+#restart {
+  left:1.5vw;
+  position: absolute;
+  padding: 0.35vh 1.1vh;
+  font-weight: 300;
+  font-style: normal;
+  font-family: input-mono;
+  font-size: 1vw;
+  border-radius: 3vw;
+  background-color: white;
+  border: 0.1vw solid black;
+  outline: none;
+  cursor:pointer;
+}
+
+#restart:hover {
+  background-color: #d8d8d8;
+}
+
+#goThemes {
+  top: 49vw;
+  right:15vw;
+  position: absolute;
+  padding: 0.6vh 1.2vh;
+  font-weight: 300;
+  font-style: normal;
+  font-family: input-mono;
+  font-size: 1vw;
+  border-radius: 3vw;
+  background-color: white;
+  border: 0.1vw solid black;
+  outline: none;
+  cursor:pointer;
+}
+
+#goThemes:hover {
+  background-color: #d8d8d8;
+}
+
+#navigo {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left:50%;
+  transform: translate(-50%, 0);
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+.reference {
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
+}
+
+#ecosystem::after {
+  width: 100%;
+}
+
+.reference::after {
+  content: '';
+  display: block;
+  width: 0%;
+  height: 0.1vw;
+  background: black;
+  position: relative;
+  top: 3%;
+  z-index: 1;
+  -webkit-transition: width 0.5s;
+  -webkit-moz-transition: width 0.5s;
+  -o-transition: width 0.5s;
+  transition: width 0.5s;
+}
+
+.reference:hover:after {
+  width: 100%;
+}

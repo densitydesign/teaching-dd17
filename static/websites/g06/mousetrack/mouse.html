@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../css/mousetrack.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="libraries/p5.min.js"></script>
+    <title>Attention War</title>
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.svg" />
+  </head>
+  <body>
+    <div id="grain-totale">
+      <div id="campo2" class="off">
+        <div id="path-img">
+          <img
+            src="./assets/youtubepath.png"
+            height="100"
+            id="youtubepath"
+            class="path"
+          />
+          <img
+            src="./assets/amazonpath2.png"
+            height="100"
+            id="primepath"
+            class="path"
+          />
+          <img
+            src="./assets/netflixpath.png"
+            height="100"
+            id="netflixpath"
+            class="path active"
+          />
+        </div>
+        <div id="statsbox">
+          <p id="disclaimer">
+            This is what it usually takes for a user to disable the autoplay
+            function on each platform.<br><br>
+            Toggle the paths to compare them.
+          </p>
+          <div id="netflixbutton" class="visbottone active">
+            <p class="titoletto" id="titolettonetflix">Netflix</p>
+            <p id="netflixstats" class="stats">
+              Avg. time:<br />Clicks:<br />Scrolls:<br />Pages:</p></p><p id="netflixnum" class="statsnum">30s<br>8<br>30<br>4</p>
+          </div>
+          <div id="primebutton" class="visbottone">
+            <p class="titoletto" id="titolettoprime">Prime Video</p>
+            <p id="primestats" class="stats">
+              Avg. time:<br />Clicks:<br />Scrolls:<br />Pages:
+            </p><p id="primenum" class="statsnum">17s<br>5<br>0<br>4</p>
+          </div>
+          <div id="youtubebutton" class="visbottone">
+            <p class="titoletto" id="titolettoyoutube">YouTube</p>
+            <p id="youtubestats" class="stats">
+              Avg. time:<br />Clicks:<br />Scrolls:<br />Pages:</p>
+            <p id="youtubenum" class="statsnum">3s<br>1<br>0<br>0</p></div>
+          <div id="twitchbutton" class="visbottone">
+            <p class="titoletto" id="titolettotwitch">Twitch</p>
+            <p id="twitchstats" class="stats">
+              Twitch doesn't have an autoplay function.
+            </p>
+          </div>
+        </div>
+        <div  onclick="location.href='../search/search.html';"id="goon2">
+          <a id="next2" >Next Technique</a>
+        </div>
+        <div id="goback"><p id="back">Back</p></div>
+      </div>
+      <div id="campo">
+        <div id="testobox">
+          <p id="testo1"><span>Click on the back button in the player window.</span></p>
+        <p id="testo2">
+          <span>Tempo: 6s<br />Interazioni:5<br />scroll:600px</span>
+        </p>
+      </div>
+        <div id="screenshotscont">
+          <div id="traccia1" class="traccia"></div>
+          <div id="traccia2" class="traccia"></div>
+          <div id="traccia3" class="traccia"></div>
+          <div id="traccia4" class="traccia"></div>
+          <div id="traccia5" class="traccia"></div>
+          <div id="traccia7" class="traccia"></div>
+          <div id="traccia8" class="traccia"></div>
+          <div id="traccia6" class="traccia"></div>
+          <div id="traccia9" class="traccia"></div>
+        </div>
+        <img src="./assets/Netflix/Netflix screenshot 1.jpg" id="screenshots" />
+        <div id="screenshotscont">
+          <div id="bottone1" class="bottone"></div>
+          <div id="bottone2" class="bottone"></div>
+          <div id="bottone3" class="bottone"></div>
+          <div id="bottone4" class="bottone"></div>
+          <div id="bottone5" class="bottone"></div>
+          <div id="bottone6" class="bottone"></div>
+          <div id="bottone7" class="bottone"></div>
+          <div id="bottone8" class="bottone"></div>
+          <div id="bottone9" class="bottone"></div>
+        </div>
+        <div id="goon"><p id="next">Next</p></div>
+      </div>
+
+      <div id="cover-mousetrack">
+        <!-- <h2 class="capitolo">2<sup>nd</sup> TECHNIQUE</h2> -->
+        <h1 class="titolo">Hide and seek</h1>
+        <p class="info">
+          The autoplay feature has proven to be an essential part of the user
+          experience, keeping the users inside a possibly endless flow of
+          content. Its effectiveness as a user retention device sometimes leads
+          streaming services to strategically conceal the disabling function,
+          making it a real challenge to opt out of this feature.
+        </p>
+        <a class="bottone-start" href="#">Enter</a>
+      </div>
+
+      <div id="navbar">
+        <a href="../index.html" id="home" class="navbar-button"
+          >ATTENTION WAR</a
+        >
+        <div id="chapters" class="navbar-button">
+          <a href="../scroll/scroll.html" class="chapters-button"
+            >First impression</a
+          >
+          <a href="#" class="chapters-button" id="active">Hide and seek</a>
+          <a href="../search/search.html" class="chapters-button"
+            >I'll handle it</a
+          >
+        </div>
+      </div>
+    </div>
+    <script src="../js/mousetrack.js"></script>
+    <script src="../libraries/grained/grained.js"></script>
+  </body>
+</html>

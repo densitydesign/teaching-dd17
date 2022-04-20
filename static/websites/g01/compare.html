@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="shortcut icon" href="assets/data/SPRITE/AR03_M02.png" type="image/x-icon">
+    <title>So Cliché</title>
+</head>
+<body>
+
+    <div class="topnav">
+        <a href="index.html" class="nav-title">So Cliché</a>
+
+        <div class="link-section">
+            <div class="link link-1">
+                <a href="cliche.html" class="nav-item">Your sassy go-to cliché guide</a>
+            </div>
+            <div class="link link-2">
+                <a href="#" class="nav-item2 highlighted">OCD - Ordered Cliché Disposition</a>
+            </div>
+        </div>
+        <a href="about.html" class="nav-item3">About the project</a>
+    </div>
+
+    <div class="legend flex-display-center-center">
+        <div class="tut-label flex-display-center-center">Hide labels</div>
+        <div class="tut-button flex-display-center-center">?</div>
+    </div>
+
+    <div class="tutorial">
+        <div class="tut-header">
+            How to navigate this section
+            <div class="close-info">X</div>
+        </div>
+        <div class="tut-text">
+            Apply the filters to the clusters. You can filter them by project or based on their position inside the render 
+            (foreground, background and middleground). Combine the filters selecting the project first and then the position. 
+            This way you can see which clichés are more frequent!
+            <br> Additionally, you can choose whether or not make the labels visible by clicking the button on the top-right corner.
+        </div>
+    </div>
+
+    <!-- MODAL WRAPPER -->
+    <div id="luca" class="modal-wrapper visibility-toggle">
+        <div class="context-header flex-display-center-start">
+            <div class="context-title">
+                    <div class="city"></div>
+                    <div class="project"></div>
+            </div>
+            <div class="close-context">X</div>
+        </div>
+        <div class="modal-content flex-display-center-center">
+            <div class="img-wrapper flex-display-center-center column">
+                <img alt="" class="modal-img">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- TARGHETTA INFORMAZIONI -->
+    <div class="info-display">
+        <div class="info-stereotype"></div>
+        <div class="info-project"></div>
+    </div>
+
+    <div id="force-layout" class="cat_box_wrapper"></div>
+
+    <div class="filter_buttons_space">
+      <div id="filter_by"> Filter by </div>
+        <div class="category_button" id="project_label"> <span> <div class="html-change-project"> Project </div> <img class='arrow arrow1' src="assets/compare/down.svg" alt="arrow"> </span>
+            <div class="closed project_filters">
+                    <div class="filter_button" id="button_aria" data-filter='Aria'> Aria </div>
+                    <div class="filter_button" id="button_co-inventing_doria" data-filter='Co-Inventing Doria'> Co-Inventing Doria </div>
+                    <div class="filter_button" id="button_green_between" data-filter='Green Between'> Green Between </div>
+                    <div class="filter_button" id="button_l_innesto" data-filter="L'innesto"> L'Innesto </div>
+                    <div class="filter_button" id="button_lambrate_streaming" data-filter='Lambrate Streaming'> Lambrate Streaming </div>
+                    <div class="filter_button" id="button_loreto_open_community" data-filter='Loreto Open Community'> Loreto Open Community </div>
+                    <div class="filter_button" id="button_milano_city_door" data-filter='Milano City Door'> Milano City Door </div>
+                    <div class="filter_button" id="button_molecola" data-filter='MoLeCoLa'> MoLeCoLa </div>
+                    <div class="filter_button" id="button_scalo_di_porta_romana" data-filter='Scalo di Porta Romana'> Scalo di Porta Romana </div>
+                    <div class="filter_button" id="button_sei_milano" data-filter='Sei Milano'> Sei Milano </div>
+                    <div class="filter_button" id="button_torre_botanica" data-filter='Torre Botanica'> Torre Botanica </div>
+                    <div class="filter_button" id="button_vitae" data-filter='Vitae'> Vitae </div>   
+            </div> 
+        </div>
+
+        <div class="category_button" id="position_label"> <span> <div class="html-change-position"> Position inside render </div> <img class='arrow arrow2' src="assets/compare/down.svg" alt="arrow"> </span>
+            <div class="position_filters closed">
+                <div class="filter_button" id="button_foreground"> Foreground </div>
+                <div class="filter_button" id="button_middleground"> Middleground </div>
+                <div class="filter_button" id="button_background"> Background </div>
+            </div> 
+        </div>  
+      
+      <div id="reset_filters"> Reset filters </div>  
+    </div>
+
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.1.1/d3.min.js" integrity="sha512-COTaPOlz12cG4fSfcBsxZsjauBAyldqp+8FQUM/dZHm+ts/jR4AFoJhCqxy8K10Jrf3pojfsbq7fAPTb1XaVkg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<!-- <script src="JS/script_wall.js"></script> -->
+<script src="JS/force-layout-cliche.js"></script>
+</body>
+</html>

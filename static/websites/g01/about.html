@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/data/SPRITE/AR03_M02.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>So Cliché</title>
+</head>
+<body>
+
+  <div class="topnav">
+    <a href="index.html" class="nav-title">So Cliché</a>
+
+    <div class="link-section">
+        <div class="link link-1">
+            <a href="cliche.html" class="nav-item">Your sassy go-to cliché guide</a>
+        </div>
+        <div class="link link-2">
+            <a href="compare.html" class="nav-item2">OCD - Ordered Cliché Disposition</a>
+        </div>
+    </div>
+    <a href="about.html" class="nav-item3 highlighted">About the project</a>
+  </div>
+
+  <div class="main-wrapper">
+    <div class="about-title">About the project</div>
+    <div class="abt-section-title">Prologue</div>
+    <div class="text-paragraph">
+      This project was realized as part of the Data Visualization course of Politecnico di Milano.
+      It originated from a bigger research dedicated to the topic of the green narrative in architecture renders.
+      We analyzed the different methods with which the renders of eco-conscious projects tried to communicate their green values to the public.
+      Since all of the projects we selected are yet to be completed, their renderings are still set in the “city of the future”,
+      which prompted the question “what does the city of the future look like?”
+    </div>
+    <br>
+    <div class="text-paragraph">
+        However we decided to give our research a more anthropological twist, focusing on the society of the city of the future.
+        We therefore analyzed the people in renders, how they dress and what they seem to be doing. We also decided to include
+        the different means of transportation depicted in the renders, as they can tell us a lot about the values of this imaginary future society.
+    </div>
+    <div class="body_title abt-section-title">Selecting the projects</div>
+    <div class="text-paragraph">
+      As we mentioned before, our project began as an analysis about the green narrative in architecture renders.
+      For this reason, when selecting the projects to include in our research, we chose to start from those that already sold themselves as “green projects”.
+      This led us to identify the <a class="underlined" href="https://www.c40reinventingcities.org/">C40 contest</a>, a competition for innovative and eco-conscious projects in different cities around the world.
+      Being from Milan, we decided to start from the nine C40 projects of this city. Since all the projects in the C40 contest concerned public spaces,
+      we decided to expand our dataset to include private projects in the city of Milan, not necessarily bound to Reinventing Cities’ rules.
+    <br>
+      As of now, So Cliché only includes projects that will be built in Milan, but the structure of the archive gives the possibility
+      to eventually expand to other cities. The projects included are:
+    </div>
+
+    <div class="text-paragraph flex">
+      <ul class="indented">
+        <li class="list_item underlined"><a href="https://www.c40reinventingcities.org/en/professionals/winning-projects/ex-macello-1370.html">Aria (C40)</a></li>
+        <li class="list_item underlined"><a href="https://www.c40reinventingcities.org/en/professionals/winning-projects/doria-1270.html">Co-Inventing Doria (C40)</a></li>
+        <li class="list_item underlined"><a href="https://www.c40reinventingcities.org/en/professionals/winning-projects/crescenzago-1371.html">Green Between (C40)</a></li>
+        <li class="list_item underlined"><a href="https://www.c40reinventingcities.org/en/professionals/winning-projects/scalo-greco-breda-1276.html">L'Innesto (C40)</a></li>
+        <li class="list_item underlined"><a href="https://www.c40reinventingcities.org/en/professionals/winning-projects/piazzale-loreto-1368.html">Loreto Open Community (C40)</a></li>
+        <li class="list_item underlined"><a href="https://www.c40reinventingcities.org/en/professionals/winning-projects/scalo-lambrate-1373.html">Lambrate Streaming (C40)</a></li>
+        <li class="list_item underlined"><a href="https://www.milanocitydoor.it/">Milano City Door (Private project)</a></li>
+        <li class="list_item underlined"><a href="https://www.c40reinventingcities.org/en/professionals/winning-projects/nodo-bovisa-1369.html">MoLeCoLa (C40)</a></li>
+        <li class="list_item underlined"><a href="https://www.scaloportaromana.com/">Scalo di Porta Romana (Private project)</a></li>
+        <li class="list_item underlined"><a href="https://seimilano.com/">Sei Milano (Private project)</a></li>
+        <li class="list_item underlined"><a href="https://www.stefanoboeriarchitetti.net/project/la-rigenerazione-di-pirelli-39/">Torre Botanica (Private project)</a></li>
+        <li class="list_item underlined"><a href="https://www.c40reinventingcities.org/en/professionals/winning-projects/serio-1273.html">Vitae (C40)</a></li>
+      </ul>
+    </div>
+    <div class="body_title abt-section-title">
+      The process
+    </div>
+    <div class="text-paragraph">
+      The first step in our research process was to find the renders related to the selected projects.
+      The main sites we took them from were the <a class="underlined" href="https://www.c40reinventingcities.org/en/professionals/winning-projects/filter-milan/">C40 Reinventing Cities</a> site, 
+      the <a class="underlined" href="https://blog.urbanfile.org/">Urbanfile</a> blog and the websites of the architects that designed them.
+      <br> We included no more than 10 pictures per project, prioritizing images with a higher resolution.
+    <br>
+      You can find all of the renders that we used for our project <a class="underlined" href="https://drive.google.com/drive/folders/1s2FIi4FlALo2kD5VRzMbwlnO_eXJsvX1?usp=sharing">here</a>.
+    </div>
+    <br>
+
+    <div class="text-paragraph">
+      Once the pictures were collected, we analyzed all the people in the renders using Photoshop, creating two different files for each of them:
+    </div>
+
+    <div class="text-paragraph">
+      <ul class="indented">
+        <li>The first file is a png cutout of the person, which we resized and fitted in a 100x100 pixel frame.
+          This enables us to analyze the person outside of their context.
+          In those cases where there was a group of people, we chose to treat them as a single entity, prioritizing the social aspect of the group over
+          its single components.</li>
+      </ul>
+    </div>
+    
+    <div class="abt-img-wrapper"><img src="assets/about/IN02_P03.png" alt="IN02_P03"></div>
+
+    <div class="text-paragraph">
+      <ul class="indented">
+        <li>In the second file we highlighted the people inside the render using green rectangles,
+          giving us the opportunity to see the person inside the context in which they were originally placed.
+          In those cases where an individual showed up multiple times in the same render, we created a single image with multiple green rectangles.</li>
+      </ul>
+    </div>
+
+    <div class="abt-img-wrapper"><img src="assets/about/IN02_P03R 1.png" alt="IN02_P03R 1"></div>
+
+    <div class="text-paragraph">
+      This process was all done by hand for accuracy, since in many cases the people in renders were too small to be recognized by&nbsp;an&nbsp;AI.
+    </div>
+    <br>
+    <div class="text-paragraph">
+      The two different files corresponding to the same person were named using a prefix that indicates the project and the render they came from,
+      and a suffix indicating the person.
+    </div>
+    <div class="abt-img-wrapper flex-start"><img src="assets/about/about_naming.png" alt="About_naming" width="1000px"></div>
+
+    <div class="text-paragraph">
+      Using this type of naming proved to be useful to organize the files as well as for the coding part of this project.
+      <br>
+      Once we collected all of the data, our initial idea was to categorize them by applying filters as objective as possible to them.
+      These filters were predominantly based on the type of activity that those people were doing, plus some others regarding their context.
+    </div>
+
+    <div class="body_title abt-section-title"> <span class="strong"> Filters for people </span> </div>
+    <div class="text-paragraph">
+      <ul class="indented">
+        <li>Hair length</li>
+        <li class="list_item">Clothing type (sportswear, business...)</li>
+        <li class="list_item">Age</li>
+        <li class="list_item">Social interactions</li>
+        <li class="list_item">Activity</li>
+        <li class="list_item">Position in render (foreground, middle ground or background)</li>
+        <li class="list_item">Project</li>
+        <li class="list_item">Year the project will be completed</li>
+      </ul>
+    </div>
+    <div class="body_title abt-section-title"><span class="strong"> Filters for means of transportation </span></div>
+    <div class="text-paragraph">
+      <ul class="indented">
+        <li>Pricetag</li>
+        <li class="list_item">Type of transport (car, public transport, soft mobility)</li>
+        <li class="list_item">Fuel (fossil fuel, electric, man-powered)</li>
+        <li class="list_item">Social interactions</li>
+        <li class="list_item">Position in render</li>
+        <li class="list_item">Project</li>
+      </ul>
+    </div>
+
+    <br><br>
+    <div class="text-paragraph">
+      While trying to apply these filters, it occurred to us that doing a completely objective categorization would be impossible since the small
+      resolution of our files forced us to make assumptions about those people. Moreover, we noticed some “groups” forming in our data,
+      showing recurring activities, behaviors or peculiarities among the people in renders. For these reasons, we shifted our approach to the
+      categorization of our dataset, rejecting the idea of creating objective filters and embracing the newfound categories,
+      which we could define as “clichés”. These clichés were defined taking into account the fact that our dataset included means
+      of transportation in addition to people.
+      <br>
+      For example, while extracting all the people in renders, we noticed that many of them  were wearing a business attire,
+      regardless of the context in which they were placed.
+    </div>
+    
+    <div class="abt-img-wrapper flex-start">
+      <img src="assets/about/WWS_lineup.png" alt="Wolf of Wall Street Lineup">
+    </div>
+    
+    <div class="text-paragraph">
+      We then decided to call them “Walf of Wall Street”, a reference to the movie that easily conveys the image of someone dressed like a businessman.
+      <br>
+      Each one of these stereotypes was given a code name, which we then inserted in a spreadsheet to categorize our files.
+    </div>
+    
+    <!-- TABLE GOES HERE -->
+    
+
+    <div class="abt-img-wrapper">
+      <table class="table" id="categories-table">
+        <tr>
+          <td>S01</td>
+          <td>Shopaholic</td>
+        </tr>
+        <tr>
+          <td>S02</td>
+          <td>Fridays for future</td>
+        </tr>
+        <tr>
+          <td>S03</td>
+          <td>5g enthusiast</td>
+        </tr>
+        <tr>
+          <td>S04</td>
+          <td>Bookworm cutie</td>
+        </tr>
+        <tr>
+          <td>S05</td>
+          <td>Wolf of Wall Street</td>
+        </tr>
+        <tr>
+          <td>S06</td>
+          <td>Lovey dovey</td>
+        </tr>
+        <tr>
+          <td>S07</td>
+          <td>Fashion diva</td>
+        </tr>
+        <tr>
+          <td>S08</td>
+          <td>F is for family</td>
+        </tr>
+        <tr>
+          <td>S09</td>
+          <td>#Squad</td>
+        </tr>
+        <tr>
+          <td>S10</td>
+          <td>Socks and sandals</td>
+        </tr>
+        <tr>
+          <td>S11</td>
+          <td>Place-older</td>
+        </tr>
+        <tr>
+          <td>S12</td>
+          <td>Find me on soundcloud</td>
+        </tr>
+        <tr>
+          <td>S13</td>
+          <td>Tree-hugger</td>
+        </tr>
+        <tr>
+          <td>S14</td>
+          <td>A child</td>
+        </tr>
+        <tr>
+          <td>S15</td>
+          <td>Freshmen</td>
+        </tr>
+        <tr>
+          <td>S16</td>
+          <td>Something futuristic</td>
+        </tr>
+        <tr>
+          <td>S17</td>
+          <td>PETA</td>
+        </tr>
+        <tr>
+          <td>S18</td>
+          <td>Hustlers</td>
+        </tr>
+        <tr>
+          <td>S19</td>
+          <td>No pain, no gain</td>
+        </tr>
+      </table>
+    </div>
+    
+    <div class="text-paragraph">
+      It is important to note that these categories do not include the entirety of our dataset, some of the people or means
+      of transportation did not fit in these clichés. We decided to give them the “S00” empty tag.
+      <br>
+      To attract a broader audience and make our project more captivating we opted for an easy and ironic tone of voice.
+      When writing the definitions of our clichés we took inspiration from the <a class="underlined" href="https://www.urbandictionary.com/">UrbanDictionary</a> website.
+    </div>
+    
+    <div class="abt-img-wrapper">
+      <table class="table" id="definitions-table">
+        <tr>
+          <td>Shopaholic</td>
+          <td>A person that loves shopping. Usually seen in their natural habitat surrounded by shopping bags.</td>
+        </tr>
+        <tr>
+          <td>Fridays for future</td>
+          <td>Green means of transportation that could actually give us a chance of surviving the climate crysis.</td>
+        </tr>
+        <tr>
+          <td>5g enthusiast</td>
+          <td>Those people who feel the need to always be connected with some kind of device, and actually wish Bill Gates could inject them with chips.</td>
+        </tr>
+        <tr>
+          <td>Bookworm cutie</td>
+          <td>A cute person, who loves to read books and being cute.</td>
+        </tr>
+        <tr>
+          <td>Wolf of Wall Street</td>
+          <td>People who take the phrase "dress for the job" too literally.</td>
+        </tr>
+        <tr>
+          <td>Lovey dovey</td>
+          <td>Kissing, hugging, and all that gushy stuff people who are in "love" do.</td>
+        </tr>
+        <tr>
+          <td>Fashion diva</td>
+          <td>A person dressed like a model strutting down a runway every time they leave their house.</td>
+        </tr>
+        <tr>
+          <td>F is for family</td>
+          <td>The kind of perfect nuclear family you only see in Christmas TV commercials.</td>
+        </tr>
+        <tr>
+          <td>#Squad</td>
+          <td>Your boys, people you would do anything for.</td>
+        </tr>
+        <tr>
+          <td>Socks and sandals</td>
+          <td>The fashion choice that sets a real tourist apart.</td>
+        </tr>
+        <tr>
+          <td>Place-older</td>
+          <td>The og generation, old but gold, those who can't even send an e-mail.</td>
+        </tr>
+        <tr>
+          <td>Find me on soundcloud</td>
+          <td>Musical artists  performing in the streets giving you the opportunity to walk around with an actual sountrack like in the movies.</td>
+        </tr>
+        <tr>
+          <td>Tree-hugger</td>
+          <td>ople who prefer spending their days gardening rather than dealing with other humans.</td>
+        </tr>
+        <tr>
+          <td>A child</td>
+          <td>An unaccompanied minor wandering around, possibly after escaping their parents.</td>
+        </tr>
+        <tr>
+          <td>Freshmen</td>
+          <td>A young person that still thinks the time you spend at university are the best years of your life.</td>
+        </tr>
+        <tr>
+          <td>Something futuristic</td>
+          <td>People or objects that look like they are straight out of a sci-fi novel.</td>
+        </tr>
+        <tr>
+          <td>PETA</td>
+          <td>The kind of people who treat their pets better then their children. Because, after all, their dog never let them down.</td>
+        </tr>
+        <tr>
+          <td>Hustlers</td>
+          <td>Someone who uses their skill, talents, or instincts to make a quick buck.</td>
+        </tr>
+        <tr>
+          <td>No pain, no gain</td>
+          <td>Gym bros and fitness enthusiasts who will surely let you know how much they can lift without you even asking.</td>
+        </tr>
+      </table>
+    </div>
+    
+    <div class="text-paragraph">
+      The division of the future society in clichés became the main focus of our project, and this led us to the naming “So Cliché”.  
+      This naming reiterates this concept, making it clear from the first moment you enter our website.
+      <br>
+      To this naming we added a subtitle to better explain our project, clarifying our project’s ties with
+      renderings and the world of architecture: Predicting the future one render at the time.
+      <br>
+      We then built the structure of our website, starting with the homepage. Here, we explain the goal of our project and the key role of people in renders.
+      <br>
+      Through the homepage you can access two sections that correspond to the types of analysis we applied to our dataset:
+      the qualitative analysis, which is the categorization into clichés of the people in renders, and the quantitative analysis,
+      which is the visualization of how many people of each cliché is present in the city of Milan.
+      <br>
+      In the first section the user can explore the different clichés in which we categorized our dataset.
+      Each cliché is introduced by its description, followed by the number of elements inside of it and the elements themselves.
+      <br>
+      We decided to also give some context information to each one of the people in our dataset.
+      In addition to the division in clichés, we added more information in the pop-up that appears each time you click on a person:
+      the user will be able to know the project from which that particular person comes and its city.
+    </div>
+
+    <div class="abt-img-wrapper flex-start">
+      <img src="assets/about/schedaR.png" width="800px" alt="Background info">
+    </div>
+    <div class="text-paragraph">
+      Still, we wanted the user to be able to better understand “the city of the future”.
+      We therefore designed the second section of our website, where we will present a clusterization of our clichés.
+      Here the user will have the opportunity to see which are the more represented clichés in the city of Milan.
+    </div>
+
+    <div class="abt-img-wrapper flex-start">
+      <img class="bordered" src="assets/about/clusters.png" width="1000px" alt="clusters">
+    </div>
+
+    <div class="text-paragraph">
+      We also implemented some of the original filters we intended to use to categorize people.
+      For example the user will be able to filter the clusters and show only the elements belonging to a specific project,
+      seeing which are the clichés more represented in each one of them, or filter them based on their position inside of the renders
+      (foreground, middle ground or background), to see which elements are given more importance.
+    </div>
+
+    <div class="abt-img-wrapper flex-start">
+      <img class="bordered" src="assets/about/filtered.png" width="1000px" alt="clusters">
+    </div>
+
+    <div class="text-paragraph">
+      To import all the different elements of our dataset, with all of their different tags
+      (cliché, project, city and position in the render), we created a spreadsheet containing all of this information.
+      You can access this spreadsheet <a href="https://docs.google.com/spreadsheets/d/1nJfBXLILjPA_WiyKqcBBbtDJTp4bLmy2Osv8ICsqbWc/edit#gid=0">here</a>.
+    </div>
+
+    <div class="body_title abt-section-title"> Conclusions </div>
+    <div class="text-paragraph">
+      This project is to be considered a never-ending work in progress, as it could be expanded with new projects and new cities.
+      Now that you know our process and how we operated you could potentially be part of this expansion,
+      predicting the future one render at the time.
+    </div>
+
+    <div class="body_title abt-section-title"> The team </div>
+    <div class="text-paragraph">
+      So Cliché is brought to you by a group of six communication design students from Politecnico di Milano
+      with a passion for manually cutting out people from renders and crying over the D3 library. <br>
+      If you'd like to hear us complain
+      shoot us a mail by clicking on any of us!
+    </div>
+    
+    <div class="team-sprite">
+      <div class="team-member fra flex-display-center-center column">
+        <img src="assets/about/team/francesco.png" alt="">
+        <div class="team-txt flex-display-center-center column"> <a href="mailto:francesco.battistoni@mail.polimi.it"> Francesco Battistoni </a> No pain, no gain </div>
+      </div>
+
+      <div class="carlito team-member flex-display-center-center column">
+        <img src="assets/about/team/carlo.png" alt="">
+        <div class="team-txt flex-display-center-center column"> <a href="mailto:carlo.boschis@mail.polimi.it">Carlo Boschis </a> Fashion diva</div>
+      </div>  
+
+      <div class="fede-i team-member flex-display-center-center column">
+        <img src="assets/about/team/federica.png" alt="">
+        <div class="team-txt flex-display-center-center column"> <a href="mailto:federica.inzani@mail.polimi.it"> Federica Inzani </a> Bookworm cutie</div>
+      </div>
+
+      <div class="fede-m team-member flex-display-center-center column">
+        <img src="assets/about/team/federico.png" alt="">
+        <div class="team-txt flex-display-center-center column"> <a href="mailto:meanifederico@gmail.com"> Federico Meani </a> Fridays for future </div>
+      </div>
+      
+      <div class="chef team-member flex-display-center-center column">
+        <img src="assets/about/team/mattia.png" alt="">
+        <div class="team-txt flex-display-center-center column"> <a href="mailto:mattia.mertens@mail.polimi.it"> Mattia Mertens </a> 5g enthusiast </div>
+      </div>
+
+      <div class="otti team-member flex-display-center-center column">
+        <img src="assets/about/team/ottavia.png" alt="">
+        <div class="team-txt flex-display-center-center column"> <a href="mailto:ottavia.robuschi@mail.polimi.it"> Ottavia Robuschi </a> Socks and sandals </div>
+      </div>
+    </div>
+  </div>
+    <footer>
+      <div id="students">
+        <h1>Authors</h1>
+        <ul>
+          <li>Francesco Battistoni</li>
+          <li>Carlo Boschis</li>
+          <li>Federica Inzani</li>
+          <li>Federico Meani</li>
+          <li>Mattia Mertens</li>
+          <li>Ottavia Robuschi</li>
+        </ul>
+      </div>
+
+      <div id="faculty">
+        <h1>Faculty</h1>
+        <ul>
+          <li>Michele Mauri</li>
+          <li>Ángeles Briones</li>
+          <li>Gabriele Colombo</li>
+          <li>Simone Vantini</li>
+          <li>Salvatore Zingale</li>
+        </ul>
+      </div>
+      <div id="assistants">
+        <h1>Teaching Assistants</h1>
+        <ul>
+          <li>Elena Aversa</li>
+          <li>Andrea Benedetti</li>
+          <li>Tommaso Elli</li>
+          <li>Beatrice Gobbo</li>
+        </ul>
+      </div>
+
+      <div id="contacts">
+        <div class="logo">
+          <img src="assets/home/Logo_DensityDesign.svg" alt="DensityDesign Lab" />
+          <img src="assets/home/Logo_Polimi.svg" alt="Politecnico di Milano" />
+        </div>
+        <p><a href="https://densitydesign.github.io/teaching-dd17/" target="_blank">Mediazioni Algoritmiche. Designing in a data intensive society.</a></p>
+        <p>The Final Synthesis Design Studio is a course at Politecnico di Milano for the Master's Degree in Communication Design.</p>
+        <ul>
+          <li><a href="https://www.facebook.com/densitydesign"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+          </svg></a> <a href="https://twitter.com/densitydesign"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+          </svg></a> <a href="https://www.instagram.com/densitydesign/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+          </svg></a></li>
+          <li><a href="http://densitydesign.org/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe2" viewBox="0 0 16 16">
+            <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855-.143.268-.276.56-.395.872.705.157 1.472.257 2.282.287V1.077zM4.249 3.539c.142-.384.304-.744.481-1.078a6.7 6.7 0 0 1 .597-.933A7.01 7.01 0 0 0 3.051 3.05c.362.184.763.349 1.198.49zM3.509 7.5c.036-1.07.188-2.087.436-3.008a9.124 9.124 0 0 1-1.565-.667A6.964 6.964 0 0 0 1.018 7.5h2.49zm1.4-2.741a12.344 12.344 0 0 0-.4 2.741H7.5V5.091c-.91-.03-1.783-.145-2.591-.332zM8.5 5.09V7.5h2.99a12.342 12.342 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5c.035.987.176 1.914.399 2.741A13.612 13.612 0 0 1 7.5 10.91V8.5H4.51zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741H8.5zm-3.282 3.696c.12.312.252.604.395.872.552 1.035 1.218 1.65 1.887 1.855V11.91c-.81.03-1.577.13-2.282.287zm.11 2.276a6.696 6.696 0 0 1-.598-.933 8.853 8.853 0 0 1-.481-1.079 8.38 8.38 0 0 0-1.198.49 7.01 7.01 0 0 0 2.276 1.522zm-1.383-2.964A13.36 13.36 0 0 1 3.508 8.5h-2.49a6.963 6.963 0 0 0 1.362 3.675c.47-.258.995-.482 1.565-.667zm6.728 2.964a7.009 7.009 0 0 0 2.275-1.521 8.376 8.376 0 0 0-1.197-.49 8.853 8.853 0 0 1-.481 1.078 6.688 6.688 0 0 1-.597.933zM8.5 11.909v3.014c.67-.204 1.335-.82 1.887-1.855.143-.268.276-.56.395-.872A12.63 12.63 0 0 0 8.5 11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.963 6.963 0 0 0 14.982 8.5h-2.49a13.36 13.36 0 0 1-.437 3.008zM14.982 7.5a6.963 6.963 0 0 0-1.362-3.675c-.47.258-.995.482-1.565.667.248.92.4 1.938.437 3.008h2.49zM11.27 2.461c.177.334.339.694.482 1.078a8.368 8.368 0 0 0 1.196-.49 7.01 7.01 0 0 0-2.275-1.52c.218.283.418.597.597.932zm-.488 1.343a7.765 7.765 0 0 0-.395-.872C9.835 1.897 9.17 1.282 8.5 1.077V4.09c.81-.03 1.577-.13 2.282-.287z"/>
+          </svg> densitydesign.org</a></li>
+          <li><a href="mailto:info@densitydesign.org"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-open" viewBox="0 0 16 16">
+            <path d="M8.47 1.318a1 1 0 0 0-.94 0l-6 3.2A1 1 0 0 0 1 5.4v.817l5.75 3.45L8 8.917l1.25.75L15 6.217V5.4a1 1 0 0 0-.53-.882l-6-3.2ZM15 7.383l-4.778 2.867L15 13.117V7.383Zm-.035 6.88L8 10.082l-6.965 4.18A1 1 0 0 0 2 15h12a1 1 0 0 0 .965-.738ZM1 13.116l4.778-2.867L1 7.383v5.734ZM7.059.435a2 2 0 0 1 1.882 0l6 3.2A2 2 0 0 1 16 5.4V14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5.4a2 2 0 0 1 1.059-1.765l6-3.2Z"/>
+          </svg> email</a></li>
+        </ul>
+      </div>
+    </footer>
+
+</body>
+</html>

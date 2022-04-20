@@ -1,0 +1,293 @@
+/*______________________________________________________desktop only*/
+
+@media only screen and (max-width: 1024px) {
+  main{
+    display:none;
+  }
+  #navBar{
+    display:none;
+  }
+  #collections{
+    display:none;
+  }
+  #goBack{
+    display:none;
+  }
+  #container{
+    display:none;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  #desktop-only{
+    display:none;
+  }
+}
+
+#desktop-only{
+  color:red;
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+
+
+
+/*______________________________________________________typography*/
+
+@font-face {
+    font-family: 'saint_regussemi_bold';
+    src: url('../fonts/sonar_hubermann_-_saintregus-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/sonar_hubermann_-_saintregus-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'saint_regusSBdCn';
+    src: url('../fonts/sonar_hubermann_-_saintregus-semiboldcondensed-webfont.woff2') format('woff2'),
+         url('../fonts/sonar_hubermann_-_saintregus-semiboldcondensed-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'saint_regussemi_bold_expanded';
+    src: url('../fonts/sonar_hubermann_-_saintregus-semiboldexpanded-webfont.woff2') format('woff2'),
+         url('../fonts/sonar_hubermann_-_saintregus-semiboldexpanded-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+p{
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: .8rem;
+  margin: 0px;
+  }
+
+  h3{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 0px;
+  }
+
+h2{
+  font-size:1.8rem;
+  font-family: 'saint_regussemi_bold';
+  color:white;
+}
+
+h1{
+  font-size:2.6rem;
+  font-family: 'saint_regussemi_bold';
+  color:white;
+}
+
+li{
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: .8rem;
+}
+
+b{
+  font-weight: 600;
+}
+
+/*______________________________________________________body*/
+
+body{
+  background-color: #f8f9fa;
+}
+
+/*______________________________________________________navbar*/
+
+#navBar {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  height: 6vh;
+  background-color: white;
+  border-bottom: 3px solid black;
+  background-color: #f8f9fa;
+}
+
+#navBar .col-4{
+  text-align: center;
+  height:100%;
+}
+
+#navBar .row{
+  height: 100%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  align-items: center;
+}
+
+#logoNavBarCol{
+    height: 100%;
+    border-left: 3px black solid;
+    border-right: 3px black solid;
+}
+
+#logoNavBar{
+    height: 4vh;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#navBar .col-4 p{
+  font-family: 'saint_regussemi_bold', 'sans-serif';
+  font-weight: bold;
+  color: black;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size:1rem;
+}
+
+#navBar .col-4:hover p{
+  color:red;
+}
+
+#navBar a{
+  text-decoration: none;
+}
+
+/*______________________________________________________grid*/
+
+::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+  	background-color: white;
+  }
+
+::-webkit-scrollbar-thumb {
+  	background-color: black;
+  }
+
+::-webkit-scrollbar-track {
+  	background-color: white;
+    border: 1px solid black;
+  }
+
+.scrollBarStyle{
+  transition: .3s;
+}
+
+html{
+  overflow-x:hidden;
+}
+
+main{
+  position: absolute;
+  width:100%;
+  top: 6vh;
+  bottom: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+/*______________________________________________________footer*/
+
+footer {
+    background-color: black;
+    color:white;
+    padding: 3rem 6rem 2rem 6rem;
+    grid-column: 1 / span 12;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 1rem;
+    font-size: 1rem;
+}
+
+footer * {
+    grid-column: span 2;
+}
+
+#contacts, #assistants {
+  grid-column: span 4;
+}
+
+.logo {
+    display: grid;
+    grid-template-columns: repeat(2, 65px);
+    column-gap: 0.5rem;
+    filter:invert(1);
+}
+
+.logo * {
+    grid-column: span 1;
+    margin-bottom:2rem;
+}
+
+.icon {
+    vertical-align: bottom;
+    padding-bottom: 0.6rem;
+}
+
+footer img {
+    height: 50px;
+    width: auto;
+}
+
+footer svg {
+  color:white;
+}
+
+footer h1 {
+    font-family: 'saint_regussemi_bold', 'sans-serif';
+    margin: 0 0 1rem 0;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+footer a {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight:400;
+  color:white;
+}
+
+footer a:hover {
+  color:red;
+  text-decoration:underline;
+}
+
+footer a:hover svg{
+  color:red;
+}
+
+footer ul {
+    padding: 0;
+}
+
+footer li {
+    list-style: none;
+    margin: 0;
+    line-height: 1.5;
+}
+
+#contacts p{
+  margin-bottom: 2rem;
+}
+
+#contacts li {
+  margin-bottom: 1rem;
+}
+
+#social svg {
+  margin-right: 1rem;
+}
+
+/* _____________________________________________________Responsive for wide screens */
+
+@media (min-width: 1400px) {
+  #navBar .col-4 p {
+    font-size: 1.2rem;
+  }
+}

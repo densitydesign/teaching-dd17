@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Attention War</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.svg" />
+    <link rel="stylesheet" type="text/css" href="./css/home.css" />
+
+    <div id="p5_loading" class="loadingclass">Loading...</div>
+
+    <script src="libraries/p5.min.js"></script>
+    <!-- <script src="libraries/p5.sound.min.js"></script> -->
+    <script src="libraries/matter/build/matter.js"></script>
+    <script src="libraries/matter/build/matter-attractors.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <div id="navbar">
+      <a href="#" id="home" class="navbar-button">ATTENTION WAR</a>
+      <div id="chapters" class="navbar-button"></div>
+      <a href="./about.html" id="about" class="navbar-button">About</a>
+    </div>
+
+    <div id="container">
+      <div class="sezione" id="landing">
+        <!-- <h1 id="titolone">ATTENTION WAR</h1> -->
+        <!-- <img id="freccia" src="./assets/freccia.svg" />  -->
+        <h4 id="freccia">Scroll Down</h4>
+        <div id="sfumatura"></div>
+      </div>
+      <div class="sezione" id="intro1">
+        <p class="text">
+          The streaming world has dramatically expanded over the past few years.
+          Competition among platforms has become more and more fierce, as they
+          long for users’ attention.
+        </p>
+      </div>
+      <div class="sezione" id="intro2">
+        <p class="text sotto" id="scoprimi">
+          As a result, streaming platforms came up with a variety of
+          implementations for their user interfaces, ranging from auto-played
+          content to library layouts that are specially designed to prevent
+          decision fatigue in the user.
+        </p>
+
+        <div id="thumbnail-group">
+          <div class="thumbnail" id="t1"></div>
+          <div class="thumbnail" id="t2"></div>
+          <div class="thumbnail" id="t3"></div>
+          <div class="thumbnail" id="t4"></div>
+          <div class="thumbnail" id="t5"></div>
+          <div class="thumbnail" id="t6"></div>
+          <div class="thumbnail" id="t7"></div>
+          <div class="thumbnail" id="t8"></div>
+          <div class="thumbnail" id="t9"></div>
+          <div class="thumbnail" id="t10"></div>
+          <div class="thumbnail" id="t11"></div>
+          <div class="thumbnail" id="t12"></div>
+          <div class="thumbnail" id="t13"></div>
+          <div class="thumbnail" id="t14"></div>
+          <div class="thumbnail" id="t15"></div>
+          <div class="thumbnail" id="t16"></div>
+          <div class="thumbnail" id="t17"></div>
+          <div class="thumbnail" id="t18"></div>
+          <div class="thumbnail" id="t19"></div>
+          <div class="thumbnail" id="t20"></div>
+          <div class="thumbnail" id="t21"></div>
+          <div class="thumbnail" id="t22"></div>
+          <div class="thumbnail" id="t23"></div>
+          <div class="thumbnail" id="t24"></div>
+          <div class="thumbnail" id="t25"></div>
+        </div>
+      </div>
+      <div class="sezione" id="intro3">
+        <p class="text">
+          In this guided experience you will discover how Netflix, Prime Video,
+          YouTube and Twitch use three different strategies to earn users’
+          attention.
+        </p>
+        <div id="gruppo-capitoli">
+          <div class="capitolo" id="capitolo1">
+            <h2 class="capitolo-titolo">First impression</h2>
+            <div class="capitolo-img" id="capitolo-img-1"></div>
+            <!-- <p class="capitolo-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+              temporibus autem earum ex, cum quibusdam enim optio quae sequi
+              placeat minima iste nemo at assumenda, alias fugiat dolores iusto
+              neque.
+            </p> -->
+          </div>
+          <div class="capitolo" id="capitolo2">
+            <h2 class="capitolo-titolo">Hide and seek</h2>
+            <div class="capitolo-img" id="capitolo-img-2"></div>
+            <!-- <p class="capitolo-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+              temporibus autem earum ex, cum quibusdam enim optio quae sequi
+              placeat minima iste nemo at assumenda, alias fugiat dolores iusto
+              neque.
+            </p> -->
+          </div>
+          <div class="capitolo" id="capitolo3">
+            <h2 class="capitolo-titolo">I'll handle it</h2>
+            <div class="capitolo-img" id="capitolo-img-3"></div>
+            <!-- <p class="capitolo-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+              temporibus autem earum ex, cum quibusdam enim optio quae sequi
+              placeat minima iste nemo at assumenda, alias fugiat dolores iusto
+              neque.
+            </p> -->
+          </div>
+        </div>
+        <a class="bottone" id="begin" href="scroll/scroll.html">Let's start</a>
+      </div>
+      <!-- <div class="sezione" id="intro4">
+        <p class="text">Want to know how they try to win you over?</p>
+        <a class="bottone" id="begin" href="scroll/scroll.html">Let's start</a>
+      </div> -->
+    </div>
+
+    <!-- LAODING FALLITO -->
+
+    <!-- <div id="loadingclass2">ei bellezza</div> -->
+
+    <!-- <script src="./libraries/grained/grained.js"></script> -->
+    <!-- <script src="./js/grain.js"></script> -->
+    <script class="culo" src="./js/home-sketch.js"></script>
+    <script class="culo" src="./js/home-matter.js"></script>
+
+    <script src="./js/home-script.js"></script>
+  </body>
+</html>

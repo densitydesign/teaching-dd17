@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Attention War</title>
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.svg">
+
+
+    <link rel="stylesheet" type="text/css" href="../css/scroll.css" />
+    <script src="libraries/p5.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div id="containerone">
+    <div id="campotot2" class="off">
+                  <div id="columnbox">
+             
+        <div id="column2" class="columns">
+          <p class="titoli2">Netflix</p>
+          <div id="box1" class="box">
+            <div id="netflixclick" class="click statist">
+              <p class="counters blue">54</p>
+            </div>
+            <div id="netflixscroll" class="scroll statist">
+              <p class="counters green">60</p>
+            </div>
+            <div id="netflixshown" class="shown statist">
+              <p class="counters red">1</p>
+            </div>
+          </div>
+        </div>
+        <div id="column3" class="columns">
+          <p class="titoli2">Prime Video</p>
+            <div id="box2" class="box">
+              <div id="primeclick" class="click statist">
+                <p class="counters blue">32</p>
+              </div>
+              <div id="primescroll" class="scroll statist">
+                <p class="counters green">38</p>
+              </div>
+              <div id="primeshown" class="shown statist">
+                <p class="counters red">22</p>
+              </div>
+            </div>
+          </div>
+          <div id="column4" class="columns">
+            <p class="titoli2">Youtube</p>
+            <div id="box3" class="box">
+              <div id="youtubeclick" class="click statist">
+                <p class="counters blue">14</p>
+              </div>
+              <div id="youtubescroll" class="scroll statist">
+                <p class="counters green">20</p>
+              </div>
+              <div id="youtubeshown" class="shown statist">
+                <p class="counters red">9</p>
+              </div>
+            </div>
+          </div>
+        <div id="column5" class="columns">
+          <p class="titoli2">Twitch</p>
+          <div id="box4" class="box">
+            <div id="twitchclick" class="click statist">
+              <p class="counters blue">8</p>
+            </div>
+            <div id="twitchscroll" class="scroll statist">
+              <p class="counters green">28</p>
+            </div>
+            <div id="twitchshown" class="shown statist">
+              <p class="counters red">4</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p id="instructionstext">The amount of content present in the first three viewports of the homepage, categorized by degree of interaction.<br><br>Toggle the switches to confront the categories.</p>
+          <div id="toggloidi">
+            <div id="toggle1" class="toggloide">
+              <div id="boxinoisbacc">
+                <div id="daytonakk1"></div>
+              </div>
+              <p class="categoria">Shown immediately</p>
+            </div>
+            <div id="toggle2" class="toggloide">
+              <div id="boxinoisbacc2">
+                <div id="daytonakk2"></div>
+              </div><p class="categoria">Shown after scroll</p>
+            </div>
+            <div id="toggle3" class="toggloide">
+              <div id="boxinoisbacc3">
+                <div id="daytonakk3"></div>
+              </div>
+              <p class="categoria">Shown after click</p>
+            </div>
+          </div>
+      <div onclick="location.href='../mousetrack/mouse.html';" id="goon2">
+        <a id="next2">Next Technique</a>
+      </div>
+      <div id="goback"><p id="back">Back</p></div>
+    </div>
+
+      <div id="campotot">
+        <div id="container">
+          <div id="viewportheight">
+            <div id="line1" class="line"></div>
+            <div id="line2" class="line"></div>
+          </div>
+          <img src = "assets/netflix.webp" id="netflix" width = "300" class = "screen"></img>
+          <img src = "assets/prime.jpg" id="prime" width = "300" class = "screen"></img>
+          <img src = "assets/youtube_prova.jpg" id = "youtube" width = "300" class = "screen"></img>
+          <img src = "assets/twitch.webp" id="twitch" width = "300" class = "screen"></img>
+          <div id="counterbar">
+            <div id="counterpix">
+              <p id="pixels" class="counter"><span>0</span></p>
+              <p id="textpix">Pixels scrolled</p>
+            </div>
+            <p id="nvideos" class="counter"><span id="nspan">0</span> videos</p>
+            <p id="pvideos" class="counter"><span id="pspan">0</span> videos</p>
+            <p id="yvideos" class="counter"><span id="yspan">0</span> videos</p>
+            <p id="tvideos" class="counter"><span id="tspan">0</span> videos</p>
+            <p class="titoli" id="titnetflix">Netflix</p>
+            <p class="titoli" id="titprime">Prime Video</p>
+            <p class="titoli" id="tityoutube">Youtube</p>
+            <p class="titoli" id="tittwitch">Twitch</p>
+            <p id="question">How many videos are in your homepage?<br>Scroll down to count them.</p>
+            <p id="viewdesc">Viewport height<br>(1920x1080)</p>
+          </div>
+        </div>
+      </div>
+    <div id="goon"><p id="next">Next</p></div>
+  </div>
+
+  <div id="cover-scroll">
+    <!-- <h2 class="capitolo">1<sup>st</sup> TECHNIQUE</h2> -->
+    <h1 class="titolo">First impression</h1>
+    <p class="info">
+      When it comes to designing the homepage interface, the goal is to offer a content library that encourages users to watch something, giving them a rich array of choices, making sure you'll be satisfied.
+
+    </p>
+    <a class="bottone-start" href="#">Enter</a>
+  </div>
+     
+  <div id="navbar">
+    <a href="../index.html" id="home" class="navbar-button">ATTENTION WAR</a>
+    <div id="chapters" class="navbar-button">
+      <a href="#" class="chapters-button" id="active">First impression</a>
+      <a href="../mousetrack/mouse.html" class="chapters-button">Hide and seek</a>
+      <a href="../search/search.html" class="chapters-button">I'll handle it</a>
+    </div>
+  </div>
+        <!-- <p id="video" class="counter"><span id="videosp">10</span> videos</p> -->
+    <!-- <script src="./fullpage.min.js"></script> -->
+    <!-- <script src="./app.js"></script> -->
+    <script src="../js/scroll-script.js"></script>
+
+    <!-- <script src="../libraries/grained/grained.js"></script>
+    <script src="../js/grain-scroll.js"></script> -->
+
+  </body>
+</html>
