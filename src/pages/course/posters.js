@@ -18,7 +18,7 @@ const IndexPage = () => {
     <>
     <title>Poster - Visual Explanations - DensityDesign Lab Final Synthesis Design Studio 2021/2022 - Mediazioni algoritmiche</title>
     <Navbar/>
-    <Breadcrumb url="/course/projects" title="Reports and Projects →"/>
+    <Breadcrumb url="../projects" title="Reports and Projects →"/>
     <main>
       <Explananda />
     </main>
