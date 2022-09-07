@@ -19,7 +19,7 @@ const IndexPage = () => {
           <h3>Poster</h3>
           <h2>Visual explanations</h2>
       </Link>
-      <Link to href="/course/projects" className="phase lg">
+      <Link to href="/projects" className="phase lg">
         <div className="phase">
           <h3>Report</h3>
           <h2>Data as artefact</h2>
