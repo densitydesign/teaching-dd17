@@ -41,4 +41,13 @@ module.exports = {
     },
   ],
   pathPrefix: "/teaching-dd17",
-};
+    plugins: [
+      {
+        resolve: `gatsby-plugin-runtime-path-prefix`,
+        options: {
+          forceTrailingSlash: true
+        },
+      },
+    ],
+  };
+

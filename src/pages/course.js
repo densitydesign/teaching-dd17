@@ -15,7 +15,7 @@ const IndexPage = () => {
     <title>Course results - DensityDesign Lab Final Synthesis Design Studio 2021/2022 - Mediazioni algoritmiche</title>
     <Navbar/>
     <div className="project-phases">
-      <Link to href="/course/posters" className="phase">
+      <Link to href="/posters" className="phase">
           <h3>Poster</h3>
           <h2>Visual explanations</h2>
       </Link>
