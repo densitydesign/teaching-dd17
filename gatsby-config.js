@@ -22,6 +22,7 @@ module.exports = {
     "gatsby-plugin-mdx",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
+    `gatsby-plugin-remove-trailing-slashes`,
     "react-icons",
     {
       resolve: "gatsby-source-filesystem",
@@ -40,14 +41,6 @@ module.exports = {
       __key: "pages",
     },
   ],
-  pathPrefix: "/teaching-dd17",
-    plugins: [
-      {
-        resolve: `gatsby-plugin-runtime-path-prefix`,
-        options: {
-          forceTrailingSlash: true
-        },
-      },
-    ],
+  pathPrefix: "/teaching-dd17"
   };
 
