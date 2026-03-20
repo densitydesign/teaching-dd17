@@ -22,7 +22,7 @@ module.exports = {
     "gatsby-plugin-mdx",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
-    `gatsby-plugin-remove-trailing-slashes`,
+    // `gatsby-plugin-remove-trailing-slashes`,
     "react-icons",
     {
       resolve: "gatsby-source-filesystem",
